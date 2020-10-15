@@ -1,0 +1,16 @@
+# c_xingliang_island
+
+# County Title
+title = c_xingliang_island
+
+# Settlements
+max_settlements = 3
+
+b_xingliang_island = tribe
+
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

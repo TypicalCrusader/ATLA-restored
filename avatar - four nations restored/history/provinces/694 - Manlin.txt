@@ -1,0 +1,17 @@
+# c_panging
+
+# County Title
+title = c_manlin
+
+# Settlements
+max_settlements = 2
+
+b_manlin = tribe
+b_huodin = temple
+
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

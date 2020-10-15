@@ -1,0 +1,15 @@
+# c_jinqiu
+
+# County Title
+title = c_jinqiu
+
+# Settlements
+max_settlements = 4
+
+b_jinqiu = tribe
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

@@ -1,0 +1,16 @@
+# c_quhou
+
+# County Title
+title = c_quhou
+
+# Settlements
+max_settlements = 3
+
+b_quhou = tribe
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History
+

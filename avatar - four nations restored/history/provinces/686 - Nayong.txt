@@ -1,0 +1,15 @@
+# c_nayong
+
+# County Title
+title = c_nayong
+
+# Settlements
+max_settlements = 2
+
+b_nayong = tribe
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

@@ -1,0 +1,17 @@
+# c_fuwei
+
+# County Title
+title = c_fuwei
+
+# Settlements
+max_settlements = 2
+
+c_fuwei = tribe
+c_fuwei_c = city
+
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

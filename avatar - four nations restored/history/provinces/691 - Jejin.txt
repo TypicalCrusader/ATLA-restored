@@ -1,0 +1,16 @@
+# c_jejin
+
+# County Title
+title = c_jejin
+
+# Settlements
+max_settlements = 3
+
+b_jejin = tribe
+
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

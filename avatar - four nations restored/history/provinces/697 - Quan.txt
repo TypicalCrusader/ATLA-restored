@@ -1,0 +1,18 @@
+# c_quan
+
+# County Title
+title = c_quan
+
+# Settlements
+max_settlements = 5
+
+b_crouching_tiger = castle
+b_quan = city
+b_quan_monastery = temple
+b_long_wang_fortress = castle
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

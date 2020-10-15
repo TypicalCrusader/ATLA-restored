@@ -1,0 +1,16 @@
+# c_qingtong
+
+# County Title
+title = c_qingtong
+
+# Settlements
+max_settlements = 2
+
+b_qingtong = tribe
+
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

@@ -1,0 +1,16 @@
+# c_bagai
+
+# County Title
+title = c_bagai
+
+# Settlements
+max_settlements = 1
+
+b_bagai = tribe
+
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History

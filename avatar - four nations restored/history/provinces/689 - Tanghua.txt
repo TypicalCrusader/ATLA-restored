@@ -1,0 +1,16 @@
+# c_tanghua
+
+# County Title
+title = c_tanghua
+
+# Settlements
+max_settlements = 2
+
+b_tanghua = tribe
+b_tanghua_monastery = temple
+
+# Misc
+culture = eastern_earth
+religion = earth_spirituality
+
+#History
