@@ -461,8 +461,8 @@ city_county_of_sandbender;Tribe of;Grande Cit� de;Gro�stadt;;Ciudad de;;;;;;
 temple_county_of_sandbender;Tribe of;Grande Cit� de;Gro�stadt;;Ciudad de;;;;;;;;;x
 temple_barony_of_sandbender;Temple of;Grande Cit� de;Gro�stadt;;Ciudad de;;;;;;;;;x
 temple_count_sandbender;Sand Sage;A;A;;A;;;;;;;;;x
-UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;;;;;;;;;x
-UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;;;;;;;;;x
+quan_holder_male;[GetQuanHolderTitleName];[GetQuanHolderTitleName];[GetQuanHolderTitleName];[GetQuanHolderTitleName];UNUSED;;;;;;;;;x
+quan_holder_female;[GetQuanHolderTitleName];[GetQuanHolderTitleName];[GetQuanHolderTitleName];[GetQuanHolderTitleName];UNUSED;;;;;;;;;x
 UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;;;;;;;;;x
 UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;;;;;;;;;x
 UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;UNUSED;;;;;;;;;x

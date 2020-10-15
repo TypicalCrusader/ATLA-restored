@@ -1429,4 +1429,20 @@ e_three_rings = {
 	religion = earth_spirituality
 	
 	dynasty_title_names = no
-}	
+}
+
+k_quan = {
+	color = { 52 165 203 }
+	color2 = { 48 135 166 }	
+	capital = 162 #Alxa
+	
+	title = "quan_holder_male"
+	title_female = "quan_holder_female"
+	foa = "SAGE_FOA"
+	short_name = yes
+	
+	
+	religion = earth_spirituality
+	
+	dynasty_title_names = no
+}

@@ -89,6 +89,7 @@
 #GetMandatePower
 #GetRootMandateModifier
 #GetExistingRCFactions
+#GetQuanHolderTitleName (aka bastardised flavorisation)
 
 ###RELATIONSHIPS###
 defined_text = {
@@ -5152,4 +5153,57 @@ defined_text = {
 			has_global_flag = dai_li_disbanded
 		}
 	}
+}
+
+defined_text = {
+	name = GetQuanHolderTitleName
+
+	text = {
+		localisation_key = GetQuanHolderTitleName_ImpBlood
+		trigger = {
+			ROOT = { 
+				is_female = no
+				any_owned_bloodline = {
+					has_bloodline_flag = hey_im_ek_succ_bloodline_flag
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetQuanHolderTitleName_ImpBlood_female
+		trigger = {
+			ROOT = { 
+				is_female = yes
+				any_owned_bloodline = {
+					has_bloodline_flag = hey_im_ek_succ_bloodline_flag
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetQuanHolderTitleName_GrandDuke
+		trigger = {
+			ROOT = { 
+				is_female = no
+				NOT = {
+					any_owned_bloodline = {
+						has_bloodline_flag = hey_im_ek_succ_bloodline_flag
+					}
+				}
+			}
+		}
+	}
+	text = {
+		localisation_key = GetQuanHolderTitleName_GrandDuke_female
+		trigger = {
+			ROOT = { 
+				is_female = yes
+				NOT = {
+					any_owned_bloodline = {
+						has_bloodline_flag = hey_im_ek_succ_bloodline_flag
+					}
+				}
+			}
+		}
+	}	
 }
