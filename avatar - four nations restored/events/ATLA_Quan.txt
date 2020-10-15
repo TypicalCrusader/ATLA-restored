@@ -1,0 +1,265 @@
+####									 ####
+## Made For T4N-Restored by TypicalCrusader##
+####									 ####
+
+namespace = T4NQuan
+
+##Clan Authority and Quan handlers + Random events##
+
+#####
+##Event List
+##T4NQuan.1 - Grant Trait princequan to new ruler
+##T4NQuan.2 - Remove trait princequan if char is no longer a ruler of k_quan
+##T4NQuan.3 - Check if CA is not < / > 100 (yearly)
+##T4NQuan.4 - Grant CA modifer based on current CA (yearly + startup)
+##T4NQuan.5 -
+##T4NQuan.6 -
+##T4NQuan.7 -
+##T4NQuan.8 -
+##T4NQuan.9 -
+##T4NQuan.10 -
+##T4NQuan.11 -
+##T4NQuan.12 -
+#####
+
+#Grant Trait to new ruler
+character_event = {
+	id = T4NQuan.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { trait = princequan }
+		has_landed_title = k_quan
+	}
+	
+	immediate = {
+		#Default CA to 50 after previous ruler death
+		set_variable = { which = global_Clanauthority value = 50 }
+		add_trait = princequan
+	}
+}
+
+#Remove trait if char is no longer a ruler of k_quan
+character_event = {
+	id = T4NQuan.2
+	is_triggered_only = yes
+	hide_window = yes	
+	
+	trigger = {
+		trait = princequan
+		NOT = { has_landed_title = k_quan }
+	}	
+	
+	immediate = { 
+		remove_trait = princequan
+	}
+}
+
+#Check if CA is not < / > 100 (yearly)
+character_event = {
+	id = T4NQuan.3
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_landed_title = k_quan
+	}
+	
+	immediate = {
+		#if CA > 100 then set it to 100 and block any gain
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value > 100 }
+			}
+			set_variable = { which = global_Clanauthority value = 0 }
+			set_global_flag = CAgainblock
+		}
+		#if CA < 0 then set it to 0 and block any lose
+		else_if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value < 0 }
+			}		
+			set_variable = { which = global_Clanauthority value = 0 }
+			set_global_flag = CAloseblock
+		}
+		if = {
+			limit = {
+				has_global_flag = CAgainblock
+				check_variable = { which = global_Clanauthority value <= 95 }
+			}
+			clr_global_flag = CAgainblock
+		}
+		else_if = {
+			limit = {
+				has_global_flag = CAloseblock
+				check_variable = { which = global_Clanauthority value >= 5 }
+			}
+			clr_global_flag = CAloseblock
+		}
+	}
+}
+
+#Grant CA modifer based on current CA (yearly + startup)
+character_event = {
+	id = T4NQuan.4
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_landed_title = k_quan
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 0 }
+				check_variable = { which = global_Clanauthority value <= 10 }
+			}
+			add_character_modifier = {
+				name = CAmodif1
+				years = -1
+			}
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif9
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 10 }
+				check_variable = { which = global_Clanauthority value <= 20 }
+			} 	
+			add_character_modifier = {
+				name = CAmodif2
+				years = -1
+			}		
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif9
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 20 }
+				check_variable = { which = global_Clanauthority value <= 30 }
+			} 	
+			add_character_modifier = {
+				name = CAmodif3
+				years = -1
+			}		
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif9
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 30 }
+				check_variable = { which = global_Clanauthority value <= 40 }
+			} 	
+			add_character_modifier = {
+				name = CAmodif4
+				years = -1
+			}		
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif9
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 40 }
+				check_variable = { which = global_Clanauthority value <= 60 }
+			}			
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif9
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 60 }
+				check_variable = { which = global_Clanauthority value <= 70 }
+			} 	
+			add_character_modifier = {
+				name = CAmodif7
+				years = -1
+			}		
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif9
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 70 }
+				check_variable = { which = global_Clanauthority value <= 80 }
+			} 	
+			add_character_modifier = {
+				name = CAmodif8
+				years = -1
+			}		
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif9
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 80 }
+				check_variable = { which = global_Clanauthority value <= 90 }
+			} 	
+			add_character_modifier = {
+				name = CAmodif9
+				years = -1
+			}		
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif10
+		}
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value >= 90 }
+				check_variable = { which = global_Clanauthority value <= 100 }
+			} 	
+			add_character_modifier = {
+				name = CAmodif10
+				years = -1
+			}		
+			remove_character_modifier = CAmodif1
+			remove_character_modifier = CAmodif2
+			remove_character_modifier = CAmodif3
+			remove_character_modifier = CAmodif4
+			remove_character_modifier = CAmodif7
+			remove_character_modifier = CAmodif8
+			remove_character_modifier = CAmodif9
+		}		
+	}
+}
