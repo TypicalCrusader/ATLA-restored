@@ -52,6 +52,6 @@ GetQuanHolderTitleName_ImpBlood;Prince of Imperial Blood;;;;;;;;;;;;;x
 GetQuanHolderTitleName_ImpBlood_female;Princess of Imperial Blood;;;;;;;;;;;;;x
 GetQuanHolderTitleName_GrandDuke;Grand Duke;;;;;;;;;;;;;x
 GetQuanHolderTitleName_GrandDuke_female;Grand Duchess;;;;;;;;;;;;;x
-GetColorClanAuthority_green;§G[global_Clanauthority.Getvalue]§!;;;;;;;;;;;;;x
-GetColorClanAuthority_yellow;§Y[global_Clanauthority.Getvalue]§!;;;;;;;;;;;;;x
-GetColorClanAuthority_red;§R[global_Clanauthority.Getvalue]§!;;;;;;;;;;;;;x
+GetColorClanAuthority_green;is §G[global_Clanauthority.GetValue]§!;;;;;;;;;;;;;x
+GetColorClanAuthority_yellow;is §Y[global_Clanauthority.GetValue]§!;;;;;;;;;;;;;x
+GetColorClanAuthority_red;is §R[global_Clanauthority.GetValue]§!;;;;;;;;;;;;;x

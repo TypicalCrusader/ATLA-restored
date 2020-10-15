@@ -3199,6 +3199,8 @@ princequan = {
 	martial = 1
 	stewardship = 2
 
+	vassal_opinion = 10
+
 	command_modifier = {
 		cavalry = 0.15
 		speed = 0.1
