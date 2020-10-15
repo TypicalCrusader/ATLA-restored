@@ -2402,33 +2402,11 @@ e_earth_kingdom = {
 			}
 		}
 
-		d_daqing = {
+		d_embarra = {
 			color = { 67 125 75 }
 			color2 = { 255 255 255 }
-			capital = 148 # c_daqing
+			capital = 687 # c_daqing
 
-			c_daqing = { # 148
-				color = { 57 135 70 }
-				color2 = { 255 255 255 }
-
-				b_inu = {
-				}
-				b_gou = {
-				}
-				b_kuttom = {
-				}
-			}
-			c_daoli = { # 149
-				color = { 84 150 95 }
-				color2 = { 255 255 255 }
-
-				b_mao = {
-				}
-				b_neko = {
-				}
-				b_billi = {
-				}
-			}
 			c_hegang = { # 152
 				color = { 38 91 47 }
 				color2 = { 255 255 255 }
@@ -2438,17 +2416,6 @@ e_earth_kingdom = {
 				b_hup = {
 				}
 				b_embara = {
-				}
-			}
-			c_nangang = { # 150
-				color = { 70 146 82 }
-				color2 = { 255 255 255 }
-
-				b_tuzi = {
-				}
-				b_dun_tu_rou = {
-				}
-				b_tu_dangao = {
 				}
 			}
 			c_suihua = { # 151
@@ -2462,6 +2429,127 @@ e_earth_kingdom = {
 				b_saracen = {
 				}
 			}
+			c_jinqiu = { #687
+			color = { 70 146 82 }
+			color2 = { 255 255 255 }
+
+				b_jinqiu= {
+				}
+				b_guitou = {
+				}
+				b_kujin= {
+				}				
+				b_nomlig = {
+				}
+			}			
+			c_quhou = { #685
+			color = { 70 146 82 }
+			color2 = { 255 255 255 }
+
+				b_quhou= {
+				}
+				b_ansan = {
+				}
+				b_sinsu= {
+				}				
+			}		
+			c_tanghua = { #689
+			color = { 70 146 82 }
+			color2 = { 255 255 255 }
+
+				b_tanghua= {
+				}
+				b_tanghua_monastery = {
+				}
+			
+			}		
+			
+		}
+		d_nagang = {
+			color = { 80 125 75 }
+			color2 = { 255 255 255 }
+			capital = 150 # c_nagang
+
+			c_daoli = { # 149
+			color = { 84 150 95 }
+			color2 = { 255 255 255 }
+
+				b_mao = {
+				}
+				b_neko = {
+				}
+				b_billi = {
+				}
+			}		
+			c_nangang = { # 150
+			color = { 70 146 82 }
+			color2 = { 255 255 255 }
+
+				b_tuzi = {
+				}
+				b_dun_tu_rou = {
+				}
+				b_tu_dangao = {
+				}
+			}
+			c_nayong = { #686
+			color = { 70 146 82 }
+			color2 = { 255 255 255 }
+
+				b_naygong= {
+				}
+				b_guiping = {
+				}
+
+			}
+			c_qijing = { #536
+				color = { 70 146 82 }
+				color2 = { 255 255 255 }
+
+				b_qijing = {}
+				b_erga = {}
+				b_sushui = {}
+				b_tanjin = {}
+			}		
+
+		}
+		
+		d_daqing = {
+			color = { 80 125 75 }
+			color2 = { 255 255 255 }
+			capital = 148 # c_daqing			
+			
+			c_daqing = { # 148
+			color = { 57 135 70 }
+			color2 = { 255 255 255 }
+
+				b_inu = {
+				}
+				b_gou = {
+				}
+				b_kuttom = {
+				}
+			}
+			c_bagai = { #690
+			color = { 57 135 70 }
+			color2 = { 255 255 255 }
+
+				b_bagai = {
+				}
+			}
+			c_panging = { #693
+			color = { 57 135 70 }
+			color2 = { 255 255 255 }
+
+				b_panging = {
+				}
+				b_mangai = {
+				}
+				b_deljinst = {
+				}
+			}
+
+
 		}
 		d_baotou = {
 			color = { 95 160 104 }
@@ -2516,22 +2604,11 @@ e_earth_kingdom = {
 				}
 			}
 		}
-		d_gansu = {
+		d_baiyin = {
 			color = { 32 124 46 }
 			color2 = { 255 255 255 }
-			capital = 164 # c_gansu
+			capital = 165 # c_gansu
 
-			c_gansu = { # 164
-				color = { 22 134 41 }
-				color2 = { 255 255 255 }
-
-				b_sup = {
-				}
-				b_mori = {
-				}
-				b_lin = {
-				}
-			}
 			c_baiyin = { # 165
 				color = { 12 90 25 }
 				color2 = { 255 255 255 }
@@ -2562,6 +2639,48 @@ e_earth_kingdom = {
 				}
 			}
 		}
+		d_gansu = {
+			color = { 22 134 41 }
+			color2 = { 255 255 255 }
+			capital = 164 # c_gansu
+
+			c_gansu = { # 164
+				color = { 22 134 41 }
+				color2 = { 255 255 255 }
+
+				b_sup = {
+				}
+				b_mori = {
+				}
+				b_lin = {
+				}
+			}
+			
+			c_qingtong = { #699
+				color = { 22 134 41 }
+				color2 = { 255 255 255 }
+
+				b_qingtong = {}
+				b_kimcho = {}
+			}
+
+		}
+		d_quan = {
+			color = { 120 81 169 }
+			color2 = { 255 255 255 }
+			capital = 697 #c_quan
+
+			c_quan = {
+				color = { 120 81 169 }
+				color2 = { 255 255 255 }
+
+				b_crouching_tiger = {}
+				b_quan = {}
+				b_quan_monastery = {} 
+				b_long_wang_fortress = {}
+				b_hou-ting = {}
+			}
+		}
 		d_jilin = {
 			color = { 63 146 65 }
 			color2 = { 255 255 255 }
@@ -2577,6 +2696,21 @@ e_earth_kingdom = {
 				}
 				b_nu_tongxinglian = {
 				}
+			}
+			c_jejin = { #691
+				color = { 53 156 60 }
+				color2 = { 255 255 255 }	
+				
+				b_jejin = {}
+				b_taegye = {}
+				b_sinwang = {}
+			}
+			c_tangong = { #692
+				color = { 76 132 80 }
+				color2 = { 255 255 255 }	
+				
+				b_tangong = {}
+				b_sokyong = {}
 			}
 			c_chengji = { # 155
 				color = { 76 132 80 }
@@ -2630,6 +2764,12 @@ e_earth_kingdom = {
 				b_og_teuli = {
 				}
 			}
+		}
+		d_yinchuan = {
+			color = { 46 153 63 }
+			color = { 255 255 255 }
+			capital = 163
+
 			c_yinchuan_islands = { # 163
 				color = { 46 153 63 }
 				color2 = { 255 255 255 }
@@ -2641,6 +2781,17 @@ e_earth_kingdom = {
 				}
 				b_jisatsu = {
 				}
+			}	
+			c_qiwei_island = { #695
+				b_qiwei_island = {}
+			}
+			c_xingliang_island = { #696
+				color = { 46 153 63 }
+				color2 = { 255 255 255 }		
+				
+				b_xingliang_island = {}
+				b_zhenxing = {}
+				b_pingtong = {}
 			}
 		}
 		d_ordos = {
@@ -2669,6 +2820,22 @@ e_earth_kingdom = {
 				}
 				b_shi_no_koshin = {
 				}
+			}
+			c_manlin = { #694
+				color = { 38 111 50 }
+				color2 = { 255 255 255 }
+
+				b_manlin = {}
+				b_huodin = {}
+			}			
+			c_xuzhou = { #698
+				color = { 38 111 50 }
+				color2 = { 255 255 255 }
+
+				b_xuzhou = {}
+				b_yueging = {}
+				b_nonsong = {}
+
 			}
 		}
 	}
