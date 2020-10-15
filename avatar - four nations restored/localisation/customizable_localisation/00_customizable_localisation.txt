@@ -5207,3 +5207,29 @@ defined_text = {
 		}
 	}	
 }
+
+defined_text = {
+	name = GetColorClanAuthority
+
+	text = {
+		localisation_key = GetColorClanAuthority_green
+		trigger = {
+			check_variable = { which = global_Clanauthority value > 60 }
+		}
+	}
+	text = {
+		localisation_key = GetColorClanAuthority_yellow
+		trigger = {
+			check_variable = { which = global_Clanauthority value >= 40 }
+			check_variable = { which = global_Clanauthority value <= 60 }
+		}
+	}
+	text = {
+		localisation_key = GetColorClanAuthority_red
+		trigger = {
+			trigger = {
+				check_variable = { which = global_Clanauthority value < 60 }
+			}
+		}
+	}
+}
