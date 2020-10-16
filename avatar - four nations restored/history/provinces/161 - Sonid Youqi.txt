@@ -13,6 +13,7 @@ b_siwang_zhi_lu = tribal
 # Misc
 culture = eastern_earth
 religion = way_of_chin
+terrain = hills
 
 #History
 672.10.7 = { b_siwang_zhi_lu = castle }

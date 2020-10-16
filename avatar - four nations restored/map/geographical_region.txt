@@ -16,9 +16,17 @@ world_hu_xin_provinces = {
 		d_yu_dao d_gangxi d_haiyang d_han_tui d_north_plain d_riluodi d_yantai d_badaji d_senlin
 	}
 }
+world_grand_duchy_quan = {
+	duchies = {
+		d_quan d_yinchuan
+	}
+	counties = {
+		c_alxa
+	}
+}
 world_xiong_lin_territory = {
 	duchies = {
-		d_xiong_lin d_lengbin d_dalian d_huping
+		d_xiong_lin d_lengbin d_dalian d_huping d_baohai
 	}
 }
 world_old_makapu = {
@@ -53,7 +61,10 @@ world_southern_plains = {
 }
 world_dongfang_peninsular = {
 	duchies = {
-		d_daqing d_baotou d_gansu d_jilin d_ningxia d_ordos
+		d_daqing d_baotou d_gansu d_jilin d_ningxia d_ordos d_quan d_yinchuan d_baiyin d_embarra d_nagang
+	}
+	regions = {
+		world_grand_duchy_quan
 	}
 }
 world_earth_islands = {
