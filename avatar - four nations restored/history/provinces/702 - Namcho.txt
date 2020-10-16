@@ -6,7 +6,7 @@ title = c_namcho
 # Settlements
 max_settlements = 4
 
-c_namcho = tribal
+b_namcho = tribal
 
 # Misc
 culture = eastern_earth
