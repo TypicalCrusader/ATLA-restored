@@ -6,8 +6,8 @@ title = c_fuwei
 # Settlements
 max_settlements = 2
 
-c_fuwei = tribe
-c_fuwei_c = city
+b_fuwei = tribal
+b_fuwei_c = city
 
 
 # Misc

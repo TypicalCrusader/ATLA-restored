@@ -6,7 +6,7 @@ title = c_nayong
 # Settlements
 max_settlements = 2
 
-b_naygong = tribe
+b_naygong = tribal
 
 # Misc
 culture = eastern_earth

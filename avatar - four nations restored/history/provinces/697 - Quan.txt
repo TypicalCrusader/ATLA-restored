@@ -4,7 +4,7 @@
 title = c_quan
 
 # Settlements
-max_settlements = 5
+max_settlements = 6
 
 b_crouching_tiger = castle
 b_quan = city

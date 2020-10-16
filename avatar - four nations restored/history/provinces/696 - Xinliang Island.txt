@@ -6,7 +6,7 @@ title = c_xingliang_island
 # Settlements
 max_settlements = 3
 
-b_xingliang_island = tribe
+b_xingliang = tribal
 
 
 # Misc

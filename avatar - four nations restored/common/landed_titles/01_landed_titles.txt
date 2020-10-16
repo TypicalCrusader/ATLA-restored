@@ -2548,8 +2548,16 @@ e_earth_kingdom = {
 				b_deljinst = {
 				}
 			}
-
-
+			c_suzhou = { #688
+				color = { 57 135 70 }
+				color2 = { 255 255 255 }
+				
+				b_suzhou = {}
+				b_wondong = {}
+				b_hangtou = {}
+				b_nangong = {}
+			
+			}
 		}
 		d_baotou = {
 			color = { 95 160 104 }
@@ -2664,6 +2672,13 @@ e_earth_kingdom = {
 				b_kimcho = {}
 			}
 
+			c_fuwei = { #700
+				color = { 22 134 41 }
+				color2 = { 255 255 255 }	
+				
+				b_fuwei = {}
+				b_fuwei_c = {} 
+			}	
 		}
 		d_quan = {
 			color = { 120 81 169 }
@@ -2679,6 +2694,7 @@ e_earth_kingdom = {
 				b_quan_monastery = {} 
 				b_long_wang_fortress = {}
 				b_hou-ting = {}
+				b_hao = {}
 			}
 		}
 		d_jilin = {
@@ -2789,7 +2805,7 @@ e_earth_kingdom = {
 				color = { 46 153 63 }
 				color2 = { 255 255 255 }		
 				
-				b_xingliang_island = {}
+				b_xingliang = {}
 				b_zhenxing = {}
 				b_pingtong = {}
 			}
@@ -2836,6 +2852,15 @@ e_earth_kingdom = {
 				b_yueging = {}
 				b_nonsong = {}
 
+			}
+			c_namcho = { #702
+				color = { 48 92 55 }
+				color2 = { 255 255 255 }
+				
+				b_namcho = {}
+				b_mansan = {}
+				b_yueying = {}
+				b_wongye = {}
 			}
 		}
 	}

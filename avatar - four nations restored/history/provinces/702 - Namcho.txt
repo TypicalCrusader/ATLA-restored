@@ -1,12 +1,12 @@
-# c_suzhou
+# c_namcho
 
 # County Title
-title = c_suzhou
+title = c_namcho
 
 # Settlements
 max_settlements = 4
 
-b_suzhou = tribal
+c_namcho = tribal
 
 # Misc
 culture = eastern_earth

@@ -6,7 +6,7 @@ title = c_tanghua
 # Settlements
 max_settlements = 2
 
-b_tanghua = tribe
+b_tanghua = tribal
 b_tanghua_monastery = temple
 
 # Misc

@@ -6,7 +6,7 @@ title = c_jejin
 # Settlements
 max_settlements = 3
 
-b_jejin = tribe
+b_jejin = tribal
 
 
 # Misc

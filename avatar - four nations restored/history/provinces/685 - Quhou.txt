@@ -6,7 +6,7 @@ title = c_quhou
 # Settlements
 max_settlements = 3
 
-b_quhou = tribe
+b_quhou = tribal
 
 # Misc
 culture = eastern_earth

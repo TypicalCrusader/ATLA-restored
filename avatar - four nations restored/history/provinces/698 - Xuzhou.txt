@@ -6,7 +6,7 @@ title = c_xuzhou
 # Settlements
 max_settlements = 3
 
-b_xuzhou = tribe
+b_xuzhou = tribal
 
 
 # Misc

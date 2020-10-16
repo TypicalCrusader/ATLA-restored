@@ -6,7 +6,7 @@ title = c_jinqiu
 # Settlements
 max_settlements = 4
 
-b_jinqiu = tribe
+b_jinqiu = tribal
 
 # Misc
 culture = eastern_earth

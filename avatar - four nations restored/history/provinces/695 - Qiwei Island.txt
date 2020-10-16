@@ -6,7 +6,7 @@ title = c_qiwei_island
 # Settlements
 max_settlements = 1
 
-b_qiwei_island = tribe
+b_qiwei_island = tribal
 
 
 # Misc

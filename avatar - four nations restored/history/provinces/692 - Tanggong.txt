@@ -6,7 +6,7 @@ title = c_tangong
 # Settlements
 max_settlements = 2
 
-b_tangong = tribe
+b_tangong = tribal
 
 
 # Misc

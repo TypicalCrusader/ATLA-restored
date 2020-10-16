@@ -6,7 +6,7 @@ title = c_bagai
 # Settlements
 max_settlements = 1
 
-b_bagai = tribe
+b_bagai = tribal
 
 
 # Misc
