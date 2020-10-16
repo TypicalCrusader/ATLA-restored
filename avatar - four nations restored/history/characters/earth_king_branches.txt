@@ -1,5 +1,5 @@
-# Fong Characters
-# 50000-50012
+# Fong Characters, Hou Quan Characters
+# 50000-50012, 60000-
 
 50000 = {
 	name = "Bang-Fong"
@@ -559,4 +559,48 @@ name = "Ma-Kao"
        512.4.4 = {
       	death = yes
       }
+}
+
+#Dongfang
+#Prince of Quan
+60000 = {
+	name = "Jin"
+	dynasty = 3972 #for now Hou, Hou-Quan
+	religion = earth_monarchism
+	culture = eastern_earth
+	#father = 10
+
+	trait = quick
+
+	539.8.16 = {
+		birth = yes
+	}
+	545.7.17 = {
+		trait = willful
+	}
+	547.10.15 ={
+		trait = curious
+	}
+	550.5.1 = {
+		trait = haughty
+	}
+	554.8.14 = {
+		remove_trait = willful
+		remove_trait = curious
+		remove_trait = haughty
+		trait = proud
+		trait = cynical
+		trait = ambitious
+		trait = patient
+	}
+	555.8.16 = {
+		trait = paranoid
+		trait = skilled_tactician
+		trait = strategist
+            trait = earthbender
+            trait = competent_bender
+	}
+	560.6.6 = {
+		trait = princequan
+	}
 }

@@ -1,0 +1,4 @@
+560.6.6 = {
+	holder = 60000
+	law = succ_tanistry
+}
