@@ -601,6 +601,17 @@ name = "Ma-Kao"
             trait = competent_bender
 	}
 	560.6.6 = {
-		trait = princequan
+            trait = princequan
+            effect = {
+                  set_variable = { which = global_Clanauthority value = 50 }
+                  random_bloodline = {
+                        limit = { 
+                              has_bloodline_flag = bloodline_hao
+                        }       
+                        #ROOT = {
+                              add_bloodline_member = PREV
+                        #}
+                  }
+            }
 	}
 }

@@ -48,8 +48,8 @@ String_pet_name_english_heaven;Heaven;;;;;;;;;;;;;x
 String_pet_name_english_autumn;Autumn;;;;;;;;;;;;;x
 String_pet_name_english_autumn2;Fall;;;;;;;;;;;;;x
 String_pet_name_english_spring;Spring;;;;;;;;;;;;;x
-GetQuanHolderTitleName_ImpBlood;Prince of Imperial Blood;;;;;;;;;;;;;x
-GetQuanHolderTitleName_ImpBlood_female;Princess of Imperial Blood;;;;;;;;;;;;;x
+GetQuanHolderTitleName_ImpBlood;Prince;;;;;;;;;;;;;x
+GetQuanHolderTitleName_ImpBlood_female;Princess;;;;;;;;;;;;;x
 GetQuanHolderTitleName_GrandDuke;Grand Duke;;;;;;;;;;;;;x
 GetQuanHolderTitleName_GrandDuke_female;Grand Duchess;;;;;;;;;;;;;x
 GetColorClanAuthority_green;is §G[global_Clanauthority.GetValue]§!;;;;;;;;;;;;;x
