@@ -1,0 +1,328 @@
+#Dongfang Families
+
+#=====================Hou-Quan=====================#
+
+#Second son of Earth King Hou Han
+60000 = {
+	name = "Yan"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = ba_sing_se
+	father = 220 
+
+	trait = quick
+	disallow_random_traits = yes
+
+	248.2.14 = {
+		birth = yes
+		trait = born_in_the_purple
+	}
+	257.7.13 = {
+		trait = princequan
+		effect = {
+			set_variable = { which = global_Clanauthority value = 50 }
+		}	
+	}
+	264.2.14 = {
+		trait = brilliant_strategist
+		trait =	strategist
+		trait = shrewd
+		trait = diligent
+		trait = wroth
+		trait = envious
+		trait = brave
+		trait = master_bender
+		trait = earthbender
+			
+		create_bloodline = {
+			type = hou_quan
+		}
+		give_nickname = nick_the_shield_of_the_east	
+	}
+	318.5.6 = {
+		death = yes
+	}
+
+}
+60001 = {
+	name = "Cheng"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60000
+
+	trait = skilled_tactician
+	trait = strategist
+	trait = slothful
+	trait = lustful
+	trait = kind
+	trait = earthbender
+	trait = powerful_bender
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+
+	disallow_random_traits = yes
+
+	270.7.23 = {
+		birth = yes
+	}
+	345.1.30 = {
+		death = yes
+	}
+
+}
+
+60002 = {
+	name = "Yang"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60001
+
+	trait = quick
+	trait = brilliant_strategist
+	trait = shrewd
+	trait = patient
+	trait = lustful
+	trait = proud
+	trait = flirtatious
+	trait = earthbender
+	trait = competent_bender
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+	
+	disallow_random_traits = yes	
+
+	295.4.12 = {
+		birth = yes
+		give_nickname = nick_the_bulwark
+	}
+	392.10.23 = {
+		death = yes
+	}
+
+}
+
+60003 = {
+	name = "Yun"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60002
+
+	trait = tough_soldier
+	trait = deceitful
+	trait = paranoid
+	trait = stubborn
+	trait = earthbender
+	trait = incompetent_bender
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+
+	disallow_random_traits = yes
+
+	319.4.5 = {
+		birth = yes
+	}
+	392.10.23 = {
+		death = yes
+	}
+
+}
+
+60004 = {
+	name = "De"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60003
+
+	trait = skilled_tactician
+	trait = cynical
+	trait = just
+	trait = proud
+	trait = earthbender
+	trait = competent_bender
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+
+	disallow_random_traits = yes
+
+	350.7.14 = {
+		birth = yes
+	}
+	432.7.14 = {
+		death = yes
+	}
+
+}
+
+60005 = {
+	name = "Yong"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60004
+	female = yes
+
+	trait = skilled_tactician
+	trait = brave
+	trait = lustful
+	trait = diligent
+	trait = strategist
+	trait = earthbender
+	trait = powerful_bender	
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+	
+	disallow_random_traits = yes
+
+	410.1.11 = {
+		birth = yes
+	}
+	472.9.18 = {
+		death = yes
+	}
+
+}
+
+60006 ={
+	name = "Jing"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60005
+
+	trait = quick
+	trait = shrewd
+	trait = brilliant_strategist
+	trait = strategist
+	trait = earthbender
+	trait = legendary_bender
+	trait = lavabender
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+
+	disallow_random_traits = yes
+
+	442.6.1 = {
+		birth = yes
+	}
+	500.12.2 = {
+		death = yes
+	}	
+}
+
+60007 = {
+	name = "Jian"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60006
+
+	trait = misguided_warrior
+	trait = craven
+	trait = gluttonous
+	trait = proud
+	trait = wroth
+	trait = earthbender
+	trait = incompetent_bender
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+
+	disallow_random_traits = yes
+
+	468.4.6 = {
+		birth = yes
+	}
+	502.7.2 = {
+		death = yes
+		give_nickname = nick_the_weak
+	}	
+}
+
+60008 = {
+	name = "Han"
+	dynasty = 5000 #Hou-Quan
+	
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60006
+
+	trait = skilled_tactician
+	trait = just
+	trait = kind
+	trait = proud
+	trait = cynical
+	trait = earthbender
+	trait = master_bender
+
+	trait = princequan #for now it will do since we are not making <500 scenarios
+
+	disallow_random_traits = yes
+
+	472.6.15 = {
+		birth = yes
+	}
+	541.3.7 = {
+		death = yes
+	}	
+}
+
+#Prince of Quan
+60009 = {
+	name = "Jin"
+	dynasty = 5000 #Hou-Quan
+	religion = earth_monarchism
+	culture = eastern_earth
+	father = 60008
+
+	disallow_random_traits = yes
+	trait = quick
+
+	539.8.16 = {
+			birth = yes           
+	}
+	545.7.17 = {
+		trait = willful
+	}
+	547.10.15 ={
+		trait = curious
+	}
+	550.5.1 = {
+		trait = haughty
+	}
+	554.8.14 = {
+		remove_trait = willful
+		remove_trait = curious
+		remove_trait = haughty
+		trait = proud
+		trait = cynical
+		trait = ambitious
+		trait = patient
+	}
+	555.8.16 = {
+		trait = paranoid
+		trait = skilled_tactician
+		trait = strategist
+		trait = earthbender
+		trait = competent_bender
+	}
+	560.6.6 = {
+		trait = princequan
+		effect = {
+			set_variable = { which = global_Clanauthority value = 50 }
+		}
+	}
+	611.1.7 = {
+		death = yes
+	}
+}

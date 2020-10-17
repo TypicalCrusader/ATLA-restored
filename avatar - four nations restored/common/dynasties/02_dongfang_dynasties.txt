@@ -1,0 +1,9 @@
+#splitted for obvious reason
+#5000 -
+
+#Princes of Quan
+5000 = {
+	name = "Hou-Quan"
+	culture = eastern_earth
+	used_for_random = no
+}
