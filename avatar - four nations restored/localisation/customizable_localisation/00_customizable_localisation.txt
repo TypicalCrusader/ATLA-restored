@@ -5157,7 +5157,9 @@ defined_text = {
 
 defined_text = {
 	name = GetQuanHolderTitleName
-
+	fallback_text = {
+		localisation_key = GetQuanHolderTitleName_fallback
+	}
 	text = {
 		localisation_key = GetQuanHolderTitleName_ImpBlood
 		trigger = {
