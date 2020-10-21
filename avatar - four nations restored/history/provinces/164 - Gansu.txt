@@ -11,12 +11,11 @@ b_sup = tribal
 #b_lin = temple
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = way_of_chin
 terrain = mountain
 
 #History
-672.8.3 = { b_sup = castle }
 672.8.3 = { religion = earth_spirituality }
 725.6.7 = { b_mori = temple }
 824.11.6 = { b_lin = city }

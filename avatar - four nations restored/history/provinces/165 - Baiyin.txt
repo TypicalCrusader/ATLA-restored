@@ -11,12 +11,11 @@ b_zangyaku_koi = tribal
 #b_baoxing = temple
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = way_of_chin
 terrain = mountain
 
 #History
-675.9.14 = { b_zangyaku_koi = castle }
 675.9.14 = { religion = earth_spirituality }
 781.1.5 = { b_poag = temple }
 892.3.16 = { b_baoxing = city }
