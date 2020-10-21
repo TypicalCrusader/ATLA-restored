@@ -240,3 +240,5 @@ sympathy_water_religions;Sympathy for Water Religions;;;;;;;;;;;x
 sympathy_water_religions_desc;This character has sympathy for Water religions.;;;;;;;;;;;x
 sympathy_fire_religions;Sympathy for Fire Religions;;;;;;;;;;;x
 sympathy_fire_religions_desc;This character has sympathy for Fire religions.;;;;;;;;;;;x
+princequan;[GetQuanHolderTitleName] of Quan;;;;;;;;;;;x
+princequan_desc;This character is §Y[GetQuanHolderTitleName] of Quan§!, a ruler of grand duchy located within the Dongfang Province. Clans of this province despise weakness, and tend to conspire against those deemed unfit to rule. Your §YClan Authority§! is the measure of respect you command amongst the local tribes -- lower values tend to lead to more rebellions.\n\nYour current §YClan Authority§! is [GetColorClanAuthority]%.;;;;;;;;;;;x
