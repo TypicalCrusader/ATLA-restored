@@ -9,7 +9,7 @@ max_settlements = 4
 b_namcho = tribal
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 
 #History

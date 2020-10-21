@@ -10,7 +10,7 @@ b_tanghua = tribal
 b_tanghua_monastery = temple
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 
 #History

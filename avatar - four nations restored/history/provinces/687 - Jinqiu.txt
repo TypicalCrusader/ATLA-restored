@@ -9,7 +9,7 @@ max_settlements = 4
 b_jinqiu = tribal
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 
 #History

@@ -10,7 +10,7 @@ b_xuzhou = tribal
 
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 
 #History

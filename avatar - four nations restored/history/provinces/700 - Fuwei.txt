@@ -11,7 +11,7 @@ b_fuwei_c = city
 
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 terrain = mountain
 #History

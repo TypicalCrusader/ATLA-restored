@@ -5,5 +5,35 @@
 5000 = {
 	name = "Hou-Quan"
 	culture = eastern_earth
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+#Random Lords
+5001 = {
+	name = "Dong"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no	
+}
+
+5002 = {
+	name = "Gonsun"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no	
+}
+
+5003 = {
+	name = "Liu"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5004 = {
+	name = "Bei"
+	culture = dongfangian
+	religion = earth_spirituality
 	used_for_random = no
 }

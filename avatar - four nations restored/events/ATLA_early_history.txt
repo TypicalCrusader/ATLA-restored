@@ -465,8 +465,7 @@ character_event = { # Age Update
 	only_rulers = yes
 
 	trigger = {
-		#has_landed_title = c_sufauraaqtaaq
-		always = yes
+		has_landed_title = c_sufauraaqtaaq
 	}
 
 	option = {

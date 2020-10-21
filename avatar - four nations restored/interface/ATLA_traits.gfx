@@ -1117,9 +1117,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_trait_princequan"
-		texturefile = "gfx/traits/earth_king.dds"
+		texturefile = "gfx/traits/trait_princequan.dds"
 		noOfFrames = 1
-		#norefcount = yes
-		#effectFile = "gfx/FX/buttonstate.lua"
 	}
 }

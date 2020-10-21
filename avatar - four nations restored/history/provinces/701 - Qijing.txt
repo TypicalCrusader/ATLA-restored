@@ -9,7 +9,7 @@ b_qijing = tribal
 
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 terrain = steppe
 

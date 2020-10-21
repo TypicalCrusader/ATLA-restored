@@ -186,6 +186,9 @@
 	410.1.11 = {
 		birth = yes
 	}
+	418.1.11 = { 
+		add_matrilineal_spouse = 60010
+	}
 	472.9.18 = {
 		death = yes
 	}
@@ -198,7 +201,8 @@
 	
 	religion = earth_monarchism
 	culture = eastern_earth
-	father = 60005
+	mother = 60005
+	father = 60010
 
 	trait = quick
 	trait = shrewd
@@ -226,7 +230,8 @@
 	
 	religion = earth_monarchism
 	culture = eastern_earth
-	father = 60006
+	mother = 60006
+	father = 60010
 
 	trait = misguided_warrior
 	trait = craven
@@ -325,4 +330,1126 @@
 	611.1.7 = {
 		death = yes
 	}
+}
+
+60010 ={
+	name = "Guan"
+	religion = earth_spirituality
+	culture = eastern_earth
+
+	408.12.1 = {
+		birth = yes
+	}
+	418.1.11 = {
+		add_matrilineal_spouse = 60005
+	}
+	472.9.18 = {
+		death = yes
+	}	
+}
+
+#=====================D o n g=====================#
+
+60011={
+	name=Jia
+	dynasty=5001
+	dna="acfdddiicld"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=7 stewardship=4 intrigue=4 learning=8
+	add_trait=intricate_webweaver add_trait=duelist 
+	499.1.24={ birth=yes }
+	556.4.28={ death=yes }
+}
+60012={
+	name=Wangzhuo
+	dynasty=5001
+	dna="jcgcpdgjcld"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=6 stewardship=4 intrigue=5 learning=4
+	add_trait=charismatic_negotiator 
+	father=60011	#Jia
+	526.9.15={ birth=yes }
+	573.7.18={ death=yes }
+}
+60013={
+	name=Mi-Hi
+	female=yes
+	dynasty=5001
+	dna="mbfdcdiicjd"
+	culture=dongfangian religion=earth_spirituality
+	father=60011	#Jia
+	530.11.10={ birth=yes }
+	592.3.7={ death=yes }
+}
+60014={
+	name=Xiaoping
+	dynasty=5001
+	dna="acncaeincpd"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=6 stewardship=8 intrigue=6 learning=4
+	add_trait=flamboyant_schemer add_trait=scholar add_trait=hunchback 
+	father=60011	#Jia
+	535.3.9={ birth=yes }
+	582.3.15={ death=yes }
+}
+60015={
+	name=Wenshunu
+	dynasty=5001
+	dna="kendndinckn"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=5 stewardship=5 intrigue=8 learning=6
+	add_trait=flamboyant_schemer add_trait=drunkard 
+	father=60011	#Jia
+	539.2.9={ birth=yes }
+	592.2.10={ death=yes }
+}
+60016={
+	name=Guoping
+	dynasty=5001
+	dna="ecgopkgjcld"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=7 stewardship=5 intrigue=6 learning=7
+	add_trait=scholarly_theologian 
+	father=60012	#Wangzhuo
+	549.11.3={ birth=yes }
+	614.1.10={ death=yes }
+}
+60017={
+	name=Xiangdao
+	dynasty=5001
+	dna="jlgfkilacgd"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=8 stewardship=7 intrigue=8 learning=4
+	add_trait=intricate_webweaver add_trait=gluttonous 
+	father=60012	#Wangzhuo
+	553.12.23={ birth=yes }
+	619.6.7={ death=yes }
+}
+60018={
+	name=Yong-Min
+	dynasty=5001
+	dna="hcgonkgjcgd"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=5 stewardship=4 intrigue=5 learning=6
+	add_trait=flamboyant_schemer 
+	father=60016	#Guoping
+	573.8.9={ birth=yes }
+	631.3.14={ death=yes }
+}
+60019={
+	name=Fa-Fen
+	female=yes
+	dynasty=5001
+	dna="emgjppmgcfd"
+	culture=dongfangian religion=earth_spirituality
+	father=60016	#Guoping
+	576.6.4={ birth=yes }
+	656.6.15={ death=yes }
+}
+60020={
+	name=Zhangke
+	dynasty=5001
+	dna="ekgcggdjcod"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=7 stewardship=8 intrigue=5 learning=7
+	add_trait=grey_eminence add_trait=mystic 
+	father=60016	#Guoping
+	579.10.13={ birth=yes }
+	638.2.28={ death=yes }
+}
+60021={
+	name=Daiyu
+	female=yes
+	dynasty=5001
+	dna="hemookgkchj"
+	culture=dongfangian religion=earth_spirituality
+	father=60016	#Guoping
+	582.7.26={ birth=yes }
+	635.3.27={ death=yes }
+}
+60022={
+	name=Chise
+	female=yes
+	dynasty=5001
+	dna="dpoojkgdjnd"
+	culture=dongfangian religion=earth_spirituality
+	father=60016	#Guoping
+	584.1.14={ birth=yes }
+	655.3.10={ death=yes }
+}
+60023={
+	name=Hannan
+	dynasty=5001
+	dna="hcgojlcieeo"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=6 stewardship=4 intrigue=6 learning=5
+	add_trait=elusive_shadow 
+	father=60018	#Yong-Min
+	595.9.24={ birth=yes }
+	672.6.3={ death=yes }
+}
+60024={
+	name=Min-Jee
+	female=yes
+	dynasty=5001
+	dna="aigjlkcjmgd"
+	culture=dongfangian religion=earth_spirituality
+	father=60018	#Yong-Min
+	599.10.10={ birth=yes }
+	675.2.21={ death=yes }
+}
+60025={
+	name=Yena
+	female=yes
+	dynasty=5001
+	dna="hcggppgpcgk"
+	culture=dongfangian religion=earth_spirituality
+	father=60018	#Yong-Min
+	601.6.18={ birth=yes }
+	672.6.7={ death=yes }
+}
+60026={
+	name=Jiao
+	dynasty=5001
+	dna="hcggnbhaccd"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=4 stewardship=4 intrigue=8 learning=5
+	add_trait=skilled_tactician add_trait=mystic add_trait=ambitious 
+	father=60018	#Yong-Min
+	603.7.11={ birth=yes }
+	650.10.28={ death=yes }
+}
+60027={
+	name=Mingli
+	dynasty=5001
+	dna="hkgojdjbmih"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=6 stewardship=6 intrigue=6 learning=6
+	add_trait=martial_cleric 
+	father=60023	#Hannan
+	622.9.11={ birth=yes }
+	695.7.28={ death=yes }
+}
+60028={
+	name=Nat-Lee
+	female=yes
+	dynasty=5001
+	dna="oggongckofo"
+	culture=dongfangian religion=earth_spirituality
+	father=60023	#Hannan
+	626.12.20={ birth=yes }
+	698.1.1={ death=yes }
+}
+60029={
+	name=An
+	female=yes
+	dynasty=5001
+	dna="jclolabieen"
+	culture=dongfangian religion=earth_spirituality
+	father=60023	#Hannan
+	629.7.22={ birth=yes }
+	699.12.31={ death=yes }
+}
+60030={
+	name=Won-Yee
+	female=yes
+	dynasty=5001
+	dna="nlgiobjbnpn"
+	culture=dongfangian religion=earth_spirituality
+	father=60027	#Mingli
+	643.8.9={ birth=yes }
+	706.9.26={ death=yes }
+}
+60031={
+	name=Shi
+	dynasty=5001
+	dna="hkbokapbfii"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=8 stewardship=5 intrigue=5 learning=6
+	add_trait=naive_appeaser 
+	father=60027	#Mingli
+	645.12.19={ birth=yes }
+	698.1.23={ death=yes }
+}
+60032={
+	name=Jingbo
+	dynasty=5001
+	dna="hmbomapofji"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=6 stewardship=6 intrigue=8 learning=4
+	add_trait=intricate_webweaver 
+	father=60031	#Shi
+	671.11.5={ birth=yes }
+	728.1.27={ death=yes }
+}
+60033={
+	name=Guowei
+	dynasty=5001
+	dna="dmhcmnegfii"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=6 stewardship=4 intrigue=6 learning=8
+	add_trait=indulgent_wastrel 
+	father=60031	#Shi
+	674.9.24={ birth=yes }
+	756.12.17={ death=yes }
+}
+60034={
+	name=Lee-Lee
+	female=yes
+	dynasty=5001
+	dna="adiojapbfip"
+	culture=dongfangian religion=earth_spirituality
+	father=60031	#Shi
+	676.9.5={ birth=yes }
+	729.1.26={ death=yes }
+}
+60035={
+	name=Lu-Chu
+	female=yes
+	dynasty=5001
+	dna="gkbmjapmlli"
+	culture=dongfangian religion=earth_spirituality
+	father=60031	#Shi
+	679.12.4={ birth=yes }
+	741.7.14={ death=yes }
+}
+60036={
+	name=Stei-See
+	female=yes
+	dynasty=5001
+	dna="hkhomapgcno"
+	culture=dongfangian religion=earth_spirituality
+	father=60031	#Shi
+	682.1.27={ birth=yes }
+	751.2.25={ death=yes }
+}
+60037={
+	name=Qing
+	dynasty=5001
+	dna="hmbooappfjo"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=6 stewardship=4 intrigue=5 learning=7
+	add_trait=misguided_warrior add_trait=genius 
+	father=60032	#Jingbo
+	694.1.22={ birth=yes }
+	756.7.27={ death=yes }
+}
+60038={
+	name=Wenchang
+	dynasty=5001
+	dna="hcbheieoiji"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=4 stewardship=7 intrigue=4 learning=4
+	add_trait=intricate_webweaver add_trait=deceitful 
+	father=60032	#Jingbo
+	697.4.26={ birth=yes }
+	749.9.2={ death=yes }
+}
+60039={
+	name=Zongru
+	dynasty=5001
+	dna="fnbehaldfoi"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=4 stewardship=5 intrigue=5 learning=6
+	add_trait=misguided_warrior 
+	father=60032	#Jingbo
+	699.3.15={ birth=yes }
+	765.1.2={ death=yes }
+}
+60040={
+	name=Hongwu
+	dynasty=5001
+	dna="hmbecagllai"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=7 stewardship=8 intrigue=7 learning=4
+	add_trait=scholarly_theologian add_trait=content 
+	father=60032	#Jingbo
+	701.10.16={ birth=yes }
+	750.2.21={ death=yes }
+}
+60041={
+	name=Shidao
+	dynasty=5001
+	dna="hjkgpcnkjja"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=8 stewardship=4 intrigue=7 learning=5
+	add_trait=tough_soldier 
+	father=60032	#Jingbo
+	706.11.25={ birth=yes }
+	756.9.17={ death=yes }
+}
+60042={
+	name=Deta
+	dynasty=5001
+	dna="lmbomakgfji"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=6 stewardship=4 intrigue=5 learning=7
+	add_trait=indulgent_wastrel 
+	father=60032	#Jingbo
+	708.1.6={ birth=yes }
+	769.3.23={ death=yes }
+}
+60043={
+	name=Fa
+	dynasty=5001
+	dna="hmnomljofji"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=7 stewardship=8 intrigue=5 learning=7
+	add_trait=intricate_webweaver add_trait=drunkard add_trait=slow 
+	father=60032	#Jingbo
+	713.12.25={ birth=yes }
+	784.5.28={ death=yes }
+}
+60044={
+	name=Gonglu
+	dynasty=5001
+	dna="lmiooopheno"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=5 stewardship=7 intrigue=8 learning=5
+	add_trait=detached_priest 
+	father=60037	#Qing
+	714.4.14={ birth=yes }
+	777.9.2={ death=yes }
+}
+60045={
+	name=Rong
+	female=yes
+	dynasty=5001
+	dna="lmbfocfabio"
+	culture=dongfangian religion=earth_spirituality
+	father=60037	#Qing
+	719.3.25={ birth=yes }
+	749.9.10={ death=yes }
+}
+60046={
+	name=Bao
+	female=yes
+	dynasty=5001
+	dna="heoooipgajo"
+	culture=dongfangian religion=earth_spirituality
+	father=60037	#Qing
+	722.9.9={ birth=yes }
+	782.8.6={ death=yes }
+}
+60047={
+	name=Chengpu
+	dynasty=5001
+	dna="hmanabpcgfo"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=5 stewardship=8 intrigue=6 learning=4
+	add_trait=grey_eminence 
+	father=60037	#Qing
+	726.8.11={ birth=yes }
+	787.5.30={ death=yes }
+}
+60048={
+	name=Disun
+	dynasty=5001
+	dna="mhiokmpeepo"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=7 stewardship=5 intrigue=4 learning=7
+	add_trait=charismatic_negotiator 
+	father=60044	#Gonglu
+	741.2.14={ birth=yes }
+	802.5.12={ death=yes }
+}
+60049={
+	name=Shilang
+	dynasty=5001
+	dna="ogiobjehebo"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=4 stewardship=4 intrigue=8 learning=5
+	add_trait=naive_appeaser 
+	father=60044	#Gonglu
+	743.10.11={ birth=yes }
+	816.3.23={ death=yes }
+}
+60050={
+	name=Ma
+	dynasty=5001
+	dna="gmiockcaooi"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=8 stewardship=4 intrigue=7 learning=6
+	add_trait=charismatic_negotiator add_trait=lunatic 
+	father=60044	#Gonglu
+	746.8.27={ birth=yes }
+	798.7.12={ death=yes }
+}
+60051={
+	name=Huitong
+	female=yes
+	dynasty=5001
+	dna="bhhokmpeoko"
+	culture=dongfangian religion=earth_spirituality
+	father=60048	#Disun
+	764.5.20={ birth=yes }
+	830.9.11={ death=yes }
+}
+60052={
+	name=Luu-Kass
+	dynasty=5001
+	dna="jhinkahlepo"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=6 stewardship=5 intrigue=5 learning=8
+	add_trait=flamboyant_schemer add_trait=weak 
+	father=60048	#Disun
+	766.12.4={ birth=yes }
+	819.11.8={ death=yes }
+}
+60053={
+	name=Chunyan
+	female=yes
+	dynasty=5001
+	dna="mhihbmpoljd"
+	culture=dongfangian religion=earth_spirituality
+	father=60048	#Disun
+	769.2.24={ birth=yes }
+	842.3.31={ death=yes }
+}
+60054={
+	name=Bokang
+	dynasty=5001
+	dna="chlkklpbcgl"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=5 stewardship=5 intrigue=4 learning=4
+	add_trait=charismatic_negotiator 
+	father=60048	#Disun
+	772.9.21={ birth=yes }
+	828.8.20={ death=yes }
+}
+60055={
+	name=Min
+	dynasty=5001
+	dna="mndhpdpleee"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=4 stewardship=4 intrigue=6 learning=8
+	add_trait=mastermind_theologian add_trait=depressed 
+	father=60048	#Disun
+	773.12.6={ birth=yes }
+	840.3.21={ death=yes }
+}
+60056={
+	name=Mah
+	female=yes
+	dynasty=5001
+	dna="mniokbbmeki"
+	culture=dongfangian religion=earth_spirituality
+	father=60048	#Disun
+	776.9.9={ birth=yes }
+	831.12.29={ death=yes }
+}
+60057={
+	name=Ai-Laomay
+	female=yes
+	dynasty=5001
+	dna="ehhahbfjeka"
+	culture=dongfangian religion=earth_spirituality
+	father=60048	#Disun
+	780.5.26={ birth=yes }
+	834.7.14={ death=yes }
+}
+60058={
+	name=Cheng
+	dynasty=5001
+	dna="khinbahcepl"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=5 stewardship=5 intrigue=7 learning=8
+	add_trait=intricate_webweaver add_trait=ill 
+	father=60052	#Luu-Kass
+	787.11.7={ birth=yes }
+	853.11.12={ death=yes }
+}
+60059={
+	name=Zhongwu
+	dynasty=5001
+	dna="ehigkmchklo"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=8 stewardship=7 intrigue=7 learning=7
+	add_trait=indulgent_wastrel 
+	father=60052	#Luu-Kass
+	790.1.6={ birth=yes }
+	839.11.3={ death=yes }
+}
+60060={
+	name=Zha
+	dynasty=5001
+	dna="ihihkaplfho"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=5 stewardship=6 intrigue=7 learning=4
+	add_trait=detached_priest 
+	father=60052	#Luu-Kass
+	795.8.7={ birth=yes }
+	852.5.5={ death=yes }
+}
+
+#=====================Placeholder-2=====================#
+
+60111={
+	name=Zhao
+	dynasty=5002
+	dna="dnifkblmbjg"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=4 stewardship=5 intrigue=5 learning=4
+	add_trait=charismatic_negotiator 
+	500.4.6={ birth=yes }
+	547.6.27={ death=yes }
+}
+60112={
+	name=Wenjie
+	dynasty=5002
+	dna="dndikblmbje"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=7 stewardship=7 intrigue=8 learning=7
+	add_trait=charismatic_negotiator 
+	father=60111	#Zhao
+	523.8.18={ birth=yes }
+	576.8.11={ death=yes }
+}
+60113={
+	name=Mikasa
+	female=yes
+	dynasty=5002
+	dna="fjifkbgmbcg"
+	culture=dongfangian religion=earth_spirituality
+	father=60111	#Zhao
+	525.7.2={ birth=yes }
+	573.11.21={ death=yes }
+}
+60114={
+	name=Ling-Min
+	female=yes
+	dynasty=5002
+	dna="dmifknlnbjg"
+	culture=dongfangian religion=earth_spirituality
+	father=60111	#Zhao
+	529.3.16={ birth=yes }
+	584.11.9={ death=yes }
+}
+60115={
+	name=He
+	dynasty=5002
+	dna="gnafhbjmbjn"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=8 stewardship=8 intrigue=5 learning=6
+	add_trait=indulgent_wastrel add_trait=slow 
+	father=60111	#Zhao
+	531.8.27={ birth=yes }
+	599.8.20={ death=yes }
+}
+60116={
+	name=Lun-Quing
+	dynasty=5002
+	dna="jgghkbgblje"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=4 stewardship=4 intrigue=8 learning=7
+	add_trait=thrifty_clerk 
+	father=60112	#Wenjie
+	544.10.14={ birth=yes }
+	589.10.15={ death=yes }
+}
+60117={
+	name=Chouhou
+	dynasty=5002
+	dna="dodbkifjbhe"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=6 stewardship=4 intrigue=5 learning=5
+	add_trait=charismatic_negotiator 
+	father=60112	#Wenjie
+	546.10.20={ birth=yes }
+	619.12.25={ death=yes }
+}
+60118={
+	name=Hanfeng
+	dynasty=5002
+	dna="dgipkilmejb"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=8 stewardship=8 intrigue=4 learning=4
+	add_trait=midas_touched add_trait=gardener 
+	father=60112	#Wenjie
+	550.12.21={ birth=yes }
+	597.9.6={ death=yes }
+}
+60119={
+	name=Geng
+	dynasty=5002
+	dna="dnckedmmjbe"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=7 stewardship=8 intrigue=6 learning=7
+	add_trait=detached_priest 
+	father=60112	#Wenjie
+	555.3.17={ birth=yes }
+	618.4.12={ death=yes }
+}
+60120={
+	name=Huaiguang
+	dynasty=5002
+	dna="ogghjepbdjo"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=5 stewardship=4 intrigue=5 learning=6
+	add_trait=mastermind_theologian add_trait=ill 
+	father=60116	#Lun-Quing
+	571.3.23={ birth=yes }
+	619.7.29={ death=yes }
+}
+60121={
+	name=Feiyan
+	female=yes
+	dynasty=5002
+	dna="kggapfgbmgh"
+	culture=dongfangian religion=earth_spirituality
+	father=60116	#Lun-Quing
+	573.5.2={ birth=yes }
+	641.11.26={ death=yes }
+}
+60122={
+	name=Lee-Han
+	female=yes
+	dynasty=5002
+	dna="jgphelgbjje"
+	culture=dongfangian religion=earth_spirituality
+	father=60116	#Lun-Quing
+	578.9.12={ birth=yes }
+	643.7.13={ death=yes }
+}
+60123={
+	name=Ryan
+	dynasty=5002
+	dna="nognmpobfla"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=8 stewardship=7 intrigue=7 learning=6
+	add_trait=misguided_warrior 
+	father=60120	#Huaiguang
+	593.3.2={ birth=yes }
+	660.1.3={ death=yes }
+}
+60124={
+	name=Ai
+	female=yes
+	dynasty=5002
+	dna="ooghhepbdbo"
+	culture=dongfangian religion=earth_spirituality
+	father=60120	#Huaiguang
+	597.3.16={ birth=yes }
+	663.6.5={ death=yes }
+}
+60125={
+	name=Koko
+	female=yes
+	dynasty=5002
+	dna="oeghoepbdlf"
+	culture=dongfangian religion=earth_spirituality
+	father=60120	#Huaiguang
+	601.11.12={ birth=yes }
+	660.2.13={ death=yes }
+}
+60126={
+	name=Fuling-Ji
+	dynasty=5002
+	dna="nganjekecjm"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=4 stewardship=6 intrigue=7 learning=5
+	add_trait=flamboyant_schemer 
+	father=60120	#Huaiguang
+	603.9.7={ birth=yes }
+	675.6.5={ death=yes }
+}
+60127={
+	name=Shidai
+	dynasty=5002
+	dna="jpgnkfnbpha"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=5 stewardship=7 intrigue=6 learning=8
+	add_trait=detached_priest add_trait=fair 
+	father=60123	#Ryan
+	619.5.15={ birth=yes }
+	676.7.6={ death=yes }
+}
+60128={
+	name=Tae
+	female=yes
+	dynasty=5002
+	dna="ncgnmmomlle"
+	culture=dongfangian religion=earth_spirituality
+	father=60123	#Ryan
+	622.8.26={ birth=yes }
+	681.8.14={ death=yes }
+}
+60129={
+	name=Bojing
+	dynasty=5002
+	dna="nfbnmpapfla"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=4 stewardship=6 intrigue=5 learning=5
+	add_trait=thrifty_clerk 
+	father=60123	#Ryan
+	626.11.13={ birth=yes }
+	696.4.24={ death=yes }
+}
+60130={
+	name=Wuyu
+	dynasty=5002
+	dna="gogmpiobfpi"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=5 stewardship=7 intrigue=4 learning=8
+	add_trait=scholarly_theologian add_trait=wounded 
+	father=60123	#Ryan
+	628.5.13={ birth=yes }
+	684.2.5={ death=yes }
+}
+60131={
+	name=Ju-Lee
+	female=yes
+	dynasty=5002
+	dna="aogkmpfhnga"
+	culture=dongfangian religion=earth_spirituality
+	father=60123	#Ryan
+	633.7.27={ birth=yes }
+	686.9.28={ death=yes }
+}
+60132={
+	name=Rui-Yun
+	female=yes
+	dynasty=5002
+	dna="ooggeeojgfi"
+	culture=dongfangian religion=earth_spirituality
+	father=60123	#Ryan
+	636.7.11={ birth=yes }
+	706.9.25={ death=yes }
+}
+60133={
+	name=Yanfan
+	dynasty=5002
+	dna="aofdfpjhmjg"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=5 stewardship=4 intrigue=4 learning=7
+	add_trait=thrifty_clerk 
+	father=60123	#Ryan
+	637.6.7={ birth=yes }
+	722.7.19={ death=yes }
+}
+60134={
+	name=Dezu
+	dynasty=5002
+	dna="kpipcinibha"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=8 stewardship=4 intrigue=8 learning=7
+	add_trait=misguided_warrior 
+	father=60127	#Shidai
+	642.9.9={ birth=yes }
+	711.8.6={ death=yes }
+}
+60135={
+	name=Shuang
+	dynasty=5002
+	dna="fplnbfnepha"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=8 stewardship=7 intrigue=4 learning=7
+	add_trait=flamboyant_schemer 
+	father=60127	#Shidai
+	646.6.17={ birth=yes }
+	689.9.5={ death=yes }
+}
+60136={
+	name=Pema
+	female=yes
+	dynasty=5002
+	dna="aignloigpca"
+	culture=dongfangian religion=earth_spirituality
+	father=60127	#Shidai
+	648.8.9={ birth=yes }
+	711.11.13={ death=yes }
+}
+60137={
+	name=Honghong
+	female=yes
+	dynasty=5002
+	dna="bhaljfnbpgk"
+	culture=dongfangian religion=earth_spirituality
+	father=60127	#Shidai
+	652.4.23={ birth=yes }
+	717.1.8={ death=yes }
+}
+60138={
+	name=Muneuji
+	dynasty=5002
+	dna="kpelejnibha"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=5 stewardship=7 intrigue=5 learning=5
+	add_trait=martial_cleric 
+	father=60134	#Dezu
+	668.10.5={ birth=yes }
+	741.9.1={ death=yes }
+}
+60139={
+	name=Zhiwen
+	dynasty=5002
+	dna="kpcplknimia"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=8 stewardship=4 intrigue=4 learning=4
+	add_trait=grey_eminence add_trait=drunkard 
+	father=60134	#Dezu
+	671.12.23={ birth=yes }
+	719.6.22={ death=yes }
+}
+60140={
+	name=Shulu-Ping
+	female=yes
+	dynasty=5002
+	dna="kkikeiedbhm"
+	culture=dongfangian religion=earth_spirituality
+	father=60134	#Dezu
+	674.12.20={ birth=yes }
+	739.10.23={ death=yes }
+}
+60141={
+	name=Ziying
+	dynasty=5002
+	dna="kififbnibha"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=4 stewardship=8 intrigue=7 learning=4
+	add_trait=misguided_warrior 
+	father=60134	#Dezu
+	675.4.17={ birth=yes }
+	707.8.19={ death=yes }
+}
+60142={
+	name=Chun-Pu
+	female=yes
+	dynasty=5002
+	dna="pphpcgnobhp"
+	culture=dongfangian religion=earth_spirituality
+	father=60134	#Dezu
+	679.3.15={ birth=yes }
+	735.11.19={ death=yes }
+}
+60143={
+	name=Lan-Xin
+	female=yes
+	dynasty=5002
+	dna="bfkpllnejmk"
+	culture=dongfangian religion=earth_spirituality
+	father=60134	#Dezu
+	681.9.24={ birth=yes }
+	754.6.2={ death=yes }
+}
+60144={
+	name=Huifei
+	female=yes
+	dynasty=5002
+	dna="jgipciojbfa"
+	culture=dongfangian religion=earth_spirituality
+	father=60134	#Dezu
+	686.8.5={ birth=yes }
+	741.4.16={ death=yes }
+}
+60145={
+	name=Tolui
+	dynasty=5002
+	dna="opdhmgnfcli"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=5 stewardship=7 intrigue=6 learning=8
+	add_trait=misguided_warrior add_trait=hedonist 
+	father=60138	#Muneuji
+	689.5.6={ birth=yes }
+	761.6.24={ death=yes }
+}
+60146={
+	name=Guinu
+	female=yes
+	dynasty=5002
+	dna="ekeleagibha"
+	culture=dongfangian religion=earth_spirituality
+	father=60138	#Muneuji
+	693.10.21={ birth=yes }
+	738.8.23={ death=yes }
+}
+60147={
+	name=Chin
+	female=yes
+	dynasty=5002
+	dna="ipempjnpbha"
+	culture=dongfangian religion=earth_spirituality
+	father=60138	#Muneuji
+	696.8.10={ birth=yes }
+	762.2.11={ death=yes }
+}
+60148={
+	name=Asami
+	female=yes
+	dynasty=5002
+	dna="cplmjggncli"
+	culture=dongfangian religion=earth_spirituality
+	father=60145	#Tolui
+	714.10.27={ birth=yes }
+	780.1.21={ death=yes }
+}
+60149={
+	name=Hana
+	female=yes
+	dynasty=5002
+	dna="oddbmgnbcmi"
+	culture=dongfangian religion=earth_spirituality
+	father=60145	#Tolui
+	717.12.22={ birth=yes }
+	788.12.17={ death=yes }
+}
+60150={
+	name=Tsuki
+	female=yes
+	dynasty=5002
+	dna="mkokfonpalj"
+	culture=dongfangian religion=earth_spirituality
+	father=60145	#Tolui
+	720.9.5={ birth=yes }
+	774.3.26={ death=yes }
+}
+60151={
+	name=Longji
+	dynasty=5002
+	dna="opdnjknlcci"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=7 stewardship=6 intrigue=8 learning=6
+	add_trait=charismatic_negotiator 
+	father=60145	#Tolui
+	724.3.9={ birth=yes }
+	782.2.11={ death=yes }
+}
+60152={
+	name=Yaozu
+	dynasty=5002
+	dna="jidnjbbfphn"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=7 stewardship=6 intrigue=6 learning=6
+	add_trait=detached_priest add_trait=ambitious 
+	father=60151	#Longji
+	747.5.6={ birth=yes }
+	799.1.12={ death=yes }
+}
+60153={
+	name=Ah-Ho
+	female=yes
+	dynasty=5002
+	dna="jpmgjlmllci"
+	culture=dongfangian religion=earth_spirituality
+	father=60151	#Longji
+	751.2.10={ birth=yes }
+	823.7.11={ death=yes }
+}
+60154={
+	name=Chai
+	dynasty=5002
+	dna="oponjpnldme"
+	culture=dongfangian religion=earth_spirituality
+	martial=5 diplomacy=4 stewardship=7 intrigue=5 learning=6
+	add_trait=elusive_shadow 
+	father=60151	#Longji
+	756.12.22={ birth=yes }
+	827.7.27={ death=yes }
+}
+60155={
+	name=Changbo
+	dynasty=5002
+	dna="opdplhclfco"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=8 stewardship=7 intrigue=5 learning=8
+	add_trait=intricate_webweaver 
+	father=60151	#Longji
+	760.11.7={ birth=yes }
+	813.10.3={ death=yes }
+}
+60156={
+	name=Guiren
+	dynasty=5002
+	dna="jigljbbcjhn"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=5 stewardship=4 intrigue=5 learning=8
+	add_trait=midas_touched 
+	father=60152	#Yaozu
+	773.8.6={ birth=yes }
+	826.1.4={ death=yes }
+}
+60157={
+	name=Tu-Ling
+	female=yes
+	dynasty=5002
+	dna="nincjgbfpon"
+	culture=dongfangian religion=earth_spirituality
+	father=60152	#Yaozu
+	775.1.14={ birth=yes }
+	834.2.6={ death=yes }
+}
+60158={
+	name=Chengyan
+	dynasty=5002
+	dna="jibiddbljnd"
+	culture=dongfangian religion=earth_spirituality
+	martial=6 diplomacy=5 stewardship=4 intrigue=7 learning=7
+	add_trait=misguided_warrior 
+	father=60156	#Guiren
+	797.2.27={ birth=yes }
+	855.10.3={ death=yes }
+}
+60159={
+	name=Zan
+	dynasty=5002
+	dna="fihlibdcehk"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=7 stewardship=8 intrigue=7 learning=4
+	add_trait=intricate_webweaver 
+	father=60156	#Guiren
+	801.3.19={ birth=yes }
+	859.3.1={ death=yes }
+}
+60160={
+	name=Bofu
+	dynasty=5002
+	dna="algldbmcgoh"
+	culture=dongfangian religion=earth_spirituality
+	martial=7 diplomacy=6 stewardship=6 intrigue=6 learning=7
+	add_trait=midas_touched 
+	father=60156	#Guiren
+	804.9.1={ birth=yes }
+	854.2.21={ death=yes }
+}
+60161={
+	name=Ying
+	female=yes
+	dynasty=5002
+	dna="jiajlckpphn"
+	culture=dongfangian religion=earth_spirituality
+	father=60156	#Guiren
+	808.4.3={ birth=yes }
+	879.8.8={ death=yes }
+}
+60162={
+	name=Rizhi
+	dynasty=5002
+	dna="lihnjnbcghj"
+	culture=dongfangian religion=earth_spirituality
+	martial=4 diplomacy=6 stewardship=7 intrigue=5 learning=6
+	add_trait=midas_touched add_trait=lustful 
+	father=60156	#Guiren
+	810.4.7={ birth=yes }
+	861.9.18={ death=yes }
+}
+60163={
+	name=Ranisa
+	female=yes
+	dynasty=5002
+	dna="kiblhmbcjhn"
+	culture=dongfangian religion=earth_spirituality
+	father=60156	#Guiren
+	812.6.27={ birth=yes }
+	868.9.22={ death=yes }
+}
+60164={
+	name=Cheng
+	dynasty=5002
+	dna="bngijmbcjpi"
+	culture=dongfangian religion=earth_spirituality
+	martial=8 diplomacy=7 stewardship=8 intrigue=6 learning=7
+	add_trait=midas_touched add_trait=ill 
+	father=60156	#Guiren
+	815.10.9={ birth=yes }
+	854.1.15={ death=yes }
 }

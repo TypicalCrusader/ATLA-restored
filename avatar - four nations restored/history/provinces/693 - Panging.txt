@@ -10,7 +10,7 @@ b_panging = tribal
 
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 
 #History
