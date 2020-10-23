@@ -381,6 +381,41 @@ junior_ally_tributary = {
 	}
 }
 
+quan_tributary = {
+	tributary_name = TRIBUTARY_QUAN_NAME
+	tributary_plural = TRIBUTARY_QUAN_PLURAL
+	suzerain_name = SUZERAIN_QUAN_NAME
+	tribute_name = TRIBUTARY_QUAN_TRIBUTE
+
+	icon = 11
+
+	tributaries_can_infight = yes
+	breaks_at_suzerain_death = no
+	breaks_on_realm_change = yes
+	tributary_must_defend = yes
+	suzerain_can_be_called = yes
+	suzerain_must_defend = no	
+	
+	income_tribute_percentage = {
+		value =  0.2
+	}
+	prestige_to_suzerain = {
+		value = 0.15
+	}	
+	reinforce_tribute_percentage = {
+		value = 0.1
+	}
+	prestige_to_tributary = { #Update GetChineseOffmapTributaryPrestigeCost for tooltip
+		value = 0
+	}
+	piety_to_tributary = {
+		value = 0
+	}
+	piety_to_suzerain = {
+		value = 0
+	}	
+}
+
 offmap = {
 	tributary_name = TRIBUTARY_OFFMAP_NAME
 	tributary_plural = TRIBUTARY_OFFMAP_PLURAL

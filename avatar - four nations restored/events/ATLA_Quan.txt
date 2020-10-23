@@ -1,18 +1,21 @@
-####									 ####
-## Made For T4N-Restored by TypicalCrusader##
-####									 ####
+#####                                          #####
+##                                                ##
+##     Events behind Clan Authority and Story     ##
+##  Written for T4N - Restored by TypicalCrusader ##
+##                                                ##
+#####                                          #####
 
 namespace = T4NQuan
 
-##Clan Authority and Quan handlers + Random events##
+###      ###
+#Event List#
+###      ###
 
-#####
-##Event List
 ##T4NQuan.1 - Grant Trait princequan to new ruler
 ##T4NQuan.2 - Remove trait princequan if char is no longer a ruler of k_quan
 ##T4NQuan.3 - Check if CA is not < / > 100 (yearly)
 ##T4NQuan.4 - Grant CA modifer based on current CA (yearly + startup)
-##T4NQuan.5 -
+##T4NQuan.5 - Assign tributes (startup)
 ##T4NQuan.6 -
 ##T4NQuan.7 -
 ##T4NQuan.8 -
@@ -261,5 +264,43 @@ character_event = {
 			remove_character_modifier = CAmodif8
 			remove_character_modifier = CAmodif9
 		}		
+	}
+}
+
+character_event = {
+	id = T4NQuan.5
+	only_rulers = yes
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		is_save_game = no
+	}
+
+	immediate = {
+		#any_independent_ruler = {
+		if = {	
+			limit = {
+				capital_scope = {
+					region = world_dongfang_peninsular
+				}
+				is_tribal = yes
+				rebel = no
+				#independent = yes
+				NOT = { has_character_flag = LowCARevolter }
+			}
+			suzerain = {
+				remove_tributary = PREV
+			}			
+			k_quan = {
+				owner = {
+					make_tributary = {
+						who = ROOT
+						percentage = 0.16
+						tributary_type = quan_tributary
+					}
+				}
+			}
+		}
 	}
 }

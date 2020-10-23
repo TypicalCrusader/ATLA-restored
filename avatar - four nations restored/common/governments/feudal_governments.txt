@@ -48,11 +48,15 @@ feudal_governments = {
 			FORT
 			HOSPITAL
 		}
-		allowed_holdings_culture = { # Will not get the wrong government type penalty for tribes of the same culture
-		}
+		
 		accepts_liege_governments = { # Gets the wrong religion modifier instead
 			clan_government
 		}
+
+		builds_with_prestige = {
+			TRIBAL
+		}
+
 		frame_suffix = "_clan_fed"
 
 		potential = {
@@ -62,7 +66,7 @@ feudal_governments = {
 			}
 		}
 		
-		color = { 5 118 133 }
+		color = { 143 52 235 } 
 		
 		can_build_tribal = yes
 		allow_looting = yes

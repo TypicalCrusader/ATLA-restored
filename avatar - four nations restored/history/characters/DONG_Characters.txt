@@ -882,7 +882,7 @@
 	852.5.5={ death=yes }
 }
 
-#=====================Placeholder-2=====================#
+#=====================Gonsun=====================#
 
 60111={
 	name=Zhao
@@ -1012,7 +1012,7 @@
 	643.7.13={ death=yes }
 }
 60123={
-	name=Ryan
+	name=Mi
 	dynasty=5002
 	dna="nognmpobfla"
 	culture=dongfangian religion=earth_spirituality

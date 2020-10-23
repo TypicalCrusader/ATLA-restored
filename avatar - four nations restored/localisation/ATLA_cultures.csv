@@ -10,7 +10,7 @@ dragon;Dragon;Nation de Feu;Fire Nation;;Fire Nation;;;;;;;;;x
 fire_nation;Fire Nation;Nation de Feu;Fire Nation;;Fire Nation;;;;;;;;;x
 colonial;Colonial;Colonial;Colonial;;Colonial;;;;;;;;;x
 sun_warrior;Sun Warrior;Guerrier du Soleil;Sun Warrior;;Sun Warrior;;;;;;;;;x
-northern_earth;Northern Earth;Royaume de la Terre du Nord;Northern Earth Kingdom;;Northern Earth Kingdom;;;;;;;;;x
+northern_earth;Xin;Royaume de la Terre du Nord;Northern Earth Kingdom;;Northern Earth Kingdom;;;;;;;;;x
 ba_sing_se;Ba Sing Se;Ba Sing Se;Ba Sing Se;;Ba Sing Se;;;;;;;;;x
 southern_earth;Southern Earth;Royaume de la Terre du Sud;Southern Earth Kingdom;;Southern Earth Kingdom;;;;;;;;;x
 sandbender;Sandbender Tribe;Tribus de Maîtres du Sable;Sandbender Tribe;;Sandbender Tribe;;;;;;;;;x
@@ -30,7 +30,7 @@ outlaw_culture;Outlaw;Criminel;Outlaw;;Outlaw;;;;;;;;;x
 pirate;5th Nation Remnant;5th Nation Remnant;5th Nation Remnant;;5th Nation Remnant;;;;;;;;;x
 southern_raider;Southern Raider;Cuirassés du Sud;Southern Raider;;Southern Raider;;;;;;;;;x
 fire_islander;Fire Islander;îles du Nation de Feu;Fire Nation Islander;;Fire Nation Islander;;;;;;;;;x
-eastern_earth;Eastern Earth;Royaume de la Terre du Est;Eastern Earth Kingdom;;Eastern Earth Kingdom;;;;;;;;;x
+eastern_earth;Jian;Royaume de la Terre du Est;Eastern Earth Kingdom;;Eastern Earth Kingdom;;;;;;;;;x
 western_earth;Western Earth;Royaume de la Terre du Ouest;Western Earth Kingdom;;Western Earth Kingdom;;;;;;;;;x
 metal_clan;Metal Clan;Clan de Métal;Metal Clan;;Metal Clan;;;;;;;;;x
 fire_nation_culture_modifier;Fire Nation Traditions;Feu;Fire;;Fire;;;;;;;;;x
@@ -64,3 +64,5 @@ colonial_air_fire;Colonial;Colonial;Colonial;;Colonial;;;;;;;;;x
 colonial_air_earth;Colonial;Colonial;Colonial;;Colonial;;;;;;;;;x
 northern_water_urban;Northern Water;Tribu d'Eau du Nord;Northern Water Tribe;;Northern Water Tribe;;;;;;;;;x
 yuan;Yuan;Yuan;Yuan;Yuan;Yuan;;;;;;;;;
+dongfangian;Dongfangian;Dongfangian;Dongfangian;Dongfangian;Dongfangian;;;;;;;;;
+dongfangian_culture_modifier;lorem ipsum orem ipsum v orem ipsum v orem ipsumvorem ipsumvorem ipsumvorem ipsumorem ipsumorem ipsumorem ipsumvorem ipsumvorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsumorem ipsum;Dongfangian;Dongfangian;Dongfangian;Dongfangian;;;;;;;;;
