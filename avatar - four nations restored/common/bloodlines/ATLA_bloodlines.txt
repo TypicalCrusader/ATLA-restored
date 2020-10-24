@@ -316,7 +316,7 @@ hao = {
 				FROM = {
 					founder = { dynasty = ROOT }
 				}
-			}					
+			}
 			AND = {
 				culture_group = earth_kingdom_culture
 			}
