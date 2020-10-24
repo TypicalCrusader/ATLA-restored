@@ -1,0 +1,35 @@
+hou_quan = {
+	martial = 2
+	vassal_opinion = 10
+	monthly_character_prestige = 0.1
+	command_modifier = {
+		cavalry = 0.1
+	}
+
+	inheritance = patrilineal
+	matrilineal_override = yes
+	allow_bastards = no
+	picture = GFX_bloodlines_symbol_earth_king
+	flags = { hou_quan hey_im_ek_succ_bloodline_flag }
+
+	active = {
+		OR = {
+			custom_tooltip = {
+				text = is_bloodline_founder
+				FROM = {
+					founder = { character = ROOT }
+				}
+			}
+			custom_tooltip = {
+				text = is_of_same_dynasty
+				FROM = {
+					founder = { dynasty = ROOT }
+				}
+			}
+			AND = {
+				culture_group = earth_kingdom_culture
+			}
+		}
+	}
+
+}
