@@ -404,15 +404,6 @@ quan_tributary = {
 	}	
 	reinforce_tribute_percentage = {
 		value = 0.1
-	}
-	prestige_to_tributary = { #Update GetChineseOffmapTributaryPrestigeCost for tooltip
-		value = 0
-	}
-	piety_to_tributary = {
-		value = 0
-	}
-	piety_to_suzerain = {
-		value = 0
 	}	
 }
 

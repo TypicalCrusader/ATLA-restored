@@ -13,10 +13,10 @@ namespace = T4NQuan
 
 ##T4NQuan.1 - Grant Trait princequan to new ruler
 ##T4NQuan.2 - Remove trait princequan if char is no longer a ruler of k_quan
-##T4NQuan.3 - Check if CA is not < / > 100 (yearly)
+##T4NQuan.3 - Check if CA is not < 0 / > 100 (yearly)
 ##T4NQuan.4 - Grant CA modifer based on current CA (yearly + startup)
 ##T4NQuan.5 - Assign tributes (startup)
-##T4NQuan.6 -
+##T4NQuan.6 - Clan Authority Yearly gain/loss (Yearly)
 ##T4NQuan.7 -
 ##T4NQuan.8 -
 ##T4NQuan.9 -
@@ -40,6 +40,9 @@ character_event = {
 		#Default CA to 50 after previous ruler death
 		set_variable = { which = global_Clanauthority value = 50 }
 		add_trait = princequan
+		
+		clr_global_flag = CAgainblock
+		clr_global_flag  = CAloseblock
 	}
 }
 
@@ -296,11 +299,104 @@ character_event = {
 				owner = {
 					make_tributary = {
 						who = ROOT
-						percentage = 0.16
+						percentage = 0.2
 						tributary_type = quan_tributary
 					}
 				}
 			}
+		}
+	}
+}
+
+character_event = {
+	id = T4NQuan.6 
+	is_triggered_only = yes
+	only_rulers = yes
+
+	desc = QuanYearlycheckdesc
+
+	trigger = {
+		has_landed_title = k_quan
+		NOR = {
+			has_global_flag = CAgainblock
+			has_global_flag  = CAloseblock
+		}
+	}
+
+	immediate = {
+	
+		set_variable = { which = oldclanauthority which = global_Clanauthority }
+		set_variable = { which = CA_lawgain value = 0 }
+		set_variable = { which = CA_mileducationgain value = 0 }
+		set_variable = { which = global_CA_randomgain value = 0 }
+		set_variable = { which = CA_tributesgain value = 0 }
+
+		ROOT = {
+
+			#Tributaries
+			any_tributary = {
+				#if = {
+				#	limit = {
+				#		is_tributary = {
+				#			type = quan_tributary
+				#		}				
+				#	}
+					change_variable = { which = CA_tributesgain value = 1 }
+				#}
+			}
+
+			#Military education Traits + Strategist trait 
+			trigger_switch = {
+				on_trigger = trait
+
+				misguided_warrior = { change_variable = { which = CA_mileducationgain value = 0.5 } }
+				tough_soldier = { change_variable = { which = CA_mileducationgain value = 1 } }
+				skilled_tactician = { change_variable = { which = CA_mileducationgain value = 1.5 } }
+				brilliant_strategist = { change_variable = { which = CA_mileducationgain value = 2 } }
+			}
+
+			trigger_switch = {
+				on_trigger = trait
+
+				strong = { change_variable = { which = CA_mileducationgain value = 1 } }
+				weak = { change_variable = { which = CA_mileducationgain value = -1 } }
+			}
+
+			if = {
+				limit = {
+					NOR = {
+						trait = misguided_warrior
+						trait = tough_soldier
+						trait = skilled_tactician 
+						trait = brilliant_strategist
+					}
+				}
+				change_variable = { which = CA_mileducationgain value = -1 }
+			}
+
+			if = {
+				limit = {
+					trait = strategist
+				}
+				change_variable = { which = CA_mileducationgain value = 1.5 }
+			}
+
+			#TODO:Laws go here, when they will be done
+		}
+		change_variable = { which = global_Clanauthority which = CA_tributesgain }
+		change_variable = { which = global_Clanauthority which = CA_mileducationgain }
+		change_variable = { which = global_Clanauthority which = CA_lawgain }
+		change_variable = { which = global_Clanauthority which = global_CA_randomgain }
+			
+		set_variable = { which = CAgain which = global_Clanauthority }
+		subtract_variable = { which = CAgain which = oldclanauthority }
+
+	}
+
+	option = {
+		name = QuanYearlycheckopt
+		custom_tooltip = {
+			name = QuanYearlycheck
 		}
 	}
 }

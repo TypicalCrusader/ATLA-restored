@@ -90,6 +90,7 @@
 #GetRootMandateModifier
 #GetExistingRCFactions
 #GetQuanHolderTitleName (aka bastardised flavorisation)
+#GetColorClanAuthority
 
 ###RELATIONSHIPS###
 defined_text = {
