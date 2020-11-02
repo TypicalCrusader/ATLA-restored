@@ -62,7 +62,7 @@ character_event = {
 	}
 }
 
-#Check if CA is not < / > 100 (yearly)
+#Check if CA is not < 0  / > 100 (yearly)
 character_event = {
 	id = T4NQuan.3
 	is_triggered_only = yes
@@ -335,14 +335,14 @@ character_event = {
 
 			#Tributaries
 			any_tributary = {
-				#if = {
-				#	limit = {
-				#		is_tributary = {
-				#			type = quan_tributary
-				#		}				
-				#	}
+				if = {
+					limit = {
+						is_tributary = {
+							type = quan_tributary
+						}				
+					}
 					change_variable = { which = CA_tributesgain value = 1 }
-				#}
+				}
 			}
 
 			#Military education Traits + Strategist trait 
