@@ -3182,9 +3182,3 @@ ek_claimant = {
 	random = no
 	hidden = yes
 }
-
-warlord_of_chin = {
-	customizer = no
-	random = no
-	religious = yes
-}
