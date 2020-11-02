@@ -346,7 +346,6 @@ earthkingpuppet = {
 	opposites = {
 		earthking
 		earthkingconstitution
-		princequan
 	}
 }
 
@@ -362,7 +361,6 @@ earthkingconstitution = {
 	opposites = {
 		earthkingpuppet
 		earthking
-		princequan
 	}
 }
 
@@ -377,7 +375,6 @@ earthking = {
 	opposites = {
 		earthkingpuppet
 		earthkingconstitution
-		princequan
 	}
 }
 
@@ -3184,4 +3181,10 @@ ek_claimant = {
 	customizer = no
 	random = no
 	hidden = yes
+}
+
+warlord_of_chin = {
+	customizer = no
+	random = no
+	religious = yes
 }
