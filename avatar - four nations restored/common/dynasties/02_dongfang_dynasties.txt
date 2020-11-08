@@ -37,3 +37,24 @@
 	religion = earth_spirituality
 	used_for_random = no
 }
+
+5005 = {
+	name = "Guan"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5007 = {
+	name = "He"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5008 = {
+	name = "Duan"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}

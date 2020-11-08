@@ -2086,11 +2086,11 @@ laws = {
 					revoke_law = quan_admin_5
 				}
 
-				vassal_limit = 15
-				demesne_size = -2
-				vassal_opinion = 15
-
 		}
+
+		vassal_limit = 15
+		demesne_size = -2
+		vassal_opinion = 15
 
 		ai_will_do = {
 			factor = 0
@@ -2135,13 +2135,13 @@ laws = {
 					revoke_law = quan_admin_5
 				}
 
-				vassal_limit = 10
-				demesne_size = -1
-				vassal_opinion = 10
-
 				change_variable = { which = global_Clanauthority value = 20 }
 
 			}
+
+			vassal_limit = 10
+			demesne_size = -1
+			vassal_opinion = 10			
 
 			ai_will_do = {
 				factor = 10
@@ -2225,13 +2225,12 @@ laws = {
 					revoke_law = quan_admin_5
 				}
 
-				vassal_limit = -10
-				demesne_size = 1
-				vassal_opinion = -10
-
 				change_variable = { which = global_Clanauthority value = 40 }
-
 			}
+
+			vassal_limit = -10
+			demesne_size = 1
+			vassal_opinion = -10			
 
 			ai_will_do = {
 				factor = 10
@@ -2272,13 +2271,12 @@ laws = {
 					revoke_law = quan_admin_4
 				}
 
-				vassal_limit = -15
-				demesne_size = 2
-				vassal_opinion = -15
-
 				change_variable = { which = global_Clanauthority value = 50 }
-
 			}
+
+			vassal_limit = -15
+			demesne_size = 2
+			vassal_opinion = -15			
 
 			ai_will_do = {
 				factor = 10
