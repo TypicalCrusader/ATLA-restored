@@ -2282,4 +2282,322 @@ laws = {
 				factor = 10
 		}
 	}
+
+	quan_council_1 = { #Dominating
+		group = Quan_laws_2
+		
+		allow = {
+			has_dlc = "Conclave"
+			NOR = {
+				has_law = quan_council_2
+				has_law = quan_council_3
+				has_law = quan_council_4
+				has_law = quan_council_5
+				has_law = quan_council_6
+			}
+			#Base reform never should be passed unless enforced by Clan Revolters, If it was passed then ... fuck - TypicalCrusader
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_council_1 either enforced by clan revoters or its bug"
+		}
+
+		effect = {
+				log = "quan_council_1 tried to pass"
+				hidden_effect = {
+					revoke_law = quan_council_2
+					revoke_law = quan_council_3
+					revoke_law = quan_council_4
+					revoke_law = quan_council_5
+					revoke_law = quan_council_6
+				}
+			}
+
+			custom_tooltip = {
+				text = Quan_council_full_block
+			}
+
+			custom_tooltip = {
+				text = ca_huge_law_loss
+			}	
+
+			global_tax_modifier = -0.25		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+
+	quan_council_2 = { #Huge
+		group = Quan_laws_2
+		
+		allow = {
+			has_dlc = "Conclave"
+			OR = {
+				has_law = quan_council_1
+				has_law = quan_council_3
+			}
+			custom_tooltip = {
+				text = has_20_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 20 }
+				}
+			}			
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_council_2 passed"
+		}
+
+		effect = {
+				log = "quan_council_2 tried to pass"
+				hidden_effect = {
+					revoke_law = quan_council_1
+					revoke_law = quan_council_3
+					revoke_law = quan_council_4
+					revoke_law = quan_council_5
+					revoke_law = quan_council_6
+				}
+
+				custom_tooltip = {
+					text = Quan_council_partial_block
+				}
+	
+				custom_tooltip = {
+					text = ca_huge_law_loss
+				}
+			}
+
+			change_variable = { which = global_Clanauthority value = 20 }
+			global_tax_modifier = -0.15		
+
+		ai_will_do = {
+			factor = 10
+		}
+
+	}	
+
+	quan_council_3 = { #Big
+		group = Quan_laws_2
+		
+		allow = {
+			has_dlc = "Conclave"
+			OR = {
+				has_law = quan_council_2
+				has_law = quan_council_4
+			}
+			custom_tooltip = {
+				text = has_30_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 30 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_council_3 passed"
+		}
+
+		effect = {
+				log = "quan_council_3 tried to pass"
+				hidden_effect = {
+					revoke_law = quan_council_1
+					revoke_law = quan_council_2
+					revoke_law = quan_council_4
+					revoke_law = quan_council_5
+					revoke_law = quan_council_6
+				}
+				change_variable = { which = global_Clanauthority value = 30 }
+
+				custom_tooltip = {
+					text = Quan_council_partial_2_block
+				}
+	
+				custom_tooltip = {
+					text = ca_big_law_loss
+				}					
+
+			}
+
+
+			global_tax_modifier = -0.05		
+
+		ai_will_do = {
+			factor = 10
+		}
+
+	}	
+
+	quan_council_4 = { #Normal
+	group = Quan_laws_2
+	
+	allow = {
+		has_dlc = "Conclave"
+		OR = {
+			has_law = quan_council_3
+			has_law = quan_council_5
+		}
+		custom_tooltip = {
+			text = has_40_CA
+			hidden_tooltip = {
+				check_variable = { which = global_Clanauthority value = 40 }
+			}
+		}
+	}
+
+	potential = {
+		holder_scope = { government = clan_federation }
+	}
+
+	pass_effect = {
+		log = "quan_council_4 passed"
+	}
+
+	effect = {
+			log = "quan_council_4 tried to pass"
+			hidden_effect = {
+				revoke_law = quan_council_1
+				revoke_law = quan_council_2
+				revoke_law = quan_council_3
+				revoke_law = quan_council_5
+				revoke_law = quan_council_6
+			}
+			change_variable = { which = global_Clanauthority value = 40 }
+			
+			custom_tooltip = {
+				text = Quan_council_small_block
+			}
+	
+			custom_tooltip = {
+				text = ca_small_law_loss
+			}		
+		}	
+	
+
+		ai_will_do = {
+			factor = 10
+		}
+
+	}
+
+	quan_council_5 = { #Small
+	group = Quan_laws_2
+	
+	allow = {
+		has_dlc = "Conclave"
+		OR = {
+			has_law = quan_council_4
+			has_law = quan_council_6
+		}
+		custom_tooltip = {
+			text = has_50_CA
+			hidden_tooltip = {
+				check_variable = { which = global_Clanauthority value = 50 }
+			}
+		}
+	}
+
+	potential = {
+		holder_scope = { government = clan_federation }
+	}
+
+	pass_effect = {
+		log = "quan_council_5 passed"
+	}
+
+	effect = {
+			log = "quan_council_5 tried to pass"
+			hidden_effect = {
+				revoke_law = quan_council_1
+				revoke_law = quan_council_2
+				revoke_law = quan_council_3
+				revoke_law = quan_council_4
+				revoke_law = quan_council_6
+			}
+			change_variable = { which = global_Clanauthority value = 50 }
+		
+			custom_tooltip = {
+				text = Quan_council_no_block
+			}
+	
+			custom_tooltip = {
+				text = ca_small_law_gain
+			}		
+		}
+	
+
+		global_tax_modifier = 0.05		
+
+		ai_will_do = {
+			factor = 10
+		}
+
+	}	
+
+	quan_council_6 = { #Advisory
+	group = Quan_laws_2
+	
+	allow = {
+		has_dlc = "Conclave"
+		has_law = quan_council_5
+		has_law = law_voting_power_0
+		custom_tooltip = {
+			text = has_60_CA
+			hidden_tooltip = {
+				check_variable = { which = global_Clanauthority value = 60 }
+			}
+		}
+	}
+
+	potential = {
+		holder_scope = { government = clan_federation }
+	}
+
+	pass_effect = {
+		log = "quan_council_5 passed"
+	}
+
+	effect = {
+			log = "quan_council_5 tried to pass"
+			hidden_effect = {
+				revoke_law = quan_council_1
+				revoke_law = quan_council_2
+				revoke_law = quan_council_3
+				revoke_law = quan_council_4
+				revoke_law = quan_council_6
+			}
+			custom_tooltip = {
+				text = Quan_council_good_block
+			}
+	
+			custom_tooltip = {
+				text = ca_huge_law_gain
+			}				
+			change_variable = { which = global_Clanauthority value = 60 }
+		}
+
+
+		global_tax_modifier = 0.1	
+
+		ai_will_do = {
+			factor = 10
+		}
+
+	}	
 }

@@ -1,0 +1,84 @@
+#CODE;ENGLISH;;;;;;;;;;x
+
+#Laws
+
+#Groups
+
+Quan_laws_1;Local Administration;;;;;;;;;;x
+Quan_laws_2;Status of Council of Clans;;;;;;;;;;x
+Quan_laws_3;Army Law;;;;;;;;;;x
+
+#Admin
+
+quan_admin_1;;;;;;;;;;;x
+quan_admin_1_desc;;;;;;;;;;;x
+quan_admin_2;;;;;;;;;;;x
+quan_admin_2_desc;;;;;;;;;;;x
+quan_admin_3;;;;;;;;;;;x
+quan_admin_3_desc;;;;;;;;;;;x
+quan_admin_4;;;;;;;;;;;x
+quan_admin_4_desc;;;;;;;;;;;x
+quan_admin_5;;;;;;;;;;;x
+quan_admin_5_desc;;;;;;;;;;;x
+
+#Council
+
+quan_council_1;;;;;;;;;;;x
+quan_council_1_desc;;;;;;;;;;;x
+quan_council_2;;;;;;;;;;;x
+quan_council_2_desc;;;;;;;;;;;x
+quan_council_3;;;;;;;;;;;x
+quan_council_3_desc;;;;;;;;;;;x
+quan_council_4;;;;;;;;;;;x
+quan_council_4_desc;;;;;;;;;;;x
+quan_council_5;;;;;;;;;;;x
+quan_council_5_desc;;;;;;;;;;;x
+quan_council_6;;;;;;;;;;;x
+quan_council_6_desc;;;;;;;;;;;x
+
+#Army
+
+
+
+#CA things
+
+has_20_CA;Has §M20 §YClan Authority§!;;;;;;;;;;x
+has_30_CA;Has §G30 §YClan Authority§!;;;;;;;;;;x
+has_40_CA;Has §Z40 §YClan Authority§!;;;;;;;;;;x
+has_50_CA;Has §R50 §YClan Authority§!;;;;;;;;;;x
+has_60_CA;Has §K60 §YClan Authority§!;;;;;;;;;;x
+
+ca_huge_law_loss;§K3 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_big_law_loss;§K2 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_law_loss;§R1 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_small_law_loss;§R0.5 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_small_law_gain;§G0.5 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+ca_law_gain;§G1 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+ca_big_law_gain;§Z2 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+ca_huge_law_gain;§Z3 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+
+#Council law Block loc
+
+Quan_council_full_block;All §YCouncil laws§! change is §Kblocked§!;;;;;;;;;;x
+Quan_council_partial_block;§YCouncil laws§! change beside §Rgranting title and imprisonment is Blocked§!;;;;;;;;;;x
+Quan_council_partial_2_block;§YCouncil law§! change beside §Mgranting title, imprisonment, banishment and execution is Blocked§!;;;;;;;;;;x
+Quan_council_small_block;All §YCouncil law§! change is allowed beside §MWar and Council Power§!
+Quan_council_no_block;All §YCouncil Law§! change is §Zallowed§!;;;;;;;;;;x
+Quan_council_good_block;All change of §YCouncil Law§! is §Gblocked§!;;;;;;;;;;x
+
+#Army laws custom tooltips
+
+Quan_gman;§KPrepare for unforseen consequences.§!;;;;;;;;;;x
+
+#Events
+
+#Yearly Check Event
+QuanYearlycheckdesc;Yada Yada yearly gain;x
+QuanYearlycheckopt;kok;x
+QuanYearlycheck;CA gained [Root.CAgain.GetValue], CA gained from traits [Root.CA_mileducationgain.GetValue], from tributes [Root.CA_tributesgain.GetValue], from laws [Root.CA_lawgain.GetValue];Crusader
+
+#Pre Revolt narrative Event
+QuanPreRevoltEvtTit;Whispers in the Shadows;;;;;;;;;;x
+QuanPreRevoltEvtDesc;;;;;;;;;;;x
+QuanPreRevoltEvtOpt;In the Shadows a darkness a devious plot was revealed!;;;;;;;;;;x
+Quan_alea_iacta_est;§KTHIS IS A POINT OF NO RETURN§!;;;;;;;;;;x
