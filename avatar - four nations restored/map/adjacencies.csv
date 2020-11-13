@@ -21,9 +21,12 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 356;350;major_river;533;-1;-1;-1;-1;Gaoling
 354;351;major_river;533;-1;-1;-1;-1;Gaoling
 353;351;major_river;533;-1;-1;-1;-1;Gaoling
+353;367;major_river;536;-1;-1;-1;-1;Jianjiang
+357;367;major_river;536;-1;-1;-1;-1;Jianjiang
+357;366;major_river;536;-1;-1;-1;-1;Jianjiang
 377;379;major_river;539;-1;-1;-1;-1;Minjiang
 378;379;major_river;539;-1;-1;-1;-1;Minjiang
-697;163;sea;513;-1;-1;-1;-1;Quan-Yinchuan
+162;163;sea;513;-1;-1;-1;-1;Alxa-Yinchuan
 147;154;major_river;538;-1;-1;-1;-1;Tuhai
 147;153;major_river;538;-1;-1;-1;-1;Tuhai
 147;152;major_river;538;-1;-1;-1;-1;Tuhai
@@ -79,5 +82,4 @@ From;To;Type;Through;-1;-1;-1;-1;Comment
 32;676;sea;469;-1;-1;-1;-1;namtso-sangmo
 34;679;sea;469;-1;-1;-1;-1;kangaroo-island-tselha
 33;34;sea;469;-1;-1;-1;-1;kangaroo-kangrinboqe
-163;696;sea;513;-1;-1;-1;-1;Yinchuan-Xinliang
-696;695;sea;513;-1;-1;-1;-1;Xinliang-Qiwei
+57;595;sea;409;-1;-1;-1;-1;ladakh-shiyama within d_west_air_islands
