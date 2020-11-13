@@ -17,7 +17,7 @@ namespace = T4NQuan
 ##T4NQuan.4 - Grant CA modifer based on current CA (yearly + startup)
 ##T4NQuan.5 - Assign tributes (startup)
 ##T4NQuan.6 - Clan Authority Yearly gain/loss (Yearly)
-##T4NQuan.7 -
+##T4NQuan.7 - Pre Scripted Mandate Revolt Event
 ##T4NQuan.8 -
 ##T4NQuan.9 -
 ##T4NQuan.10 -
@@ -313,13 +313,14 @@ character_event = {
 	is_triggered_only = yes
 	only_rulers = yes
 
+	picture = GFX_evt_chin_war
 	desc = QuanYearlycheckdesc
 
 	trigger = {
 		has_landed_title = k_quan
 		NOR = {
 			has_global_flag = CAgainblock
-			has_global_flag  = CAloseblock
+			has_global_flag = CAloseblock
 		}
 	}
 
@@ -338,7 +339,7 @@ character_event = {
 				if = {
 					limit = {
 						is_tributary = {
-							type = quan_tributary
+							tributary_type = quan_tributary
 						}				
 					}
 					change_variable = { which = CA_tributesgain value = 1 }
@@ -383,6 +384,9 @@ character_event = {
 
 			#TODO:Laws go here, when they will be done
 		}
+		
+		
+		
 		change_variable = { which = global_Clanauthority which = CA_tributesgain }
 		change_variable = { which = global_Clanauthority which = CA_mileducationgain }
 		change_variable = { which = global_Clanauthority which = CA_lawgain }
@@ -391,12 +395,77 @@ character_event = {
 		set_variable = { which = CAgain which = global_Clanauthority }
 		subtract_variable = { which = CAgain which = oldclanauthority }
 
+		if = {
+			limit = {
+				OR = {
+					check_variable = { which = global_Clanauthority value > 100 }
+					check_variable = { which = global_Clanauthority value < 0 } 
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { which = global_Clanauthority value > 100 }
+				}
+				character_event = { id = T4NQuan.3 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { which = global_Clanauthority value < 0 }					
+				}
+				character_event = { id = T4NQuan.3 }
+			}
+		}
+
 	}
 
 	option = {
 		name = QuanYearlycheckopt
 		custom_tooltip = {
-			name = QuanYearlycheck
+			text = QuanYearlycheck
+		}
+	}
+}
+
+#Pre Scripted Mandate Revolt Event
+narrative_event = {
+	id = T4NQuan.7
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	picture = GFX_evt_suspicious_noble
+	border = GFX_event_narrative_frame_intrigue
+	title = QuanPreRevoltEvtTit
+	desc = QuanPreRevoltEvtDesc
+
+	trigger = {
+		has_landed_title = k_quan
+		k_quan = {	
+			OR = {
+				AND = {
+					has_law = quan_army_5
+					has_law = quan_council_4
+					has_law = quan_admin_3
+				}
+				AND = {
+					has_law = quan_army_5
+					has_law = quan_council_6
+					#TODO:after testing add all other conclave council law
+				}
+			}
+		}
+	}
+
+	immediate = {
+		character_event = { id = T4NQuan.8 years = 1 }
+	}
+
+	option = {
+		name = QuanPreRevoltEvtOpt
+		custom_tooltip = {
+			text = Quan_alea_iacta_est
+			hidden_tooltip = {
+
+			}
 		}
 	}
 }

@@ -874,4 +874,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/airnomad_spar.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_chin_war"
+		texturefile = "gfx/event_pictures/chin_war.dds"
+		allwaystransparent = yes
+	}
 }

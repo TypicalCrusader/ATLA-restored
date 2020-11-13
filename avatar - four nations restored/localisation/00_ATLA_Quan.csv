@@ -3,13 +3,15 @@
 #Laws
 
 #Groups
-
 Quan_laws_1;Local Administration;;;;;;;;;;x
+Quan_laws_1_desc;;;;;;;;;;;x
 Quan_laws_2;Status of Council of Clans;;;;;;;;;;x
+Quan_laws_2_desc;;;;;;;;;;;x
 Quan_laws_3;Army Law;;;;;;;;;;x
+Quan_laws_3_desc;;;;;;;;;;;x
+
 
 #Admin
-
 quan_admin_1;;;;;;;;;;;x
 quan_admin_1_desc;;;;;;;;;;;x
 quan_admin_2;;;;;;;;;;;x
@@ -22,7 +24,6 @@ quan_admin_5;;;;;;;;;;;x
 quan_admin_5_desc;;;;;;;;;;;x
 
 #Council
-
 quan_council_1;;;;;;;;;;;x
 quan_council_1_desc;;;;;;;;;;;x
 quan_council_2;;;;;;;;;;;x
@@ -37,7 +38,16 @@ quan_council_6;;;;;;;;;;;x
 quan_council_6_desc;;;;;;;;;;;x
 
 #Army
-
+quan_army_1;Clan Levies;;;;;;;;;;x
+quan_army_1_desc;;;;;;;;;;;x
+quan_army_2;Jian Levies;;;;;;;;;;x
+quan_army_2_desc;;;;;;;;;;;x
+quan_army_3;Mixed;;;;;;;;;;x
+quan_army_3_desc;;;;;;;;;;;x
+quan_army_4;Officer Core;;;;;;;;;;x
+quan_army_4_desc;;;;;;;;;;;x
+quan_army_5;Badgermole Brigade;;;;;;;;;;x
+quan_army_5_desc;;;;;;;;;;;x
 
 
 #CA things
@@ -58,16 +68,16 @@ ca_big_law_gain;§Z2 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
 ca_huge_law_gain;§Z3 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
 
 #Council law Block loc
-
 Quan_council_full_block;All §YCouncil laws§! change is §Kblocked§!;;;;;;;;;;x
 Quan_council_partial_block;§YCouncil laws§! change beside §Rgranting title and imprisonment is Blocked§!;;;;;;;;;;x
 Quan_council_partial_2_block;§YCouncil law§! change beside §Mgranting title, imprisonment, banishment and execution is Blocked§!;;;;;;;;;;x
-Quan_council_small_block;All §YCouncil law§! change is allowed beside §MWar and Council Power§!
+Quan_council_small_block;All §YCouncil law§! change is allowed beside §MWar and Council Power§!;;;;;;;;;;x
 Quan_council_no_block;All §YCouncil Law§! change is §Zallowed§!;;;;;;;;;;x
 Quan_council_good_block;All change of §YCouncil Law§! is §Gblocked§!;;;;;;;;;;x
 
-#Army laws custom tooltips
 
+#Army laws custom tooltips
+Quan_clan_dislike_warn;§RSome Clans may not like it.§!;;;;;;;;;;x
 Quan_gman;§KPrepare for unforseen consequences.§!;;;;;;;;;;x
 
 #Events
@@ -80,5 +90,5 @@ QuanYearlycheck;CA gained [Root.CAgain.GetValue], CA gained from traits [Root.CA
 #Pre Revolt narrative Event
 QuanPreRevoltEvtTit;Whispers in the Shadows;;;;;;;;;;x
 QuanPreRevoltEvtDesc;;;;;;;;;;;x
-QuanPreRevoltEvtOpt;In the Shadows a darkness a devious plot was revealed!;;;;;;;;;;x
-Quan_alea_iacta_est;§KTHIS IS A POINT OF NO RETURN§!;;;;;;;;;;x
+QuanPreRevoltEvtOpt;In the Shadows of a night a devious plot is revealed!;;;;;;;;;;x
+Quan_alea_iacta_est;§KTHIS IS A POINT OF NO RETURN. IF YOU ARE NOT ON IRONMAN, YOU SHOULD SAVE NOW.§!;;;;;;;;;;x
