@@ -1611,6 +1611,7 @@ e_earth_kingdom = {
 				b_baojiang = {
 				}
 				b_baojiang_village = {
+					short_name = yes
 				}
 				b_baojiang_slums = {
 				}
@@ -3530,6 +3531,7 @@ e_earth_kingdom = {
 				b_bieshu = {
 				}
 				b_senlin_village = {
+					short_name = yes
 				}
 				b_great_forest = {
 				}
@@ -4035,6 +4037,7 @@ e_earth_kingdom = {
 				b_shique = {
 				}
 				b_makapu_village = {
+					short_name = yes
 				}
 				b_baowo = {
 				}
@@ -4126,6 +4129,7 @@ e_earth_kingdom = {
 				holy_site = followers_of_kyoshi_reformed
 
 				b_zigan_village = {
+					short_name = yes
 				}
 				b_xiping = {
 				}
@@ -6446,6 +6450,7 @@ e_earth_kingdom = {
 				holy_site = followers_of_kyoshi_reformed
 
 				b_chin_village = {
+					short_name = yes
 				}
 				b_dabanbi = {
 				}
@@ -6824,6 +6829,7 @@ e_fire_nation = {
 				b_jooshima = {
 				}
 				b_kuin_village = {
+					short_name = yes
 				}
 				b_ama = {
 				}
