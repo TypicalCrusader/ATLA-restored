@@ -721,7 +721,17 @@ laws = {
 		earth_kingdom_culture_opinion = -5
 
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = ze_admin_province
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = ze_admin_anarchy
+			}			
 		}
 	}	
 
@@ -778,7 +788,17 @@ laws = {
 		demesne_size = -1
 
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = ze_admin_balance
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = ze_admin_territories
+			}			
 		}
 	}
 
@@ -830,7 +850,17 @@ laws = {
 		earth_kingdom_culture_opinion = 5
 		
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = ze_admin_slight_central
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = ze_admin_province
+			}			
 		}
 	}
 	
@@ -884,7 +914,17 @@ laws = {
 		demesne_size = 2
 
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = ze_admin_central
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = ze_admin_balance
+			}			
 		}
 	}
 	
@@ -942,9 +982,17 @@ laws = {
 		#}
 		earth_kingdom_culture_opinion = 15
 		demesne_size = 4
+
+
 		ai_will_do = {
-			factor = 1000
+			factor = 1		
+
+			additive_modifier = {
+				value = 10
+				has_law = ze_admin_slight_central
+			}			
 		}
+
 	}
 
 	bureaucracy_anarchy = {
@@ -978,7 +1026,7 @@ laws = {
 		vassal_limit = -80
 
 		ai_will_do = {
-			factor = 1000
+			factor = 0
 		}
 	}
 	
@@ -1024,7 +1072,17 @@ laws = {
 		vassal_limit = -40
 
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = balanced_bureaucracy
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = bureaucracy_anarchy
+			}			
 		}
 	}
 	
@@ -1071,7 +1129,17 @@ laws = {
 		}
 
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = good_bureaucracy
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = underfunded_bureaucracy
+			}			
 		}
 	}
 
@@ -1120,7 +1188,17 @@ laws = {
 		vassal_limit = 10
 		
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = slight_bureaucratic_dominance
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = balanced_bureaucracy
+			}			
 		}
 	}
 	
@@ -1169,7 +1247,17 @@ laws = {
 		vassal_limit = 30
 		
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = bureaucratic_dominance
+			}			
+
+			additive_modifier = {
+				value = 10
+				has_law = good_bureaucracy
+			}			
 		}
 	}
 	
@@ -1215,7 +1303,12 @@ laws = {
 		vassal_limit = 60
 		
 		ai_will_do = {
-			factor = 1000
+			factor = 1
+			
+			additive_modifier = {
+				value = 10
+				has_law = slight_bureaucratic_dominance
+			}			
 		}
 	}
 
@@ -2096,9 +2189,7 @@ laws = {
 			factor = 0
 			#Never fucking never
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+
 	}
 
 	quan_admin_2 = { #Semi-Autonomous
@@ -2143,10 +2234,20 @@ laws = {
 			demesne_size = -1
 			vassal_opinion = 10			
 
-			ai_will_do = {
-				factor = 10
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_admin_3
 			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_1
+			}			
 		}
+	}
 
 	quan_admin_3 = { #Balanced
 		group = Quan_laws_1
@@ -2186,10 +2287,20 @@ laws = {
 
 			}
 
-			ai_will_do = {
-				factor = 10
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_admin_4
 			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_2
+			}			
 		}
+	}
 
 	quan_admin_4 = { #Semi-Centralised
 		group = Quan_laws_1
@@ -2232,9 +2343,19 @@ laws = {
 			demesne_size = 1
 			vassal_opinion = -10			
 
-			ai_will_do = {
-				factor = 10
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_admin_5
 			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_3
+			}			
+		}
 	}
 
 	quan_admin_5 = { #Centralised
@@ -2278,8 +2399,13 @@ laws = {
 			demesne_size = 2
 			vassal_opinion = -15			
 
-			ai_will_do = {
-				factor = 10
+		ai_will_do = {
+			factor = 1
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_4
+			}			
 		}
 	}
 
@@ -2384,7 +2510,17 @@ laws = {
 			global_tax_modifier = -0.15		
 
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_3
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_1
+			}			
 		}
 
 	}	
@@ -2439,7 +2575,17 @@ laws = {
 			global_tax_modifier = -0.05		
 
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_4
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_2
+			}			
 		}
 
 	}	
@@ -2489,9 +2635,18 @@ laws = {
 			}		
 		}	
 	
-
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_5
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_4
+			}			
 		}
 
 	}
@@ -2545,7 +2700,17 @@ laws = {
 		global_tax_modifier = 0.05		
 
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_6
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_5
+			}			
 		}
 
 	}	
@@ -2596,7 +2761,17 @@ laws = {
 		global_tax_modifier = 0.1	
 
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_6
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_5
+			}			
 		}
 
 	}	
@@ -2643,9 +2818,7 @@ laws = {
 			factor = 0
 			#Never fucking never
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+
 	}
 
 	quan_army_2 = { #Jian Levies
@@ -2699,8 +2872,19 @@ laws = {
 
 
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_army_3
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_1
+			}			
 		}
+
 	}	
 
 	quan_army_3 = { #Normal
@@ -2749,8 +2933,19 @@ laws = {
 		levy_size = 0.5
 		
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_army_4
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_2
+			}			
 		}
+
 	}
 
 	quan_army_4 = { #Officer Corps
@@ -2803,8 +2998,19 @@ laws = {
 		levy_size = 0.5
 		
 		ai_will_do = {
-			factor = 10
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_army_5
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_3
+			}			
 		}
+
 	}	
 
 	quan_army_5 = { #Badgermole Brigade
@@ -2865,7 +3071,12 @@ laws = {
 		land_morale = 0.2
 		
 		ai_will_do = {
-			factor = 10
+			factor = 1
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_4
+			}			
 		}
 	}
 }
