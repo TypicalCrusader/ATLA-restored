@@ -5256,3 +5256,684 @@
 	985.1.10={ birth=yes }
 	1036.8.20={ death=yes }
 }
+60567={
+	name=Daeso
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	499.5.23={ birth=yes }
+	581.6.9={ death=yes }
+}
+60568={
+	name=Iseul
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60567	#Daeso
+	523.2.24={ birth=yes }
+	573.1.15={ death=yes }
+}
+60569={
+	name=Jeongui
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60567	#Daeso
+	527.6.14={ birth=yes }
+	608.1.1={ death=yes }
+}
+60570={
+	name=Ho-Lee
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60567	#Daeso
+	530.9.4={ birth=yes }
+	600.3.7={ death=yes }
+}
+60571={
+	name=Lun
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60567	#Daeso
+	536.11.4={ birth=yes }
+	601.12.24={ death=yes }
+}
+60572={
+	name=Uiryeo
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60568	#Iseul
+	552.10.23={ birth=yes }
+	611.6.2={ death=yes }
+}
+60573={
+	name=Wuyu
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60568	#Iseul
+	557.4.6={ birth=yes }
+	594.8.21={ death=yes }
+}
+60574={
+	name=Galsa
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60568	#Iseul
+	559.7.7={ birth=yes }
+	624.11.25={ death=yes }
+}
+60575={
+	name=Shamen
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60568	#Iseul
+	563.9.6={ birth=yes }
+	618.4.17={ death=yes }
+}
+60576={
+	name=Mi-Sun
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60572	#Uiryeo
+	577.5.3={ birth=yes }
+	630.10.24={ death=yes }
+}
+60577={
+	name=Damdeok
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60572	#Uiryeo
+	581.8.25={ birth=yes }
+	628.5.20={ death=yes }
+}
+60578={
+	name=Kirei
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60572	#Uiryeo
+	584.5.19={ birth=yes }
+	655.8.5={ death=yes }
+}
+60579={
+	name=Daisy
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60572	#Uiryeo
+	587.2.12={ birth=yes }
+	660.6.17={ death=yes }
+}
+60580={
+	name=Feng-Long
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60572	#Uiryeo
+	591.6.15={ birth=yes }
+	648.12.6={ death=yes }
+}
+60581={
+	name=Shen-Ping
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60572	#Uiryeo
+	593.1.12={ birth=yes }
+	655.7.7={ death=yes }
+}
+60582={
+	name=Fuuko
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60572	#Uiryeo
+	597.8.27={ birth=yes }
+	668.4.9={ death=yes }
+}
+60583={
+	name=Huan
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60577	#Damdeok
+	602.2.1={ birth=yes }
+	671.7.25={ death=yes }
+}
+60584={
+	name=Fuuko
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60577	#Damdeok
+	604.2.10={ birth=yes }
+	646.3.7={ death=yes }
+}
+60585={
+	name=Chun-Lee
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60577	#Damdeok
+	607.10.17={ birth=yes }
+	696.10.17={ death=yes }
+}
+60586={
+	name=Nosumi
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60577	#Damdeok
+	611.12.24={ birth=yes }
+	660.3.20={ death=yes }
+}
+60587={
+	name=Teo
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60577	#Damdeok
+	615.5.1={ birth=yes }
+	700.6.20={ death=yes }
+}
+60588={
+	name=Laquan
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60583	#Huan
+	623.8.21={ birth=yes }
+	687.7.27={ death=yes }
+}
+60589={
+	name=Ru
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60583	#Huan
+	625.5.8={ birth=yes }
+	679.3.11={ death=yes }
+}
+60590={
+	name=Maeseuk
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60583	#Huan
+	628.10.22={ birth=yes }
+	674.4.5={ death=yes }
+}
+60591={
+	name=Yume
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60588	#Laquan
+	644.12.9={ birth=yes }
+	711.8.15={ death=yes }
+}
+60592={
+	name=Lee-An
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60588	#Laquan
+	646.11.4={ birth=yes }
+	708.3.24={ death=yes }
+}
+60593={
+	name=Fu
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60588	#Laquan
+	651.10.25={ birth=yes }
+	717.4.3={ death=yes }
+}
+60594={
+	name=Yang
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60588	#Laquan
+	655.5.1={ birth=yes }
+	711.1.27={ death=yes }
+}
+60595={
+	name=Wonui
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60593	#Fu
+	671.11.3={ birth=yes }
+	728.2.26={ death=yes }
+}
+60596={
+	name=Zenko
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60593	#Fu
+	675.6.5={ birth=yes }
+	733.6.1={ death=yes }
+}
+60597={
+	name=Stei-See
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60593	#Fu
+	679.3.7={ birth=yes }
+	728.1.26={ death=yes }
+}
+60598={
+	name=Dong-Min
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60593	#Fu
+	684.6.7={ birth=yes }
+	729.4.4={ death=yes }
+}
+60599={
+	name=Eum
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60595	#Wonui
+	698.5.13={ birth=yes }
+	760.3.6={ death=yes }
+}
+60600={
+	name=Yin
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60595	#Wonui
+	702.10.10={ birth=yes }
+	776.4.16={ death=yes }
+}
+60601={
+	name=Peony
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60595	#Wonui
+	705.12.15={ birth=yes }
+	774.3.6={ death=yes }
+}
+60602={
+	name=Wigung
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60595	#Wonui
+	706.7.3={ birth=yes }
+	752.10.27={ death=yes }
+}
+60603={
+	name=Ying
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60599	#Eum
+	720.4.19={ birth=yes }
+	791.7.24={ death=yes }
+}
+60604={
+	name=Ho-Lee
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60599	#Eum
+	723.3.21={ birth=yes }
+	770.8.7={ death=yes }
+}
+60605={
+	name=Naun
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60603	#Ying
+	745.8.14={ birth=yes }
+	809.7.14={ death=yes }
+}
+60606={
+	name=Uija
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60603	#Ying
+	750.9.18={ birth=yes }
+	815.9.28={ death=yes }
+}
+60607={
+	name=Baekgo
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60605	#Naun
+	772.2.14={ birth=yes }
+	833.7.7={ death=yes }
+}
+60608={
+	name=Yeo
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60605	#Naun
+	775.3.20={ birth=yes }
+	836.5.21={ death=yes }
+}
+60609={
+	name=Cheng
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60605	#Naun
+	779.8.3={ birth=yes }
+	831.4.29={ death=yes }
+}
+60610={
+	name=Sang-Kyu
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60605	#Naun
+	782.7.4={ birth=yes }
+	831.4.24={ death=yes }
+}
+60611={
+	name=Xian
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60607	#Baekgo
+	799.11.26={ birth=yes }
+	874.2.16={ death=yes }
+}
+60612={
+	name=Da-Lee
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60607	#Baekgo
+	802.12.17={ birth=yes }
+	847.12.11={ death=yes }
+}
+60613={
+	name=Liu-Liu
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60611	#Xian
+	825.8.15={ birth=yes }
+	883.9.14={ death=yes }
+}
+60614={
+	name=Shayn
+	female=yes
+	dynasty=5008
+	culture=dongfangian
+	religion=earth_spirituality
+	father=60611	#Xian
+	829.1.25={ birth=yes }
+	885.3.17={ death=yes }
+}
+60615={
+	name=Mang
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60611	#Xian
+	834.4.27={ birth=yes }
+	882.1.12={ death=yes }
+}
+60616={
+	name=Sue-Si
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60611	#Xian
+	835.3.12={ birth=yes }
+	892.1.27={ death=yes }
+}
+60617={
+	name=Pung
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60615	#Mang
+	856.9.15={ birth=yes }
+	908.7.15={ death=yes }
+}
+60618={
+	name=Kopti
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60615	#Mang
+	859.8.24={ birth=yes }
+	919.10.14={ death=yes }
+}
+60619={
+	name=Biryu
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60615	#Mang
+	862.9.7={ birth=yes }
+	910.2.1={ death=yes }
+}
+60620={
+	name=Tolui
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60615	#Mang
+	864.7.11={ birth=yes }
+	913.11.21={ death=yes }
+}
+60621={
+	name=Jeong
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60615	#Mang
+	868.3.18={ birth=yes }
+	913.3.15={ death=yes }
+}
+60622={
+	name=Butakha
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60617	#Pung
+	876.11.16={ birth=yes }
+	922.1.10={ death=yes }
+}
+60623={
+	name=Yeongnyu
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60617	#Pung
+	878.3.26={ birth=yes }
+	930.7.12={ death=yes }
+}
+60624={
+	name=Odchigin
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60617	#Pung
+	882.9.19={ birth=yes }
+	938.7.27={ death=yes }
+}
+60625={
+	name=Yangno
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60622	#Butakha
+	904.6.10={ birth=yes }
+	958.3.24={ death=yes }
+}
+60626={
+	name=Won
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60622	#Butakha
+	907.7.24={ birth=yes }
+	983.9.4={ death=yes }
+}
+60627={
+	name=Menggei
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60625	#Yangno
+	924.6.12={ birth=yes }
+	973.9.28={ death=yes }
+}
+60628={
+	name=Kei
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60625	#Yangno
+	927.3.5={ birth=yes }
+	992.12.5={ death=yes }
+}
+60629={
+	name=Lao
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60625	#Yangno
+	931.12.13={ birth=yes }
+	986.12.11={ death=yes }
+}
+60630={
+	name=Geonmu
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60625	#Yangno
+	935.4.22={ birth=yes }
+	1004.7.7={ death=yes }
+}
+60631={
+	name=Damdeok
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60627	#Menggei
+	950.8.22={ birth=yes }
+	1011.6.15={ death=yes }
+}
+60632={
+	name=Chong
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60627	#Menggei
+	955.10.14={ birth=yes }
+	1013.10.1={ death=yes }
+}
+60633={
+	name=Shu-Fang
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60631	#Damdeok
+	978.6.18={ birth=yes }
+	1051.3.25={ death=yes }
+}
+60634={
+	name=Chun-Hei
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60631	#Damdeok
+	981.6.8={ birth=yes }
+	1054.3.6={ death=yes }
+}
+60635={
+	name=Sakae
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60631	#Damdeok
+	983.8.15={ birth=yes }
+	1070.4.21={ death=yes }
+}
+60636={
+	name=Dochim
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60631	#Damdeok
+	986.3.27={ birth=yes }
+	1059.11.11={ death=yes }
+}
+60637={
+	name=Seono
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60631	#Damdeok
+	987.6.24={ birth=yes }
+	1058.4.25={ death=yes }
+}
+60638={
+	name=Mosuri
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60631	#Damdeok
+	991.9.16={ birth=yes }
+	1064.12.11={ death=yes }
+}
+60639={
+	name=Fuutaba
+	female=yes
+	dynasty=5008
+	culture=dongfangian 
+	religion=earth_spirituality
+	father=60631	#Damdeok
+	995.10.9={ birth=yes }
+	1048.2.19={ death=yes }
+}

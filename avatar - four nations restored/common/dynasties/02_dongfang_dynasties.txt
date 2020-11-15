@@ -45,6 +45,13 @@
 	used_for_random = no
 }
 
+5006 = {
+	name = "Yi"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
 5007 = {
 	name = "He"
 	culture = dongfangian
