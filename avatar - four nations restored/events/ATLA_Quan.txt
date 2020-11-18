@@ -18,8 +18,8 @@ namespace = T4NQuan
 ##T4NQuan.5 - Assign tributes (startup)
 ##T4NQuan.6 - Clan Authority Yearly gain/loss (Yearly)
 ##T4NQuan.7 - Pre Scripted Mandate Revolt Event
-##T4NQuan.8 -
-##T4NQuan.9 -
+##T4NQuan.8 - Five Banner Rebelion
+##T4NQuan.9 - Declare Five Banners Rebelion
 ##T4NQuan.10 -
 ##T4NQuan.11 -
 ##T4NQuan.12 -
@@ -464,8 +464,260 @@ narrative_event = {
 		custom_tooltip = {
 			text = Quan_alea_iacta_est
 			hidden_tooltip = {
-
+				set_global_flag = Quan_the_die_is_cast
 			}
 		}
 	}
 }
+
+#Five Banners revolt
+#T h i c c 
+
+narrative_event = {
+	id = T4NQuan.8
+	is_triggered_only = yes
+	only_rulers = yes
+	picture = GFX_evt_china_unrest
+	title = QuanFiveBannersTit
+	desc = QuanFiveBannersDesc
+	
+	trigger = {
+		has_global_flag = Quan_the_die_is_cast
+		has_landed_title = k_quan
+	}
+	
+	immediate = {
+		change_variable = { which = global_Clanauthority value = -15 }
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value < 0 }
+			}
+			character_event = { id = T4NQuan.3 }
+		}
+	}
+	
+	option = {
+		name = QuanFiveBannersOpt
+		custom_tooltip = {
+			text = Quan_rebelion_begins
+			hidden_tooltip = {
+				c_nayong = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+						random_list = {
+						80 = { }
+						20 = { 
+							if = {
+								limit = {
+									any_playable_ruler = {
+										limit = {
+											culture = dongfangian
+											NOT = { has_character_flag = Quan_Five_banners_Leader }
+											}
+										}
+									}
+									save_event_target_as = Quan_Five_Banners_leader
+									set_character_flag = Quan_Five_banners_Leader
+									event_target:Quan_Five_Banners_leader = {
+										character_event = { id = T4NQuan.9 }
+									}																		
+								}
+							}
+						}
+					}
+				}
+				c_qijing = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+						random_list = {
+						70 = { }
+						30 = { 
+							if = {
+								limit = {
+									any_playable_ruler = {
+										limit = {
+											culture = dongfangian
+											NOT = { has_character_flag = Quan_Five_banners_Leader }
+											}
+										}
+									}
+									save_event_target_as = Quan_Five_Banners_leader
+									set_character_flag = Quan_Five_banners_Leader
+									event_target:Quan_Five_Banners_leader = {
+										character_event = { id = T4NQuan.9 }
+									}																		
+								}
+							}
+						}
+					}
+				}
+				c_jejin = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+						random_list = {
+						70 = { }
+						30 = { 
+							if = {
+								limit = {
+									any_playable_ruler = {
+										limit = {
+											culture = dongfangian
+											NOT = { has_character_flag = Quan_Five_banners_Leader }
+											}
+										}
+									}
+									save_event_target_as = Quan_Five_Banners_leader
+									set_character_flag = Quan_Five_banners_Leader
+									event_target:Quan_Five_Banners_leader = {
+										character_event = { id = T4NQuan.9 }
+									}																		
+								}
+							}
+						}
+					}
+				}
+				c_tangong = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+						random_list = {
+						90 = { }
+						10 = { 
+							if = {
+								limit = {
+									any_playable_ruler = {
+										limit = {
+											culture = dongfangian
+											NOT = { has_character_flag = Quan_Five_banners_Leader }
+											}
+										}
+									}
+									save_event_target_as = Quan_Five_Banners_leader
+									set_character_flag = Quan_Five_banners_Leader
+									event_target:Quan_Five_Banners_leader = {
+										character_event = { id = T4NQuan.9 }
+									}																		
+								}
+							}
+						}
+					}
+				}
+				c_tanghua = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+						random_list = {
+						30 = { }
+						70 = { 
+							if = {
+								limit = {
+									any_playable_ruler = {
+										limit = {
+											culture = dongfangian
+											NOT = { has_character_flag = Quan_Five_banners_Leader }
+											}
+										}
+									}
+									save_event_target_as = Quan_Five_Banners_leader
+									set_character_flag = Quan_Five_banners_Leader
+									event_target:Quan_Five_Banners_leader = {
+										character_event = { id = T4NQuan.9 }
+									}									
+								}
+							}
+						}
+						if = { #if noone will gain the five banners leader give it to Clan Bei
+							limit = {	
+								any_playable_ruler = {
+									limit = {
+										culture = dongfangian
+										NOT = { has_character_flag = Quan_Five_banners_Leader }
+										}
+									}
+								}
+							save_event_target_as = Quan_Five_Banners_leader
+							set_character_flag = Quan_Five_banners_Leader
+							event_target:Quan_Five_Banners_leader = {
+								character_event = { id = T4NQuan.9 }
+							}
+						}	
+					}
+				}				
+			}
+		}
+	}
+}
+
+character_event = {
+	id = T4NQuan.9
+	is_triggered_only = yes
+	only_rulers = yes
+	hide_window = yes
+	
+	
+	trigger = {
+		has_character_flag = Quan_Five_banners_Leader
+		has_global_flag = Quan_the_die_is_cast
+	}
+	
+	immediate = {
+		ROOT = {
+			k_quan = {
+				remove_tributary = ROOT
+			}
+			primary_title = {
+				holder_scope = {
+					activate_title = { title = k_five_banners status = yes }
+					grant_title = k_five_banners
+				}
+			}
+			k_five_banners = {
+				holder_scope = {
+					copy_title_laws = FROMFROM
+					copy_title_history = FROMFROM				
+					#o h  b o i now you fucked up
+					spawn_unit = {
+						owner = ROOT
+						province = ROOT
+						home = ROOT			
+						
+						troops = {
+							archers = { 1000 1000 }
+							light_infantry = { 1500 1500 }
+							light_cavalry = { 2500 2500 }
+						}
+
+						attrition = 1.0
+						disband_on_peace = yes
+						maintenance_multiplier = 0.5
+					}						
+				}
+			}	
+		}
+		any_playable_ruler = {
+			limit = {
+				culture = dongfangian
+				has_character_flag = Quan_Five_banners_member
+				NOT = { has_character_flag = Quan_Five_banners_Leader }
+			}
+			k_quan = {
+				remove_tributary = PREV
+			}
+			primary_title = {
+				set_defacto_liege = ROOT
+			}
+		}
+		k_quan = {
+			holder_scope = {
+				reverse_war = {
+					target = PREV
+					casus_belli = Quan_scripted_revolt_cb
+				}
+			}
+		}
+	}
+}
+	
+	
+	
+	
+
+#Random gain events

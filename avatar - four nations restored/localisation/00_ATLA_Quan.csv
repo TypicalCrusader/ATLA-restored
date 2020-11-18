@@ -91,4 +91,29 @@ QuanYearlycheck;CA gained [Root.CAgain.GetValue], CA gained from traits [Root.CA
 QuanPreRevoltEvtTit;Whispers in the Shadows;;;;;;;;;;x
 QuanPreRevoltEvtDesc;;;;;;;;;;;x
 QuanPreRevoltEvtOpt;In the Shadows of a night a devious plot is revealed!;;;;;;;;;;x
-Quan_alea_iacta_est;§KTHIS IS A POINT OF NO RETURN. IF YOU ARE NOT ON IRONMAN, YOU SHOULD SAVE NOW.§!;;;;;;;;;;x
+Quan_alea_iacta_est;§YThe die is cast... §KTHIS IS A POINT OF NO RETURN. IF YOU ARE NOT ON IRONMAN, YOU SHOULD SAVE NOW.§!;;;;;;;;;;x
+
+#Five Banner Revolt Start Event
+QuanFiveBannersTit;Five Banners Rebelion;;;;;;;;;;x
+QuanFiveBannersDesc;;;;;;;;;;;x
+QuanFiveBannersOpt;They will pay with their blood!;;;;;;;;;;x
+Quan_rebelion_begins;§RRebelion Begins...§!;;;;;;;;;;x
+
+
+
+#CBs
+
+#Five Banners Rebelion
+Quan_Five_Banners_CB;Five Banners Rebelion;;;;;;;;;;x
+Quan_Five_Banners_Rebelion;Five Banners Rebelion;;;;;;;;;;x
+
+
+
+#Special Titles
+
+#Five Banners
+k_five_banners;Five Banners Rebelion;;;;;;;;;;x
+k_five_banners_adj;Five Bannerian;;;;;;;;;;x
+first_rider;First Rider;;;;;;;;;;x
+first_rider_FOA;My Leader;;;;;;;;;;x
+

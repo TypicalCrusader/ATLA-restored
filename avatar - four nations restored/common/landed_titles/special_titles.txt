@@ -1438,7 +1438,22 @@ k_quan = {
 	
 	title = "quan_holder_male"
 	title_female = "quan_holder_female"
-	foa = "SAGE_FOA"
+	foa = "quan_FOA"
+	short_name = yes
+	
+	
+	religion = earth_spirituality
+	
+	dynasty_title_names = no
+}
+
+k_five_banners = {
+	color = { 52 165 203 }
+	color2 = { 48 135 166 }	
+	capital = 162 #Alxa
+	
+	title = "first_rider"
+	foa = "first_rider_FOA"
 	short_name = yes
 	
 	

@@ -1059,8 +1059,10 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_trait_princequan"
-		texturefile = "gfx/traits/trait_princequan.dds"
+		name = "GFX_trait_warlord_of_chin"
+		texturefile = "gfx/traits/warlord_of_chin.dds"
 		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
 	}
 }
