@@ -1065,4 +1065,9 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_trait_princequan"
+		texturefile = "gfx/traits/trait_princequan.dds"
+		noOfFrames = 1
+	}
 }
