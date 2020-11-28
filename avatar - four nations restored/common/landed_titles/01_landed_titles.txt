@@ -2748,10 +2748,16 @@ e_earth_kingdom = {
 				color = { 120 81 169 }
 				color2 = { 255 255 255 }
 
-				b_crouching_tiger = {}
+				b_crouching_tiger = {
+					short_name = yes
+				}
 				b_quan = {}
-				b_quan_monastery = {} 
-				b_long_wang_fortress = {}
+				b_quan_monastery = {
+					short_name = yes
+				} 
+				b_long_wang_fortress = {
+					short_name = yes
+				}
 				b_hou-ting = {}
 				b_hao = {}
 			}

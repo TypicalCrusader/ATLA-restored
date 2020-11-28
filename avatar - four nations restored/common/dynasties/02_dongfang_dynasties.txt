@@ -6,6 +6,17 @@
 	name = "Hou-Quan"
 	culture = eastern_earth
 	religion = earth_spirituality
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
 	used_for_random = no
 }
 
@@ -65,3 +76,36 @@
 	religion = earth_spirituality
 	used_for_random = no
 }
+
+
+#Plebian Random Dynasties
+
+5009 = {
+	name = "Bam"
+	culture = dongfangian
+	religion = earth_spirituality
+}	
+
+5010 = {
+	name = "Gam"
+	culture = dongfangian
+	religion = earth_spirituality
+}	
+
+5011 = {
+	name = "Zam"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5012 = {
+	name = "Nam"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5013 = {
+	name = "Mam"
+	culture = dongfangian
+	religion = earth_spirituality
+}	

@@ -11,6 +11,7 @@ namespace = T4NQuan
 #Event List#
 ###      ###
 
+#####
 ##T4NQuan.1 - Grant Trait princequan to new ruler
 ##T4NQuan.2 - Remove trait princequan if char is no longer a ruler of k_quan
 ##T4NQuan.3 - Check if CA is not < 0 / > 100 (yearly)
@@ -20,9 +21,13 @@ namespace = T4NQuan
 ##T4NQuan.7 - Pre Scripted Mandate Revolt Event
 ##T4NQuan.8 - Five Banner Rebelion
 ##T4NQuan.9 - Declare Five Banners Rebelion
-##T4NQuan.10 -
-##T4NQuan.11 -
-##T4NQuan.12 -
+##T4NQuan.10 - World Event stating that revolt has started
+##T4NQuan.11 - Coronation, Hou-Quan Narrative event (startup)
+##T4NQuan.12 - Rebuild the Walls, (Hou-quan narrative 2 )
+##T4NQuan.13 - Taming the Frontier, (Hou-Quan narrative 3)
+##T4NQuan.14 - 
+##T4NQuan.15 - 
+##T4NQuan.16 - Strategist / Martial edu gain (Hou-Quans)
 #####
 
 #Grant Trait to new ruler
@@ -117,156 +122,7 @@ character_event = {
 	}
 
 	immediate = {
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 0 }
-				check_variable = { which = global_Clanauthority value <= 10 }
-			}
-			add_character_modifier = {
-				name = CAmodif1
-				years = -1
-			}
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif9
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 10 }
-				check_variable = { which = global_Clanauthority value <= 20 }
-			} 	
-			add_character_modifier = {
-				name = CAmodif2
-				years = -1
-			}		
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif9
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 20 }
-				check_variable = { which = global_Clanauthority value <= 30 }
-			} 	
-			add_character_modifier = {
-				name = CAmodif3
-				years = -1
-			}		
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif9
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 30 }
-				check_variable = { which = global_Clanauthority value <= 40 }
-			} 	
-			add_character_modifier = {
-				name = CAmodif4
-				years = -1
-			}		
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif9
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 40 }
-				check_variable = { which = global_Clanauthority value <= 60 }
-			}			
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif9
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 60 }
-				check_variable = { which = global_Clanauthority value <= 70 }
-			} 	
-			add_character_modifier = {
-				name = CAmodif7
-				years = -1
-			}		
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif9
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 70 }
-				check_variable = { which = global_Clanauthority value <= 80 }
-			} 	
-			add_character_modifier = {
-				name = CAmodif8
-				years = -1
-			}		
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif9
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 80 }
-				check_variable = { which = global_Clanauthority value <= 90 }
-			} 	
-			add_character_modifier = {
-				name = CAmodif9
-				years = -1
-			}		
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif10
-		}
-		if = {
-			limit = {
-				check_variable = { which = global_Clanauthority value >= 90 }
-				check_variable = { which = global_Clanauthority value <= 100 }
-			} 	
-			add_character_modifier = {
-				name = CAmodif10
-				years = -1
-			}		
-			remove_character_modifier = CAmodif1
-			remove_character_modifier = CAmodif2
-			remove_character_modifier = CAmodif3
-			remove_character_modifier = CAmodif4
-			remove_character_modifier = CAmodif7
-			remove_character_modifier = CAmodif8
-			remove_character_modifier = CAmodif9
-		}		
+		quan_gib_ca_modifier_effect = yes
 	}
 }
 
@@ -339,7 +195,7 @@ character_event = {
 				if = {
 					limit = {
 						is_tributary = {
-							tributary_type = quan_tributary
+							type = quan_tributary
 						}				
 					}
 					change_variable = { which = CA_tributesgain value = 1 }
@@ -408,7 +264,7 @@ character_event = {
 				}
 				character_event = { id = T4NQuan.3 }
 			}
-			else_if = {
+			if = {
 				limit = {
 					check_variable = { which = global_Clanauthority value < 0 }					
 				}
@@ -510,10 +366,10 @@ narrative_event = {
 							if = {
 								limit = {
 									any_playable_ruler = {
-										limit = {
+										#limit = {
 											culture = dongfangian
 											NOT = { has_character_flag = Quan_Five_banners_Leader }
-											}
+										#	}
 										}
 									}
 									save_event_target_as = Quan_Five_Banners_leader
@@ -535,11 +391,11 @@ narrative_event = {
 							if = {
 								limit = {
 									any_playable_ruler = {
-										limit = {
+										#limit = {
 											culture = dongfangian
 											NOT = { has_character_flag = Quan_Five_banners_Leader }
 											}
-										}
+										#}
 									}
 									save_event_target_as = Quan_Five_Banners_leader
 									set_character_flag = Quan_Five_banners_Leader
@@ -560,11 +416,11 @@ narrative_event = {
 							if = {
 								limit = {
 									any_playable_ruler = {
-										limit = {
+										#limit = {
 											culture = dongfangian
 											NOT = { has_character_flag = Quan_Five_banners_Leader }
 											}
-										}
+										#}
 									}
 									save_event_target_as = Quan_Five_Banners_leader
 									set_character_flag = Quan_Five_banners_Leader
@@ -585,11 +441,11 @@ narrative_event = {
 							if = {
 								limit = {
 									any_playable_ruler = {
-										limit = {
+										#limit = {
 											culture = dongfangian
 											NOT = { has_character_flag = Quan_Five_banners_Leader }
 											}
-										}
+										#}
 									}
 									save_event_target_as = Quan_Five_Banners_leader
 									set_character_flag = Quan_Five_banners_Leader
@@ -610,11 +466,11 @@ narrative_event = {
 							if = {
 								limit = {
 									any_playable_ruler = {
-										limit = {
+										#limit = {
 											culture = dongfangian
 											NOT = { has_character_flag = Quan_Five_banners_Leader }
 											}
-										}
+										#}
 									}
 									save_event_target_as = Quan_Five_Banners_leader
 									set_character_flag = Quan_Five_banners_Leader
@@ -627,11 +483,11 @@ narrative_event = {
 						if = { #if noone will gain the five banners leader give it to Clan Bei
 							limit = {	
 								any_playable_ruler = {
-									limit = {
+									#limit = {
 										culture = dongfangian
 										NOT = { has_character_flag = Quan_Five_banners_Leader }
 										}
-									}
+									#}
 								}
 							save_event_target_as = Quan_Five_Banners_leader
 							set_character_flag = Quan_Five_banners_Leader
@@ -673,7 +529,7 @@ character_event = {
 				holder_scope = {
 					copy_title_laws = FROMFROM
 					copy_title_history = FROMFROM				
-					#o h  b o i now you fucked up
+					#o h  b o i now you are fucked
 					spawn_unit = {
 						owner = ROOT
 						province = ROOT
@@ -714,10 +570,327 @@ character_event = {
 			}
 		}
 	}
+	
+	option = {
+		any_playable_ruler = {
+			limit = {
+				ai = no
+			}
+			set_global_flag = WorldState_QuanFiveBannerRebelion
+			clr_global_flag = Quan_the_die_is_cast
+			narrative_event = { id = T4NQuan.10 }
+		}
+	}	
 }
-	
-	
-	
-	
 
+narrative_event = {
+	id = T4NQuan.10
+	is_triggered_only = yes
+	only_rulers = yes
+	ai = no
+	picture = GFX_evt_china_unrest
+	title = QuanFiveBannersWorldTit
+	desc = QuanFiveBannersWorldDesc
+	#frame =
+	
+	trigger = {
+		has_global_flag = WorldState_QuanFiveBannerRebelion
+	}
+	
+	option = {
+		trigger = {
+			has_landed_title = k_quan
+		}
+		name = QuanRebelionPrinceReaction
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				has_landed_title = k_five_banners
+				vassal_of = k_five_banners
+			}
+		}
+		name = QuanRebelionRebelReaction
+	}
+	
+	option = {
+		trigger = {
+			has_landed_title = e_earth_kingdom
+			OR = {
+				dynasty = 1366 #Hou-Ting
+				dynasty = 3972 #Hou
+				dynasty = 3971 #Hao
+			}
+		}
+		name = QuanRebelionEKReaction
+		hidden_tooltip = {
+			narrative_event = { id = T4NQuan.11 }
+		}		
+	}
+
+	option = {
+		trigger = {
+			NOR = {
+				AND = {
+					has_landed_title = e_earth_kingdom
+					OR = {
+						dynasty = 1366 #Hou-Ting
+						dynasty = 3972 #Hou
+						dynasty = 3971 #Hao
+					}
+				}
+				OR = {
+					has_landed_title = k_five_banners
+					vassal_of = k_five_banners
+				}
+				has_landed_title = k_quan
+			}
+		}
+		name = QuanRebelionWorldReaction
+	}
+}
+
+#coronation of the prince		
+narrative_event = {
+	id = T4NQuan.11
+	is_triggered_only = yes
+	only_rulers = yes
+	title = QuanHouQuanNarrativeTit1
+	desc = QuanHouQuanNarrativeDesc1
+	picture = GFX_evt_coronation_cm
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		NOT = { has_character_flag = Quan_narrative_chain_start }
+		has_landed_title = k_quan
+	}
+	
+	option = { #I will be virtuous
+		name = QuanHouQuanNarrativeOpt1a
+		set_character_flag = Quan_narrative_chain_start
+		narrative_event = { id = T4NQuan.12 years = 2 random = 120 }
+		add_trait = virtuous
+	}
+		
+}
+
+
+#Rebuilding the walls
+narrative_event = {
+	id = T4NQuan.12
+	is_triggered_only = yes
+	only_rulers = yes
+	title = QuanHouQuanNarrativeTit2
+	desc = QuanHouQuanNarrativeDesc2
+	#picture = 
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		has_landed_title = k_quan
+	}
+	
+	option = { #Rebuild Them
+		name = QuanHouQuanNarrativeOpt2a
+		narrative_event = { id = T4NQuan.13 years = 2 random = 120 }
+		treasury = -450
+		prestige = 150
+		b_crouching_tiger = {
+			add_building = militia_barracks_4
+			add_building = quan_walls_4
+		}
+		custom_tooltip = {
+			text = QuanNextYearCAGain5
+			hidden_tooltip = {	
+				change_variable = { which = global_CA_randomgain value = 5 }
+			}
+		}
+	}
+	
+	option = { #we dont need them
+		name = QuanHouQuanNarrativeOpt2b
+		narrative_event = { id = T4NQuan.13 years = 2 random = 120 }
+		custom_tooltip = {
+			text = QuanNextYearCALoss10
+			hidden_tooltip = {	
+				change_variable = { which = global_CA_randomgain value = -10 }
+			}
+		}		
+	}
+}
+
+#Taming the Frontier (Hou-Quan narrative 3)
+narrative_event = {
+	id = T4NQuan.13
+	is_triggered_only = yes
+	only_rulers = yes
+	title = QuanHouQuanNarrativeTit3
+	desc = QuanHouQuanNarrativeDesc3
+	#picture = 
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		has_landed_title = k_quan
+	}
+	
+	option = { #allow colonisation
+		name = QuanHouQuanNarrativeOpt3a
+		custom_tooltip = {
+			text = Quan_clan_dislike_warn
+			hidden_tooltip = {
+				any_tributary = {
+					opinion = {
+						modifier = opinion_deeply_insulted
+						who = ROOT
+						years = 10
+					}
+				}
+				set_global_flag = Quan_colonisation_allowed
+				narrative_event = { id = T4NQuan.14 years = 2 random = 120 }
+			}
+		}
+	}
+	
+	option = { #dissallow it 
+		name = QuanHouQuanNarrativeOpt3b
+		custom_tooltip = {
+			text = Quan_clan_like
+			hidden_tooltip = {
+				any_tributary = {
+					opinion = {
+						modifier = opinion_reasonable
+						who = ROOT
+						years = 10
+					}
+				}
+				set_global_flag = Quan_colonisation_disallowed
+				narrative_event = { id = T4NQuan.14 years = 2 random = 120 }
+			}
+		}
+	}
+}
+
+
+	
+#Strategist / Martial edu gain (Hou-Quans)
+narrative_event = {
+	id = T4NQuan.16
+	is_triggered_only = yes
+	title = QuanHouQuanBloodStratTit
+	desc = QuanHouQuanBloodStratDesc
+	#picture = 
+	
+	trigger = {
+		any_owned_bloodline = {
+			has_bloodline_flag = hou_quan
+		}
+		OR = {
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+		NOT = { has_character_flag = Quan_edu_strat_event_fired }
+	}
+	
+	option = {
+		name = QuanHouQuanBloodStratOpt
+		custom_tooltip = {
+			text = Quan_swiggity_swooty
+			hidden_tooltip = {
+				random_list = {
+					50 = { #you can get better education!
+						if = {
+							limit = {
+								trait = misguided_warrior
+							}
+							random_list = {
+								75 = {
+									remove_trait = misguided_warrior
+									add_trait = tough_soldier
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								25 = { 
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+							}
+							break 
+						}
+						if = {
+							limit = {
+								trait = tough_soldier
+							}
+							random_list = {
+								50 = { 
+									remove_trait = tough_soldier
+									add_trait = skilled_tactician	
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								50 = { set_character_flag = Quan_edu_strat_event_fired }
+							}
+							break
+						}
+						if = {
+							limit = {
+								trait = skilled_tactician
+							}
+							random_list = {
+								25 = { 
+									remove_trait = skilled_tactician
+									add_trait = brilliant_strategist	
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								75 = { set_character_flag = Quan_edu_strat_event_fired  }
+							}
+							break
+						}
+						if = { #special cases
+							limit = {
+								trait = brilliant_strategist
+								NOT = { trait = strategist }
+							}
+							random_list = {
+								75 = { 
+									add_trait = strategist
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								25 = { set_character_flag = Quan_edu_strat_event_fired }
+							}
+							break
+						}
+						if = {
+							limit = {
+								trait = brilliant_strategist
+								trait = strategist 
+							}
+							random_list = {
+								60 = { 
+									martial = 1 
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								20 = { 
+									martial = 2
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								20 = { set_character_flag = Quan_edu_strat_event_fired }
+							}
+							break
+						}
+					}
+					50 = { #you can get strategist trait!
+						random_list = {
+							50 = {
+								add_trait = strategist
+								set_character_flag = Quan_edu_strat_event_fired
+							}
+							50 = { set_character_flag = Quan_edu_strat_event_fired }
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+	
 #Random gain events

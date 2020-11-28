@@ -5,7 +5,7 @@ hou_quan = {
 	command_modifier = {
 		cavalry = 0.1
 	}
-
+	quan_hou_quan_blood_effect = 1
 	inheritance = patrilineal
 	matrilineal_override = yes
 	allow_bastards = no
@@ -26,10 +26,7 @@ hou_quan = {
 					founder = { dynasty = ROOT }
 				}
 			}
-			AND = {
-				culture_group = earth_kingdom_culture
-			}
 		}
+		culture_group = earth_kingdom_culture
 	}
-
 }

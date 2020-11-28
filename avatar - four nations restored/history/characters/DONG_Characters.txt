@@ -249,7 +249,9 @@
 		birth = yes
 	}
 	502.7.2 = {
-		death = yes
+		death = {
+			death_reason = death_battle
+		}
 		give_nickname = nick_the_weak
 	}	
 }
@@ -278,8 +280,10 @@
 		birth = yes
 	}
 	541.3.7 = {
-		death = yes
-	}	
+		death = {
+			death_reason = death_battle
+		}
+	}
 }
 
 #Prince of Quan
@@ -325,6 +329,7 @@
 		trait = princequan
 		effect = {
 			set_variable = { which = global_Clanauthority value = 50 }
+			set_character_flag = Quan_edu_strat_event_fired
 		}
 	}
 	611.1.7 = {
@@ -1461,6 +1466,7 @@
 	dynasty=5003
 	culture=dongfangian 
 	religion=earth_spirituality
+	father = 60640
 	499.3.8={ birth=yes }
 	561.6.24={ death=yes }
 }
@@ -5937,3 +5943,60 @@
 	995.10.9={ birth=yes }
 	1048.2.19={ death=yes }
 }
+
+#=====================First Ruler=====================#
+
+60640 = {
+	name = Nan
+	culture = dongfangian
+	religion = earth_spirituality
+	dynasty = 5003
+	
+	diplomacy = 2
+	martial = 8
+	intrigue = 3
+	stewardship = 6
+	learning = 1
+	
+	trait = tough_soldier
+	trait = proud
+	trait = stubborn
+	trait = shrewd
+	trait = cynical
+	
+	1.1.1 = {
+		birth = yes
+	}
+	23.3.1 = {
+		death = {
+			death_reason = death_battle
+		}
+	}
+}	
+
+#=====================Haos=====================#
+
+60641 = {
+	name = Han
+	dynasty = 3971
+	
+	culture = eastern_earth
+	religion = earth_monarchism
+	
+	trait = brilliant_strategist
+	trait = master_bender
+	trait = earthbender
+	trait = greedy
+	trait = lustful
+	trait = ambitious
+	
+	6.1.1 = {
+		birth = yes
+		trait = QuanDevNote
+	}
+	
+	60.2.23 = {
+		death = yes
+	}
+}
+	

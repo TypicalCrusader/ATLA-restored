@@ -6,9 +6,9 @@
 Quan_laws_1;Local Administration;;;;;;;;;;x
 Quan_laws_1_desc;;;;;;;;;;;x
 Quan_laws_2;Status of Council of Clans;;;;;;;;;;x
-Quan_laws_2_desc;;;;;;;;;;;x
+Quan_laws_2_desc;The Council of Clans consists of the rulers of all clans, originally serving as an advisory council. It recently gained the power to veto changes by the ruler of Quan, along with the power to implement new laws independent of their liege's influence.;;;;;;;;;;x
 Quan_laws_3;Army Law;;;;;;;;;;x
-Quan_laws_3_desc;;;;;;;;;;;x
+Quan_laws_3_desc;Traditionally, each clan of the Golden Steppe gives a portion of their warriors to the ruler of Quan, but the influx of Jian colonists inspired the princes of Quan to use these warriors as either a primary force or an elite force whose members are handpicked by the ruler.;;;;;;;;;;x
 
 
 #Admin
@@ -67,6 +67,11 @@ ca_law_gain;§G1 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
 ca_big_law_gain;§Z2 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
 ca_huge_law_gain;§Z3 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
 
+
+QuanNextYearCALoss10;You will lose §R10 §YClan Authority§! next year.;;;;;;;;;;x
+QuanNextYearCAGain5;You will gain §G5 §YClan Authority§! next year.;;;;;;;;;;x
+
+
 #Council law Block loc
 Quan_council_full_block;All §YCouncil laws§! change is §Kblocked§!;;;;;;;;;;x
 Quan_council_partial_block;§YCouncil laws§! change beside §Rgranting title and imprisonment is Blocked§!;;;;;;;;;;x
@@ -91,15 +96,46 @@ QuanYearlycheck;CA gained [Root.CAgain.GetValue], CA gained from traits [Root.CA
 QuanPreRevoltEvtTit;Whispers in the Shadows;;;;;;;;;;x
 QuanPreRevoltEvtDesc;;;;;;;;;;;x
 QuanPreRevoltEvtOpt;In the Shadows of a night a devious plot is revealed!;;;;;;;;;;x
-Quan_alea_iacta_est;§YThe die is cast... §KTHIS IS A POINT OF NO RETURN. IF YOU ARE NOT ON IRONMAN, YOU SHOULD SAVE NOW.§!;;;;;;;;;;x
+Quan_alea_iacta_est;§YThe die is cast...\n§KTHIS IS A POINT OF NO RETURN. IF YOU ARE NOT ON IRONMAN, YOU SHOULD SAVE NOW.§!;;;;;;;;;;x
 
 #Five Banner Revolt Start Event
-QuanFiveBannersTit;Five Banners Rebelion;;;;;;;;;;x
+QuanFiveBannersTit;A House Divided;;;;;;;;;;x
 QuanFiveBannersDesc;;;;;;;;;;;x
 QuanFiveBannersOpt;They will pay with their blood!;;;;;;;;;;x
 Quan_rebelion_begins;§RRebelion Begins...§!;;;;;;;;;;x
 
+#Five Banner Revolt World Event
+QuanFiveBannersWorldTit;Five Banner Rebelion;;;;;;;;;;x
+QuanFiveBannersWorldDesc;;;;;;;;;;;x
+QuanRebelionPrinceReaction;Damn those Rebels!;;;;;;;;;;x
+QuanRebelionRebelReaction;For the Clans!;;;;;;;;;;x
+QuanRebelionEKReaction;We must help our kinsman!;;;;;;;;;;x
+QuanRebelionWorldReaction;Dongfang in flames;;;;;;;;;;x
 
+#Coronation (Hou-Quan narrative 1)
+QuanHouQuanNarrativeTit1;Corronation;;;;;;;;;;x
+QuanHouQuanNarrativeDesc1;;;;;;;;;;;x
+QuanHouQuanNarrativeOpt1a;Let My rule Begin;;;;;;;;;;x
+
+
+#Rebuilding the Walls (Hou-Quan narrative 2)
+QuanHouQuanNarrativeTit2;Rebuilding the Walls;;;;;;;;;;x
+QuanHouQuanNarrativeDesc2;;;;;;;;;;;x
+QuanHouQuanNarrativeOpt2a;Rebuild them;;;;;;;;;;x
+QuanHouQuanNarrativeOpt2b;We Dont need them;;;;;;;;;;x
+
+#Taming the Frontier (Hou-Quan narrative 3)
+QuanHouQuanNarrativeTit3;Taming The Frontier?;;;;;;;;;;x
+QuanHouQuanNarrativeDesc3;;;;;;;;;;;x
+QuanHouQuanNarrativeOpt3a;Allow It;;;;;;;;;;x
+QuanHouQuanNarrativeOpt3b;Dissallow It;;;;;;;;;;x
+Quan_clan_like;Clans Like it;;;;;;;;;;x
+
+#Hou-Quan strat/better education event
+QuanHouQuanBloodStratTit;Blood of the "Shield of the East";;;;;;;;;;x
+QuanHouQuanBloodStratDesc;The Wall of Place of Hold;;;;;;;;;;x
+QuanHouQuanBloodStratOpt;My blood makes most powerful Leaders!;;;;;;;;;;x
+Quan_swiggity_swooty;§YDEV NOTE: Results Hidden for reason!§!;;;;;;;;;;x
 
 #CBs
 
@@ -107,13 +143,53 @@ Quan_rebelion_begins;§RRebelion Begins...§!;;;;;;;;;;x
 Quan_Five_Banners_CB;Five Banners Rebelion;;;;;;;;;;x
 Quan_Five_Banners_Rebelion;Five Banners Rebelion;;;;;;;;;;x
 
+#Clan Revolt
+Quan_clan_revolt_CB;Clan Revolt;;;;;;;;;;x
+Quan_clan_revolt;Clan Revolt;;;;;;;;;;x
 
 
 #Special Titles
 
 #Five Banners
 k_five_banners;Five Banners Rebelion;;;;;;;;;;x
-k_five_banners_adj;Five Bannerian;;;;;;;;;;x
+k_five_banners_adj;Five Banners;;;;;;;;;;x
 first_rider;First Rider;;;;;;;;;;x
 first_rider_FOA;My Leader;;;;;;;;;;x
 
+#Bloodlines
+
+#Hou-Quan
+quan_hou_quan_blood_effect;§YCharacters with military upbringing tend to be great §GStrategists and Leaders§!;;;;;;;;;;x
+hou_quan;Royal Blood of Hou-Quans;;;;;;;;;;x
+hou_quan_desc;Hou-Quans are descended from Hou-Quan Yan, the second son of Earth King Hou Han IV. Yan became the ruler of Quan at a young age and quelled a peasant uprising in Ji and Dongfang, eventually granted the title "Shield of the East" by his brother, Earth King Hou-Ting Jian I. Hou-Quans are renowned as warriors and tacticians, and they have widespread support from the Dongfang clans.;;;;;;;;;;x
+
+#Governments
+
+#Clan
+clan_government;Clan;;;;;;;;;;;;;
+clan_government_desc;;;;;;;;;;;;;
+
+#Clan Federation
+clan_federation;Clan Federation;;;;;;;;;;;;;
+clan_federation_desc;(insert rest of desc here) §Y“Since Lang Wang conquered Dongfang the tribes of it were one of most loyal subjects of Earth King but they always respected one thing Strength, There was one Prince which name was Bei he lost campaign against Imperial Regent and soon enough he also lost his head (...)” - Sun Wu, The Art of War§!\n;;;;;;;;;;;;
+
+
+
+
+#Buildings
+long_wang_fortress;Long Wang Fortress;;;;;;;;;;x
+long_wang_fortress_desc;Long Wang Fortress was erected along with its brother, the §YCitadel of Crouching Tiger§!, in §Y23 AU§! in the aftermath of the last battle between §YDongfang peninsula tribes§! with the §YKingdom of Ji§! forces. In §Y25 AU Hou Han§!, one of §YLong Wang§! cousins and a new Military Governor, made the land near both fortresses a capital of the §YProvince of Dongfang§! - along with granting it a new name, §YQuan§!. Long Wang Fortress, along with the §YCrouching Tiger Citadel§!, is one of most formidable defenses in the entire world. Attempting to conquer it will require even greater force and leadership than even the legendary §YChin 'The Conqueror'§! showed;;;;;;;;;;x
+
+
+
+#Wonder
+
+#Citadel of Crouching Tiger
+crouching_tiger_citadel;Citadel of Crouching Tiger;;;;;;;;;;x
+crouching_tiger_citadel_desc;Built in §Y23 AU§! along with its brother §YLong Wang Fortress§!, this citadel is a sight to behold. Located on a cliff sitting in the middle of the current city of §YQuan§!, with fifteen heavily fortified towers and six double gates, this fortress has a §Yguardian spirit§! which protects it from destruction. Only one man in history has successfully besieged the fortress, §YChin the Conqueror§!, through military might the only other time the fortress was successfully besieged was after the §YFall of Ba Sing Se§! in §Y930 AU§! during a Fire Nation Siege. The Citadel was returned to its full glory in §Y1000 AU§! by Prince §YHou-Ting Jian§! before the traitorous §YKuvira§! formed the §Y"Earth Empire".§!;;;;;;;;;;x
+
+#Traits
+
+#DevNote
+QuanDevNote;Developer Note Regarding this character;;;;;;;;;;x
+QuanDevNote_desc;This character supposed be cousin of Long Wang but since we hitted year barrier we cannot make him cousin;;;;;;;;;;x

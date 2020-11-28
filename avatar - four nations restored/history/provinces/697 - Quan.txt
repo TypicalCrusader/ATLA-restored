@@ -16,3 +16,19 @@ culture = eastern_earth
 religion = earth_spirituality
 
 #History
+23.3.1 = { build_wonder = crouching_tiger_citadel }
+25.1.23 = { set_wonder_stage = 1 }
+78.7.14 = { set_wonder_stage = 2 }
+123.9.5 = { set_wonder_stage = 3 }
+173.11.6 = { set_wonder_stage = 4 }
+150.4.9 = { set_wonder_stage = 2 }
+183.9.12 = { set_wonder_stage = 4 }
+554.70.25 = { set_wonder_stage = 1 } #After the "Ten Years Siege"
+581.12.28 = { set_wonder_stage = 2 }
+610.4.5 = { set_wonder_stage = 3 }
+650.8.11 = { set_wonder_stage = 4 }
+930.6.29 = { set_wonder_stage = 1 } #after Great Motherland War
+950.11.2 = { set_wonder_stage = 2 }
+992.1.1 = { set_wonder_stage = 3 }
+1000.3.12 = { set_wonder_stage = 4 }
+ 
