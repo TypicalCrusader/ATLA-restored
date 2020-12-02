@@ -145,7 +145,7 @@ character_event = {
 				}
 				is_tribal = yes
 				rebel = no
-				#independent = yes
+				independent = yes
 				NOT = { has_character_flag = LowCARevolter }
 			}
 			suzerain = {
@@ -333,7 +333,8 @@ narrative_event = {
 	id = T4NQuan.8
 	is_triggered_only = yes
 	only_rulers = yes
-	picture = GFX_evt_china_unrest
+	#picture = GFX_evt_china_unrest
+	picture = GFX_evt_burning_castle_hf
 	title = QuanFiveBannersTit
 	desc = QuanFiveBannersDesc
 	
@@ -350,6 +351,11 @@ narrative_event = {
 			}
 			character_event = { id = T4NQuan.3 }
 		}
+		c_tanghua = {
+			holder_scope = {
+				save_event_target_as = Quan_Five_Banners_leader
+			}
+		}
 	}
 	
 	option = {
@@ -360,144 +366,33 @@ narrative_event = {
 				c_nayong = {
 					holder_scope = {
 						set_character_flag = Quan_Five_banners_member
-						random_list = {
-						80 = { }
-						20 = { 
-							if = {
-								limit = {
-									any_playable_ruler = {
-										#limit = {
-											culture = dongfangian
-											NOT = { has_character_flag = Quan_Five_banners_Leader }
-										#	}
-										}
-									}
-									save_event_target_as = Quan_Five_Banners_leader
-									set_character_flag = Quan_Five_banners_Leader
-									event_target:Quan_Five_Banners_leader = {
-										character_event = { id = T4NQuan.9 }
-									}																		
-								}
-							}
-						}
 					}
 				}
 				c_qijing = {
 					holder_scope = {
 						set_character_flag = Quan_Five_banners_member
-						random_list = {
-						70 = { }
-						30 = { 
-							if = {
-								limit = {
-									any_playable_ruler = {
-										#limit = {
-											culture = dongfangian
-											NOT = { has_character_flag = Quan_Five_banners_Leader }
-											}
-										#}
-									}
-									save_event_target_as = Quan_Five_Banners_leader
-									set_character_flag = Quan_Five_banners_Leader
-									event_target:Quan_Five_Banners_leader = {
-										character_event = { id = T4NQuan.9 }
-									}																		
-								}
-							}
-						}
 					}
 				}
 				c_jejin = {
 					holder_scope = {
 						set_character_flag = Quan_Five_banners_member
-						random_list = {
-						70 = { }
-						30 = { 
-							if = {
-								limit = {
-									any_playable_ruler = {
-										#limit = {
-											culture = dongfangian
-											NOT = { has_character_flag = Quan_Five_banners_Leader }
-											}
-										#}
-									}
-									save_event_target_as = Quan_Five_Banners_leader
-									set_character_flag = Quan_Five_banners_Leader
-									event_target:Quan_Five_Banners_leader = {
-										character_event = { id = T4NQuan.9 }
-									}																		
-								}
-							}
-						}
 					}
 				}
 				c_tangong = {
 					holder_scope = {
 						set_character_flag = Quan_Five_banners_member
-						random_list = {
-						90 = { }
-						10 = { 
-							if = {
-								limit = {
-									any_playable_ruler = {
-										#limit = {
-											culture = dongfangian
-											NOT = { has_character_flag = Quan_Five_banners_Leader }
-											}
-										#}
-									}
-									save_event_target_as = Quan_Five_Banners_leader
-									set_character_flag = Quan_Five_banners_Leader
-									event_target:Quan_Five_Banners_leader = {
-										character_event = { id = T4NQuan.9 }
-									}																		
-								}
-							}
-						}
 					}
 				}
 				c_tanghua = {
 					holder_scope = {
 						set_character_flag = Quan_Five_banners_member
-						random_list = {
-						30 = { }
-						70 = { 
-							if = {
-								limit = {
-									any_playable_ruler = {
-										#limit = {
-											culture = dongfangian
-											NOT = { has_character_flag = Quan_Five_banners_Leader }
-											}
-										#}
-									}
-									save_event_target_as = Quan_Five_Banners_leader
-									set_character_flag = Quan_Five_banners_Leader
-									event_target:Quan_Five_Banners_leader = {
-										character_event = { id = T4NQuan.9 }
-									}									
-								}
-							}
+						set_character_flag = Quan_Five_banners_Leader
+						event_target:Quan_Five_Banners_leader = {
+							character_event = { id = T4NQuan.9 }
 						}
-						if = { #if noone will gain the five banners leader give it to Clan Bei
-							limit = {	
-								any_playable_ruler = {
-									#limit = {
-										culture = dongfangian
-										NOT = { has_character_flag = Quan_Five_banners_Leader }
-										}
-									#}
-								}
-							save_event_target_as = Quan_Five_Banners_leader
-							set_character_flag = Quan_Five_banners_Leader
-							event_target:Quan_Five_Banners_leader = {
-								character_event = { id = T4NQuan.9 }
-							}
-						}	
-					}
+					}	
 				}				
-			}
+			}				
 		}
 	}
 }
@@ -527,8 +422,8 @@ character_event = {
 			}
 			k_five_banners = {
 				holder_scope = {
-					copy_title_laws = FROMFROM
-					copy_title_history = FROMFROM				
+					copy_title_laws = PREV
+					copy_title_history = PREV			
 					#o h  b o i now you are fucked
 					spawn_unit = {
 						owner = ROOT
@@ -666,11 +561,11 @@ narrative_event = {
 		has_landed_title = k_quan
 	}
 	
-	option = { #I will be virtuous
+	option = { #Let My Rule Begin
 		name = QuanHouQuanNarrativeOpt1a
 		set_character_flag = Quan_narrative_chain_start
 		narrative_event = { id = T4NQuan.12 years = 2 random = 120 }
-		add_trait = virtuous
+		prestige = 50
 	}
 		
 }
@@ -778,7 +673,7 @@ narrative_event = {
 	is_triggered_only = yes
 	title = QuanHouQuanBloodStratTit
 	desc = QuanHouQuanBloodStratDesc
-	#picture = 
+	picture = GFX_evt_china_invades
 	
 	trigger = {
 		any_owned_bloodline = {
@@ -814,7 +709,7 @@ narrative_event = {
 									set_character_flag = Quan_edu_strat_event_fired
 								}
 							}
-							break 
+							break = yes
 						}
 						if = {
 							limit = {
@@ -828,7 +723,7 @@ narrative_event = {
 								}
 								50 = { set_character_flag = Quan_edu_strat_event_fired }
 							}
-							break
+							break = yes
 						}
 						if = {
 							limit = {
@@ -842,7 +737,7 @@ narrative_event = {
 								}
 								75 = { set_character_flag = Quan_edu_strat_event_fired  }
 							}
-							break
+							break = yes
 						}
 						if = { #special cases
 							limit = {
@@ -856,7 +751,7 @@ narrative_event = {
 								}
 								25 = { set_character_flag = Quan_edu_strat_event_fired }
 							}
-							break
+							break = yes
 						}
 						if = {
 							limit = {
@@ -874,7 +769,7 @@ narrative_event = {
 								}
 								20 = { set_character_flag = Quan_edu_strat_event_fired }
 							}
-							break
+							break = yes
 						}
 					}
 					50 = { #you can get strategist trait!
@@ -891,6 +786,45 @@ narrative_event = {
 		}
 	}
 }
+
+character_event = {
+	id = T4NQuan.17
+	is_triggered_only = yes
+	only_rulers = yes
+	hide_from = yes
+	desc = QuanColonisation
+	picture = GFX_evt_powerful_tower_wol
+	
+	trigger = {
+		has_landed_title = k_quan
+	}
+	
+	option = {
+		name = QuanChoosenCastle
+		
+		event_target:Quan_colonised_prov = {
+			location = {
+				build_holding = {
+					type = castle
+					holder = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = QuanChoosenCity
+		
+		event_target:Quan_colonised_prov = {
+			location = {
+				build_holding = {
+					type = city
+					holder = ROOT
+				}
+			}
+		}
+	}
+}		
 
 	
 #Random gain events

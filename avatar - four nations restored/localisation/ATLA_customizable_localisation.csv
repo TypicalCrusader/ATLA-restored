@@ -56,3 +56,7 @@ GetColorClanAuthority_green;is §G[global_Clanauthority.GetValue]§!;;;;;;;;;;;;;x
 GetColorClanAuthority_yellow;is §Y[global_Clanauthority.GetValue]§!;;;;;;;;;;;;;x
 GetColorClanAuthority_red;is §R[global_Clanauthority.GetValue]§!;;;;;;;;;;;;;x
 GetQuanHolderTitleName_fallback;Grand Duke;;;;;;;;;;;;;x
+GetAgeGeneral_child;Child;;;;;;;;;;;;;x
+GetAgeGeneral_young;Young;;;;;;;;;;;;;x
+GetAgeGeneral_middleaged;Middle Aged;;;;;;;;;;;;;x
+GetAgeGeneral_old;Old;;;;;;;;;;;;;x
