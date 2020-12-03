@@ -333,7 +333,6 @@ narrative_event = {
 	id = T4NQuan.8
 	is_triggered_only = yes
 	only_rulers = yes
-	#picture = GFX_evt_china_unrest
 	picture = GFX_evt_burning_castle_hf
 	title = QuanFiveBannersTit
 	desc = QuanFiveBannersDesc
@@ -424,22 +423,27 @@ character_event = {
 				holder_scope = {
 					copy_title_laws = PREV
 					copy_title_history = PREV			
-					#o h  b o i now you are fucked
-					spawn_unit = {
-						owner = ROOT
-						province = ROOT
-						home = ROOT			
-						
-						troops = {
-							archers = { 1000 1000 }
-							light_infantry = { 1500 1500 }
-							light_cavalry = { 2500 2500 }
+					if = {
+						limit = {
+							has_game_rule = 
 						}
+						#o h  b o i now you are fucked
+						spawn_unit = {
+							owner = ROOT
+							province = ROOT
+							home = ROOT			
+							
+							troops = {
+								archers = { 1000 1000 }
+								light_infantry = { 1500 1500 }
+								light_cavalry = { 2500 2500 }
+							}
 
-						attrition = 1.0
-						disband_on_peace = yes
-						maintenance_multiplier = 0.5
-					}						
+							attrition = 1.0
+							disband_on_peace = yes
+							maintenance_multiplier = 0.5
+						}
+					}
 				}
 			}	
 		}
@@ -666,6 +670,61 @@ narrative_event = {
 }
 
 
+
+
+#Kinsmanship
+narrative_event = {
+	id = T4NQuan.15
+	is_triggered_only = yes
+	only_rulers = yes
+	hide_from = no
+	title = QuanKinsmanshipTit
+	desc = QuanKinsmanshipDesc
+	picture = GFX_evt_diplomat_hf
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		has_landed_title = k_quan		
+	}
+
+	
+	#We shall rejoin our Kinsman!
+	option = {
+		name = QuanKinsmanshipRejoin
+
+		e_earth_kingdom = {
+			holder_scope = {
+				make_tributary = {
+					who = ROOT
+					percentage = 0.2
+					tributary_type = earth_kingdom_state_tributary #they are first and only ""Canon"" state of EK
+				}
+			}
+			opinion = {
+				modifier = opinion_reasonable
+				who = ROOT
+				years = 100
+			}				
+		}
+	}
+	
+	#Who need Family Bonds anyway?
+	option = {
+		name = QuanKinsmanshipReject
+		add_trait = unjust
+		add_trait = cynical
+		e_earth_kingdom = {
+			holder_scope = {
+				opinion = {
+					modifier = opinion_deeply_insulted
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}
+}
+	
 	
 #Strategist / Martial edu gain (Hou-Quans)
 narrative_event = {

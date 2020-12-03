@@ -219,3 +219,17 @@ TRIBUTARY_QUAN_NAME;Clan;;;;;;;;;;x
 TRIBUTARY_QUAN_PLURAL;Clans;;;;;;;;;;x
 SUZERAIN_QUAN_NAME;[GetQuanHolderTitleName];;;;;;;;;;x
 TRIBUTARY_QUAN_TRIBUTE;Tribute;;;;;;;;;;x
+
+
+#Rule
+RULE_GROUP_FOURNATIONS;§YFour Nations§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_amount_tit;§YFour Nations§!: Five Banners Rebelion;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_amount_desc;You can choose amount of troops that FBR will get.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_normal;§YNormal§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_normal_desc;FBR will spawn with normal amount of troops.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_hard;§RHard§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_hard_desc;FBR will spawn with 2 times of their normal forces.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_very_hard;§RVery Hard§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_very_hard_desc;FBR will spawn with 4 times of their normal forces.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_i_want_die;§RI Want To Die§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_i_want_die_desc;§KIts not even remotely fair...§!;;;;;;;;;;x
