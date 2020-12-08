@@ -885,5 +885,30 @@ character_event = {
 	}
 }		
 
+#Day of Reconing
+narrative_event = {
+	id = T4NQuan.18
+	only_rulers = yes
+	is_triggered_only = yes
+	title = QuanMorningTit
+	desc = QuanMorningDesc
+	
+	trigger = {
+		has_landed_title = k_quan
+		has_global_flag = Quan_QuanWonCivilWar
+	}
+	
+	#I will be better man/woman than them
+	option = {
+		name = QuanMorningOpt1
+	}
+	
+	#off with their heads
+	option = {
+		name = QuanMorningOpt2
+	}
+}	
+
+	
 	
 #Random gain events

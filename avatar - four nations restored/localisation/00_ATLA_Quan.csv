@@ -140,6 +140,11 @@ QuanColonisation;Oi Mate choose a holding type;;;;;;;;;;x
 QuanChoosenCastle;Castle;;;;;;;;;;x
 QuanChoosenCity;City;;;;;;;;;;x
 
+#Day of Reconing
+QuanMorningTit;Day of Reconing;;;;;;;;;;x
+QuanMorningDesc;
+QuanMorningOpt1;
+QuanMorningOpt2;
 
 #CBs
 
