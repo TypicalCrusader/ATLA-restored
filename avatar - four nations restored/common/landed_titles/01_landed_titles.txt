@@ -3285,6 +3285,11 @@ e_earth_kingdom = {
 
 		capital = 261 # c_gaolan
 		culture = southern_earth
+		
+		title = special_king
+		title_female = special_queen
+		
+		short_name = yes		
 
 		allow = {
 			hidden_tooltip = {
@@ -4804,7 +4809,7 @@ e_earth_kingdom = {
 		color2 = { 255 255 255 }
 
 		capital = 340 # c_gaoling
-		culture = southern_earth
+		culture = southern_earth		
 
 		allow = {
 			hidden_tooltip = {
@@ -4819,6 +4824,8 @@ e_earth_kingdom = {
 			color = { 51 98 17 }
 			color2 = { 255 255 255 }
 			capital = 340 # c_gaoling
+
+			short_name = yes
 
 			c_gaoling = { # 340
 				color = { 41 108 12 }
@@ -5119,6 +5126,11 @@ e_earth_kingdom = {
 		culture = southern_earth
 		fire_nation = "New Ozai"
 		colonial = "New Ozai"
+		
+		title = special_king
+		title_female = special_queen
+		
+		short_name = yes
 
 		allow = {
 			hidden_tooltip = {
