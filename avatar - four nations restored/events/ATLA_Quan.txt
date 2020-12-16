@@ -25,9 +25,18 @@ namespace = T4NQuan
 ##T4NQuan.11 - Coronation, Hou-Quan Narrative event (startup)
 ##T4NQuan.12 - Rebuild the Walls, (Hou-quan narrative 2 )
 ##T4NQuan.13 - Taming the Frontier, (Hou-Quan narrative 3)
-##T4NQuan.14 - 
-##T4NQuan.15 - 
+##T4NQuan.14 - Reform Fail (Hou-Quan narrative 4)
+##T4NQuan.15 - Kinsmanship (Hou-Quan narrative 5)
 ##T4NQuan.16 - Strategist / Martial edu gain (Hou-Quans)
+##T4NQuan.17 - Colony Event
+##T4NQuan.18 - Day of The Reconing (pt.1) (Quan wins)
+##T4NQuan.19 - Day of The Reconing (pt.2)
+##T4NQuan.20 - Day of The Reconing (pt.3)
+##T4NQuan.21 - Retribution (pt.1) (FBR wins)
+##T4NQuan.22 - Retribution (pt.2)
+##T4NQuan.23 - Retribution (pt.3)
+###Start of Random CA gain/lose events
+##
 #####
 
 #Grant Trait to new ruler
@@ -287,7 +296,8 @@ narrative_event = {
 	id = T4NQuan.7
 	only_rulers = yes
 	is_triggered_only = yes
-	
+	#window = ChonkerEventWindowNarrative
+	#background = GFX_Chonker
 	picture = GFX_evt_suspicious_noble
 	border = GFX_event_narrative_frame_intrigue
 	title = QuanPreRevoltEvtTit
@@ -423,10 +433,10 @@ character_event = {
 				holder_scope = {
 					copy_title_laws = PREV
 					copy_title_history = PREV			
-					if = {
-						limit = {
-							has_game_rule = 
-						}
+					#if = {
+						#limit = {
+							#has_game_rule = 
+						#}
 						#o h  b o i now you are fucked
 						spawn_unit = {
 							owner = ROOT
@@ -443,7 +453,7 @@ character_event = {
 							disband_on_peace = yes
 							maintenance_multiplier = 0.5
 						}
-					}
+					#}
 				}
 			}	
 		}
@@ -575,7 +585,7 @@ narrative_event = {
 }
 
 
-#Rebuilding the walls
+#Decay
 narrative_event = {
 	id = T4NQuan.12
 	is_triggered_only = yes
@@ -595,7 +605,7 @@ narrative_event = {
 		treasury = -450
 		prestige = 150
 		b_crouching_tiger = {
-			add_building = militia_barracks_4
+			#add_building = militia_barracks_4
 			add_building = quan_walls_4
 		}
 		custom_tooltip = {
@@ -892,23 +902,238 @@ narrative_event = {
 	is_triggered_only = yes
 	title = QuanMorningTit
 	desc = QuanMorningDesc
+	picture = GFX_evt_china_rebel_general
 	
 	trigger = {
 		has_landed_title = k_quan
 		has_global_flag = Quan_QuanWonCivilWar
 	}
 	
-	#I will be better man/woman than them
+	#Attack [Quan_Five_Banners_leader.GetFirstName] with full force
 	option = {
 		name = QuanMorningOpt1
+		set_character_flag = killed_FBR_leader
+		event_target:Quan_Five_Banners_leader = {
+			death = {
+				death_reason = death_murder_beheading
+				killer = ROOT
+			}
+		}
+		narrative_event = { id = T4NQuan.19 } #Day of Reconing pt.2
 	}
 	
-	#off with their heads
+	#Attack the rock
 	option = {
 		name = QuanMorningOpt2
+		set_character_flag = attacked_rock
+		narrative_event = { id = T4NQuan.19 } #Day of Reconing pt.2
 	}
 }	
 
+#Day of Reconing pt.2
+narrative_event = {
+	id = T4NQuan.19
+	only_rulers = yes
+	is_triggered_only = yes
 	
+	picture = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		picture = GFX_evt_cornered_duel_hf
+	}
+	picture = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		picture = GFX_evt_judged_by_ruler
+	}	
+	
+	title = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		text = QuanReconingTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		text = QuanJusticeTit
+	}
+	
+	desc = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		text = QuanReconingDesc
+	}
+	desc = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		text = QuanJusticeDesc
+	}
+	
+	trigger = {
+		has_landed_title = k_quan
+		has_global_flag = Quan_QuanWonCivilWar
+	}
+
+	#Oh Ancestors what have i done?!
+	option = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		name = QuanReconingRegret
+		set_character_flag = Quan_ReconingRegret
+		narrative_event = { id = T4NQuan.20 days = 1 }
+	}
+	
+	#Eh one traitor down
+	option = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		name = QuanReconingArbitrary
+		narrative_event = { id = T4NQuan.20 days = 1 }
+		set_character_flag = Quan_ReconingArbitrary
+	}
+	
+	#Let one of them to become advisor
+	option = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		name = QuanJusticeAdvisor
+		set_character_flag = Quan_JusticeAdvisor
+		narrative_event = { id = T4NQuan.20 }
+	}
+	
+	#expel them from the golden steppe
+	option = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		name = QuanJusticeExile
+		set_character_flag = Quan_JusticeExile
+		narrative_event = { id = T4NQuan.20 }
+	}
+}
+
+#Day of Reconing (pt.3)
+narrative_event = {
+	id = T4NQuan.20
+	is_triggered_only = yes
+	only_rulers = yes
+
+	trigger = {
+		has_landed_title = k_quan
+		has_global_flag = Quan_QuanWonCivilWar
+	}
+	
+	title = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}
+		text = QuanRegretEvtTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = Quan_ReconingArbitrary
+		}	
+		text = QuanArbitraryEvtTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}	
+		text = QuanAdvisorEvtTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}	
+		text = QuanExileEvtTit
+	}
+
+	desc = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}
+		text = QuanRegretEvtDesc		
+	}
+	desc = {
+		trigger = {
+			has_character_flag = Quan_ReconingArbitrary
+		}	
+		text = QuanArbitraryEvtDesc	
+	}
+	desc = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}	
+		text = QuanAdvisorEvtDesc		
+	}
+	desc = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}	
+		text = QuanExileEvtDesc	
+	}
+
+	picture = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}
+		picture = GFX_evt_bloody_knife_hf
+	}
+	picture = {
+		trigger = {
+			has_character_flag = Quan_ReconingArbitrary
+		}	
+		picture = GFX_evt_king_Lunatic
+	}
+	picture = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}
+		picture = GFX_evt_meeting_hf
+	}
+	picture = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}	
+		picture = GFX_evt_riders_night_hf
+	}
+	
+	option = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}	
+		name = QuanDeath
+	}
+	option = {
+		trigger = {
+			OR = {
+				has_character_flag = Quan_ReconingArbitrary
+				has_character_flag = Quan_ReconingRegret
+			}
+		}		
+		name = QuanMoveOn
+	}
+	option = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}	
+		name = QuanAdvisor
+	}
+	option = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}		
+		name = QuanExile
+	}	
+}
 	
 #Random gain events

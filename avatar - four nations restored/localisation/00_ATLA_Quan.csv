@@ -142,9 +142,17 @@ QuanChoosenCity;City;;;;;;;;;;x
 
 #Day of Reconing
 QuanMorningTit;Day of Reconing;;;;;;;;;;x
-QuanMorningDesc;
-QuanMorningOpt1;
-QuanMorningOpt2;
+QuanMorningDesc;;;;;;;;;;;x
+QuanMorningOpt1;Attack [Quan_Five_Banners_leader.GetFirstNameWithNick] in your anger;;;;;;;;;;x
+QuanMorningOpt2;Attack nearby rock;;;;;;;;;;x
+
+#Day of Reconing pt.2
+QuanReconingTit;Reconing;;;;;;;;;;x
+QuanJusticeTit;Justice;;;;;;;;;;x
+QuanReconingDesc;;;;;;;;;;;x
+QuanJusticeDesc;;;;;;;;;;;x
+QuanReconingRegret;Oh Ancestors what have i done!;;;;;;;;;;x
+QuanReconingArbitrary;Eh one traitor down;;;;;;;;;;x
 
 #CBs
 
@@ -219,7 +227,7 @@ TRIBUTARY_QUAN_TRIBUTE;Tribute;;;;;;;;;;x
 
 #Rule
 RULE_GROUP_FOURNATIONS;§YFour Nations§!;;;;;;;;;;x
-T4N_Quan_FBR_troops_spawn_amount_tit;§YFour Nations§!: Five Banners Rebelion;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_amount_tit;§RFour Nations§!: Five Banners Rebelion;;;;;;;;;;x
 T4N_Quan_FBR_troops_spawn_amount_desc;You can choose amount of troops that FBR will get.;;;;;;;;;;x
 T4N_Quan_FBR_troops_spawn_normal;§YNormal§!;;;;;;;;;;x
 T4N_Quan_FBR_troops_spawn_normal_desc;FBR will spawn with normal amount of troops.;;;;;;;;;;x

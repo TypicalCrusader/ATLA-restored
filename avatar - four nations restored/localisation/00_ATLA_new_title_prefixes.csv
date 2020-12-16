@@ -511,6 +511,8 @@ SUN_QUEEN;Sun Queen;A;A;;A;;;;;;;;;x
 NAVY_ADMIRAL;Admiral;A;A;;A;;;;;;;;;x
 quan_holder_male;[GetQuanHolderTitleName];;;;;;;;x
 quan_holder_female;[GetQuanHolderTitleName];;;;;;;;x
+first_rider;Khan;;;;;;;;x
+first_rider_fem;Khan;;;;;;;;x
 
 #Holders foas
 GREAT_UNITER_FOA;Great Uniter;A;A;;A;;;;;;;;;x

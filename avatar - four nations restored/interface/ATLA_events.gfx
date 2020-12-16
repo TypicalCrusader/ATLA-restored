@@ -879,4 +879,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/chin_war.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "GFX_evt_chin_defeat"
+		texturefile = "gfx/event_pictures/chin_defeat.dds"
+		allwaystransparent = yes
+	}
 }
