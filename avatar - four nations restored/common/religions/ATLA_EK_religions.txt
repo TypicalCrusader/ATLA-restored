@@ -1,0 +1,1049 @@
+#####                                          #####
+##                                                ##
+##             Earth Kingdom Religions            ##
+##  Written for T4N - Restored by TypicalCrusader ##
+##                                                ##
+#####                                          #####
+
+earth_spiritualism_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	hostile_within_group = yes
+	color = { 0.8 0.4 0.0 }
+	
+	ai_convert_same_group = 1
+	ai_convert_other_group = 2	# always try to convert
+
+	earth_spirituality_reformed = {
+		icon = 1
+		heresy_icon = 2
+		color = { 0.1 0.52 0.04 }
+		
+		allow_in_ruler_designer = no
+		
+		scripture_name = THE_LORE
+		priest_title = EARTH_SAGE
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_HEI_BAI
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM
+		}
+		
+		piety_name = SPIRITUALITY
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		intermarry = earth_monarchism
+		intermarry = earth_spirituality
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = way_of_chin
+		intermarry = unificationism
+		intermarry = followers_of_kyoshi
+	}
+	
+	earth_spirituality = {
+		icon = 1
+		heresy_icon = 2
+		color = { 0.1 0.52 0.04 }
+		
+		female_temple_holders = yes
+		can_demand_religious_conversion = yes		
+		
+		reformed = earth_spirituality_reformed
+		
+		scripture_name = THE_LORE
+		priest_title = EARTH_SAGE
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_HEI_BAI
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM
+		}
+		
+		aggression = 2
+		piety_name = SPIRITUALITY
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		intermarry = earth_monarchism
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = way_of_chin
+		intermarry = unificationism
+		intermarry = followers_of_kyoshi
+	}
+	
+	northern_earth_spirituality = {
+		icon = 1
+		heresy_icon = 2
+		parent = earth_spirituality
+		color = { 0.91 0.72 0.13 }
+		
+		character_modifier = {
+			fire_religions_opinion  = 30
+			religion_flex = 0.2
+		}
+		
+		female_temple_holders = yes
+		can_demand_religious_conversion = yes	
+		priests_can_marry = yes
+		feminist = yes 
+		can_retire_to_monastery = yes
+		
+		scripture_name = THE_NORTHERN_LORE
+		priest_title = EARTH_SAGE
+		
+		god_names = {
+			GOD_THE_SUN GOD_THE_FIRE_SPIRIT GOD_THE_SPIRITS GOD_THE_EMBER GOD_THE_PHOENIX GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_HEI_BAI
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM
+		}
+		
+		aggression = 2
+		piety_name = SPIRITUALITY
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		intermarry = fire_spirituality
+		intermarry = fire_spirituality_reformed
+		intermarry = fire_nation_imperialism
+		intermarry = northern_earth_spirituality
+		intermarry = earth_monarchism
+		intermarry = the_great_serpent
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = way_of_chin
+		intermarry = unificationism
+		intermarry = followers_of_kyoshi
+	}		
+	
+	the_great_serpent_reformed = {
+		icon = 3
+		heresy_icon = 4
+		color = { 95 163 145 }
+		
+		allow_in_ruler_designer = no
+		
+		piety_name = SPIRITUALITY_SERPENT
+		
+		scripture_name = THE_LORE
+		priest_title = EARTH_SAGE
+
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_THE_SERPENT
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_THE_SERPENT
+		}
+
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = earth_monarchism
+		intermarry = the_great_serpent
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = way_of_chin
+		intermarry = unificationism	
+		intermarry = followers_of_kyoshi
+	}
+		
+	the_great_serpent = {
+		icon = 3
+		heresy_icon = 4
+		color = { 95 163 145 }
+		
+		piety_name = SPIRITUALITY_SERPENT
+		
+		reformed = the_great_serpent_reformed
+		
+		character_modifier = {
+			religion_flex = 0.1
+			monthly_character_prestige = 0.25
+			demesne_size = 1
+		}
+		scripture_name = THE_LORE
+		priest_title = EARTH_SAGE
+		
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		allow_rivermovement = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_THE_SERPENT
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_THE_SERPENT
+		}
+		
+		aggression = 4
+		
+		allow_looting = yes
+		cousin_marriage = no
+		psc_marriage = no
+		seafarer = yes
+		short_reign_opinion_year_mult = 3
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = earth_monarchism
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = way_of_chin
+		intermarry = unificationism
+		intermarry = followers_of_kyoshi		
+	}
+	
+	children_of_si_wong_reformed = {
+		icon = 15
+		heresy_icon = 15
+		color = { 220 233 38 }
+		
+		graphical_culture = muslimgfx
+		allow_in_ruler_designer = no
+		
+		scripture_name = THE_LIBRARY_RECORDS
+		priest_title = SAND_SAGE
+		piety_name = SPIRITUALITY
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS
+		}
+		
+		high_god_name = GOD_THE_SPIRITS # GOD_WAN_SHI_TONG
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVIL_GOD_BUZZARD_WASPS
+		}
+
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 0
+
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = earth_monarchism
+		intermarry = children_of_si_wong
+		intermarry = way_of_chin
+		intermarry = unificationism
+		intermarry = followers_of_kyoshi
+	}
+
+	children_of_si_wong = { # Spiritualist
+		icon = 15
+		heresy_icon = 15
+		reformed = children_of_si_wong_reformed
+		color = { 220 233 38 }
+		
+		graphical_culture = muslimgfx
+		
+		scripture_name = THE_LIBRARY_RECORDS
+		priest_title = SAND_SAGE
+		
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		allow_looting = yes
+		defensive_attrition = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS
+		}
+		
+		high_god_name = GOD_THE_SPIRITS # GOD_WAN_SHI_TONG
+		
+		piety_name = SPIRITUALITY
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVIL_GOD_BUZZARD_WASPS
+		}
+		
+		aggression = 4
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 0
+		
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = earth_monarchism
+		intermarry = children_of_si_wong_reformed
+		intermarry = way_of_chin
+		intermarry = unificationism
+		intermarry = followers_of_kyoshi		
+	}	
+}
+
+earth_imperialism_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	hostile_within_group = yes
+	color = { 56 71 57 }
+	
+	ai_convert_same_group = 1
+	ai_convert_other_group = 2	# always try to convert
+
+	earth_monarchism = {
+		icon = 5
+		heresy_icon = 6
+		color = { 23 64 25 }
+		scripture_name = THE_LORE
+		priest_title = EARTH_SAGE
+		
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		can_grant_divorce = no
+		women_can_take_consorts = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_EXALTED_MONARCH
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM
+		}
+		
+		investiture = yes
+		can_excommunicate = yes
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		cousin_marriage = yes
+		landed_kin_prestige_bonus = yes
+		
+		max_consorts = 3
+		piety_name = SPIRITUALITY
+		
+		aggression = 1.5
+		
+		character_modifier = {
+			vanguard_opinion = -100
+			imperial_cult_opinion = -100
+			badgermole_cult_opinion = 10 #they like them	
+			way_of_chin_opinion = -100
+			unificationism_opinion = -100
+		}
+		
+		#Intermarry
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_imperialism
+		intermarry = followers_of_kyoshi
+	}
+	
+	earth_imperialism = { #No Religous Head
+		icon = 5
+		heresy_icon = 6
+		color = { 49 132 56 }
+
+		parent = earth_monarchism
+		
+		scripture_name = ROYAL_EDICT
+		priest_title = EARTH_SAGE
+		piety_name = LOYALITY
+
+		peace_prestige_loss = yes
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		can_grant_divorce = no		
+		can_excommunicate = no
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_EXALTED_MONARCH
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM
+		}
+		
+		unit_modifier  = {
+			morale_offence 0.05
+			morale_offence 0.025
+			defence = 0.1
+		}
+		aggression = 4
+		
+		#Intermarry
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_monarchism
+		intermarry = way_of_chin
+		intermarry = unificationism
+	}
+	
+	imperial_cult = {
+		icon = 5
+		heresy_icon = 6
+		color = { 49 132 56 }
+
+		parent = earth_monarchism
+		
+		scripture_name = IMPERIAL_EDICT
+		priest_title = EARTH_SAGE
+		piety_name = FEALTY
+		crusade_name = IMPERIAL_MARCH
+
+		peace_prestige_loss = yes
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		can_grant_divorce = no		
+		can_excommunicate = no
+		defensive_attrition = yes
+		hard_to_convert = yes #Their Faith in God Monarch is unending
+		can_excommunicate = yes
+		can_call_crusade = yes
+		#can_have_antipopes = yes
+		
+		#They follow in footsteps of God Monarch
+		women_can_take_consorts = yes
+		max_consorts = 3 
+		
+		god_names = {
+			GOD_EARTH GOD_LONG_WANG GOD_CURRENT_MONARCH GOD_EARTH_KING GOD_EARTH_QUEEN GOD_JIAN GOD_HOU
+		}
+		
+		high_god_name = GOD_EXALTED_MONARCH
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM GOD_CHIN GOD_TING
+		}
+		
+		aggression = 3.5
+		ai_convert_same_group = 2
+		
+		character_modifier = {
+			vanguard_opinion = -20 #Curious Case they only dislike eachother
+			earth_monarchism_opinion = -100
+			badgermole_cult_opinion = -100
+			way_of_chin_opinion = -100
+			unificationism_opinion = -100
+		}
+		
+		#Intermarry
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_imperialism
+		intermarry = vanguard #only religion with intermarry with them
+	}	
+	
+	badgermole_cult = {
+		icon = 5
+		heresy_icon = 6
+		color = { 112 109 59 }
+		
+		parent = earth_monarchism
+		
+		scripture_name = THE_BAGERMOLE_SCRIPT
+		priest_title = EARTH_SAGE
+		
+		god_names = {
+			GOD_EARTH GOD_LONG_WANG GOD_JIAN GOD_HOU
+		}
+		
+		high_god_name = GOD_THE_BADGERMOLE_THRONE
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM GOD_CHIN GOD_TING
+		}	
+		
+		priests_can_marry = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes	
+		can_excommunicate = yes		
+		defensive_attrition = yes
+		pacifist = yes
+		feminist = yes
+		
+		women_can_take_consorts = yes
+		max_consorts = 3
+		
+		character_modifier = {
+			earth_monarchism_opinion = 10 #they like them
+			imperial_cult_opinion = -100
+			vanguard_opinion = -100
+			way_of_chin_opinion = -20
+			unificationism_opinion = -15
+		}
+		
+		aggression = 1
+		ai_convert_same_group = 0
+		
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_monarchism	
+		intermarry = earth_imperialism
+		intermarry = way_of_chin
+		intermarry = unificationism
+		intermarry = followers_of_kyoshi
+	}
+
+	vanguard = { #Oh boi, Super Fringe Radical Group beliving that only they are worthy basking in God Monarch Light
+		icon = 5
+		heresy_icon = 6
+		color = { 150 168 16 }
+
+		parent = earth_monarchism
+		
+		scripture_name = THE_TRUTH
+
+		max_wives = 3
+
+		god_names = {
+			GOD_THE_BADGERMOLE_THRONE GOD_LONG_WANG GOD_EARTH_QUEEN GOD_JIAN GOD_EARTH_KING GOD_CURRENT_MONARCH
+		}
+		
+		high_god_name = GOD_EXALTED_MONARCH
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_THE_EARTH GOD_CHIN GOD_TING
+		}
+		
+		raised_vassal_opinion_loss =yes
+		peace_piety_gain = 1.0
+		priests_can_marry = yes
+		defensive_attrition = yes
+		attacking_same_religion_piety_loss = yes
+		hard_to_convert = yes
+		can_call_crusade = yes
+		can_grant_invasion_cb = yes
+		can_demand_religious_conversion = yes
+		peace_prestige_loss = yes
+		allow_looting = yes
+		uses_jizya_tax = yes
+		
+		unit_modifier = {
+			defence = 0.05
+			morale_offence = 0.1
+		}
+		
+		ai_convert_same_group = 2
+		crusade_name = LIBERATION
+		piety_name = ZEAL
+		priest_title = ZEALOT
+		
+		character_modifier = {
+			imperial_cult_opinion = -20 #Curious Case they only dislike eachother
+			earth_monarchism_opinion = -100
+			earth_imperialism_opinion = -100
+			badgermole_cult = -100
+			infidel_opinion = -100 #everyone hates them, they hate everyone
+		}
+		
+		aggression = 7
+		intermarry = imperial_cult #only religion with intermarry with them
+	}
+	
+	way_of_chin = { # Imperialist
+		icon = 7
+		heresy_icon = 8
+		color = { 56 101 5 }
+		scripture_name = THE_WAY
+		priest_title = EARTH_SAGE
+		
+		priests_can_marry = yes
+		feminist = no # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = no
+		can_grant_divorce = yes
+		can_demand_religious_conversion = yes
+		allow_looting = yes
+		peace_prestige_loss = yes
+		attacking_same_religion_piety_loss = yes
+		hard_to_convert = yes
+		uses_jizya_tax = yes
+		can_excommunicate = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS
+		}
+		high_god_name = GOD_CHIN
+		
+		evil_god_names = {
+			EVILGOD_THE_AVATAR EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM GOD_EARTH_KING GOD_EARTH_QUEEN GOD_CURRENT_MONARCH GOD_HOU GOD_LONG_WANG GOD_JIAN GOD_KYOSHI
+		}
+		
+		can_excommunicate = yes
+		can_call_crusade = no
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+
+		character_modifier = {
+			earth_monarchism_opinion = -50
+			imperial_cult_opinion = -70
+			badgermole_cult = -20
+			vanguard_opinion = -100
+			unificationism_opinion = -60
+		}
+		
+		ai_convert_same_group = 2
+		max_consorts = 3
+
+		piety_name = SPIRITUALITY
+		aggression = 4
+		
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_imperialism
+		intermarry = unificationism			
+	}
+	
+	unificationism = { # Imperialist
+		icon = 9
+		heresy_icon = 10
+		color = { 137 165 143 }
+		
+		scripture_name = THE_LORE
+		priest_title = EARTH_SAGE
+		
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		allow_rivermovement = yes
+		can_demand_religious_conversion = yes
+		allow_looting = yes
+		peace_prestige_loss = yes
+		attacking_same_religion_piety_loss = yes
+		hard_to_convert = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS
+		}
+		
+		investiture = no
+		can_excommunicate = yes
+		can_call_crusade = no
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		character_modifier = {
+			earth_monarchism_opinion = -50
+			imperial_cult_opinion = -70
+			badgermole_cult = -20
+			vanguard_opinion = -100
+			way_of_chin_opinion = -60
+		}
+		
+		women_can_take_consorts = yes
+		max_consorts = 3
+		
+		piety_name = SPIRITUALITY
+		aggression = 3
+		
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_imperialism
+		intermarry = unificationism		
+	}	
+}
+
+earth_philosophies_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	hostile_within_group = no
+	color = { 56 71 57 }
+	
+	ai_convert_same_group = 1
+	ai_convert_other_group = 2	# always try to convert
+	
+	
+	
+	omashuan_ethics = { # Spiritualist
+		icon = 12
+		heresy_icon = 12
+		color = { 131 135 12 }
+		scripture_name = THE_LORE
+		priest_title = EARTH_SAGE
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		allow_rivermovement = no
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS
+		}
+		
+		high_god_name = GOD_THE_SPIRITS # GOD_OMA GOD_SHU
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS
+		}
+		can_excommunicate = yes
+		can_call_crusade = no
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		cousin_marriage = yes
+		psc_marriage = no
+		piety_name = SPIRITUALITY
+
+		aggression = 1.5
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_monarchism
+		intermarry = badgermole_cult
+		intermarry = the_divided
+		intermarry = followers_of_kyoshi		
+	}
+	
+	the_divided = {
+		icon = 2
+		heresy_icon = 1
+		color = { 174 91 50 }
+		scripture_name = THE_LORE
+		priest_title = CANYON_GUIDE
+		
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		allow_rivermovement = yes
+		pacifist = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_THE_GREAT_DIVIDE
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		evil_god_names = {
+			EVILGOD_FATHER_GLOWWORM EVILGOD_CANYON_CRAWLERS
+		}
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		piety_name = SPIRITUALITY
+		
+		aggression = 0.5
+		
+		intermarry = path_of_jin_wei
+		intermarry = path_of_wei_jin
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_monarchism
+		intermarry = badgermole_cult
+		intermarry = omashuan_ethics	
+		intermarry = followers_of_kyoshi
+	}
+	
+
+	path_of_jin_wei = {
+		icon = 2
+		heresy_icon = 1
+		color = { 192 195 117 }
+		scripture_name = THE_REDEMPTION_ORACLE
+		priest_title = CANYON_GUIDE
+		parent = the_divided
+		
+		priests_can_marry = yes
+		feminist = no # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_JIN_WEI
+		}
+		
+		high_god_name = GOD_THE_SPIRIT
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_CANYON_CRAWLERS
+		}
+		can_excommunicate = yes
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		hard_to_convert = yes
+		attacking_same_religion_piety_loss = yes
+		piety_name = CIVILITY
+		
+		aggression = 2
+		intermarry = the_divided
+	}
+
+	path_of_wei_jin = {
+		icon = 2
+		heresy_icon = 1
+		parent = the_divided
+		color = { 61 63 16 }
+		scripture_name = THE_REDEMPTION_ORACLE
+		priest_title = CANYON_GUIDE
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		can_grant_divorce = yes
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_WEI_JIN
+		}
+		
+		high_god_name = GOD_THE_SPIRITS
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_CANYON_CRAWLERS
+		}
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		hard_to_convert = yes
+		
+		attacking_same_religion_piety_loss = yes
+		piety_name = FREEDOM
+		
+		aggression = 1
+		intermarry = the_divided
+	}	
+
+	followers_of_kyoshi = { # Spiritualist
+		icon = 11
+		heresy_icon = 11
+		color = { 77 219 81 }
+		scripture_name = THE_LORE
+		priest_title = EARTH_PRIEST
+		
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		male_temple_holders = no
+		can_grant_divorce = yes
+		allow_rivermovement = no
+		
+		god_names = {
+			GOD_EARTH GOD_THE_EARTH GOD_THE_EARTH_SPIRIT GOD_THE_SPIRITS GOD_KYOSHI GOD_THE_SPIRITS
+		}
+		
+		high_god_name = GOD_THE_AVATAR
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM GOD_CHIN
+		}
+		
+		unit_modifier = {
+			levy_size = 1
+			retinuesize_perc = 0.3
+			key = "OFF_RELIGION"
+		}
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		attacking_same_religion_piety_loss = yes
+		piety_name = SPIRITUALITY
+		
+		aggression = 0.5
+		
+		intermarry = path_of_jin_wei
+		intermarry = path_of_wei_jin
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_monarchism
+		intermarry = badgermole_cult
+		intermarry = omashuan_ethics		
+	}
+
+}
+
+earth_paganism_group = {
+	has_coa_on_barony_only = yes
+	graphical_culture = indiangfx
+	playable = yes
+	hostile_within_group = yes
+	color = { 56 71 57 }
+	
+	ai_convert_same_group = 1
+	ai_convert_other_group = 2	# always try to convert
+
+	fortune_telling_reformed = { # Spiritualist
+		icon = 14
+		heresy_icon = 14
+		color = { 255 215 0 }
+		scripture_name = THE_DRAGON_BONES
+		priest_title = FORTUNE_TELLER
+		
+		allow_in_ruler_designer = no	
+		
+		god_names = {
+			 GOD_THE_SPIRITS
+		}
+		
+		high_god_name = GOD_THE_SPIRIT
+		
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM
+		}
+		
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		
+		character_modifier = {
+			fertility = 0.10
+			learning = -4
+		}
+		
+		piety_name = SPIRITUALITY
+	}
+
+	fortune_telling = { # Spiritualist
+		icon = 14
+		heresy_icon = 14
+		reformed = fortune_telling_reformed
+		color = { 255 215 0 }
+		scripture_name = THE_DRAGON_BONES
+		priest_title = FORTUNE_TELLER
+		
+		ai_convert_other_group = 2 # always try to convert
+		
+		priests_can_marry = yes
+		feminist = yes # Nullifies the negative opinion modifier that vassals normally get if ruler is female or has female heir
+		can_retire_to_monastery = yes
+		female_temple_holders = yes
+		
+		god_names = {
+			 GOD_THE_SPIRITS
+		}
+		high_god_name = GOD_THE_SPIRITS
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS EVILGOD_FATHER_GLOWWORM
+		}
+		
+		max_consorts = 3 # Can take concubines
+		investiture = no
+		can_have_antipopes = no
+		can_excommunicate = no
+		can_call_crusade = no
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 1
+		cousin_marriage = no
+		psc_marriage = no
+		
+		character_modifier = {
+			fertility = 0.10
+			learning = -4
+		}
+		
+		piety_name = SPIRITUALITY
+	}		
+}	
+		

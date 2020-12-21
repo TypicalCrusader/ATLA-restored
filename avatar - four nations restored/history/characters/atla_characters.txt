@@ -74,7 +74,7 @@
 	diplomacy = 14
 	intrigue = 8
 	stewardship = 7
-	religion = ba_sing_se_cultural_heritage
+	religion = earth_monarchism
 	culture = ba_sing_se
 	dna = "0000a000d00"
 	properties = "0f0bj000000000"
@@ -264,7 +264,7 @@
 4 = {
 	name = "Jang Chun" #49th earth kings son
 	dynasty = 1366
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	father = 1
 	746.2.13 = {
@@ -339,7 +339,7 @@
 9 = {
 	name = "Goung" #47th earth king
 	dynasty = 1366
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	dna = "00d000d0a00"
 	properties = "0c0bc000000000"
@@ -358,7 +358,7 @@
 10 = {
 	name = "Tian" #48th earth king
 	dynasty = 1366
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	dna = "000000c0b00"
 	properties = "0e0bd000000000"
@@ -786,7 +786,7 @@
 24 = {
 	name = "Kuei" #52nd earth king
 	dynasty = 1366
-	religion = ba_sing_se_cultural_heritage
+	religion = earth_monarchism
 	culture = customPortrait_suki
 	dna = "00b000b0b00"
 	properties = "0i0b0000000000"
@@ -1010,7 +1010,7 @@
 30 = {
 	name = "Wei Hung" #51st earth king
 	dynasty = 1366
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	dna = "00g000b0000"
 	properties = "0e00f000000000"
@@ -1030,7 +1030,7 @@
 	name = "Ji Houa" #50th earth king
 	dynasty = 1366
 	female = yes
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	dna = "00a000f0000"
 	properties = "0f0b0000000000"
@@ -1050,7 +1050,7 @@
 	name = "Hou-Ting" #53rd earth king
 	dynasty = 1366
 	female = yes
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	disallow_random_traits = yes
 	father = 24
@@ -1194,7 +1194,7 @@
 		add_trait = skilled_tactician
 	}
 	602.4.15 = {
-		religion = ba_sing_se_cultural_heritage
+		religion = earth_monarchism
 		remove_trait = earthking
 		remove_trait = ambitious
 		remove_trait = proud
@@ -2140,7 +2140,7 @@
 64 = {
 	name = "Gunn"
 	dynasty = 1400
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	disallow_random_traits = yes
 	958.7.16 = {
@@ -2674,7 +2674,7 @@
 	diplomacy = 9
 	intrigue = 8
 	stewardship = 7
-	religion = "ba_sing_se_cultural_heritage"
+	religion = "earth_monarchism"
 	culture = "ba_sing_se"
 	female = yes
 	904.9.8 = {
