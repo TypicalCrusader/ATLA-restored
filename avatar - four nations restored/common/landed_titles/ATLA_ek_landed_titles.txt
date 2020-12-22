@@ -103,11 +103,29 @@ d_imperial_cult = {
 	culture = ba_sing_se
 	religion = imperial_cult
 	
+	controls_religion = imperial_cult
+	
 	title = "grand_secretary"
 	title_female = "grand_secretary"
 	foa = "imperial_secretary"
 	title_prefix = "grand_secretariat"
 
+}
+
+d_vanguard = {
+	color = { 51 104 2 }
+	color2 = { 255 255 20 }
+	
+	short_name = yes
+	culture = ba_sing_se
+	religion = vanguard
+	
+	controls_religion = vanguard
+	
+	title = "arch_militant"
+	title_female = "arch_militant"
+	foa = "imperial_secretary"
+	title_prefix = "guardians"
 
 }
 
