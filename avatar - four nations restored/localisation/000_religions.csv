@@ -243,8 +243,8 @@ GOD_HOU;Hou;;;;;;;;;x
 GOD_KYOSHI;Kyoshi;;;;;;;;;x
 GOD_THE_BADGERMOLE_THRONE;The Badgermole Throne;;;;;;;;;x
 ROYAL_EDICT;Royal Edict;;;;;;;;;x
-LOYALITY;Loyality;;;;;;;;;x
-ZEAL;Zeal;;;;;;;;;x
+STAT_PIETY_LOYALITY;Loyality;;;;;;;;;x
+STAT_PIETY_ZEAL;Zeal;;;;;;;;;x
 ZEALOT;Zealot;;;;;;;;;x
 LIBERATION;Liberation;;;;;;;;;x
 THE_TRUTH;The Truth;;;;;;;;;x
@@ -252,8 +252,9 @@ THE_BAGERMOLE_SCRIPT;The Badgermole Scriptures;;;;;;;;;x
 GOD_EXALTED_MONARCH;Earth Monarch;;;;;;;;;x
 THE_WAY;The Way;;;;;;;;;x
 IMPERIAL_EDICT;Imperial Edict;;;;;;;;;x
-FEALTY;Fealty;;;;;;;;;x
+STAT_PIETY_FEALTY;Fealty;;;;;;;;;x
 IMPERIAL_MARCH;Imperial March;;;;;;;;;x
+
 
 secretly_convert_to_fire_nation_imperialism_holy_site;Secretly Convert to Fire Nation Imperialism;;;;;;;;;;;;
 secretly_convert_to_fire_nation_imperialism_holy_site_desc;Secretly renounce the old beliefs of spirituality for the belief of expansion through conquest.;;;;;;;;;;;;

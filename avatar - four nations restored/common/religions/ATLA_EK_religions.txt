@@ -603,7 +603,7 @@ earth_imperialism_group = {
 			imperial_cult_opinion = -20 #Curious Case they only dislike eachother
 			earth_monarchism_opinion = -100
 			earth_imperialism_opinion = -100
-			badgermole_cult = -100
+			badgermole_cult_opinion = -100
 			infidel_opinion = -100 #everyone hates them, they hate everyone
 		}
 		

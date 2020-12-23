@@ -92,6 +92,7 @@ d_earth_monarchism = {
 	culture = ba_sing_se
 	religion = earth_monarchism
 	controls_religion = earth_monarchism
+	landless = yes
 	
 }
 
@@ -104,16 +105,16 @@ d_imperial_cult = {
 	religion = imperial_cult
 	
 	controls_religion = imperial_cult
+	landless = yes
 	
 	title = "grand_secretary"
 	title_female = "grand_secretary"
 	foa = "imperial_secretary"
-	title_prefix = "grand_secretariat"
 
 }
 
 d_vanguard = {
-	color = { 51 104 2 }
+	color = { 206 203 18 }
 	color2 = { 255 255 20 }
 	
 	short_name = yes
@@ -121,11 +122,11 @@ d_vanguard = {
 	religion = vanguard
 	
 	controls_religion = vanguard
+	landless = yes
 	
-	title = "arch_militant"
-	title_female = "arch_militant"
+	title = "guardian"
+	title_female = "guardian"
 	foa = "imperial_secretary"
-	title_prefix = "guardians"
 
 }
 

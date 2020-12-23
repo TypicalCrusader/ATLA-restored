@@ -1036,3 +1036,51 @@ way_of_chin_opinion = {
 	is_hidden = no
 	max_decimals = 0
 }
+
+imperial_cult_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+earth_monarchism_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+earth_imperialism_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+badgermole_cult_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+unificationism_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+vanguard_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}

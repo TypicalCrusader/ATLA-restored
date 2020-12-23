@@ -175,7 +175,6 @@ grand_duchy;Grand Duchy of;;;;;;;;x
 noble_republic;Noble Republic of;;;;;;;;x
 empire;Empire of;;;;;;;;x
 grand_secretariat;Grand Secretariat of;;;;;;;;x
-guardians;Guardians of;;;;;;;;x
 
 ##Title Holders
 
@@ -493,6 +492,7 @@ quan_holder_female;[GetQuanHolderTitleName];;;;;;;;x
 first_rider;Khan;;;;;;;;x
 first_rider_fem;Khan;;;;;;;;x
 grand_secretary;Grand Secretary;;;;;;;;x
+guardian;Guardian;;;;;;;;x
 
 #Holders foas
 GREAT_UNITER_FOA;Great Uniter;A;A;;A;;;;;;;;;x
