@@ -1,0 +1,15 @@
+# c_namcho
+
+# County Title
+title = c_namcho
+
+# Settlements
+max_settlements = 4
+
+b_namcho = tribal
+
+# Misc
+culture = dongfangian
+religion = earth_spirituality
+
+#History

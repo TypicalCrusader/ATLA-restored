@@ -5,3 +5,7 @@ assign_mission_target = {
 	customizer = no
 	hidden = yes
 }
+
+QuanDevNote = {
+	customizer = no
+}

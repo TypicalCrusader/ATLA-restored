@@ -1,0 +1,16 @@
+# c_qijing
+# County Title
+title = c_qijing
+
+# Settlements
+max_settlements = 4
+
+b_qijing = tribal
+
+
+# Misc
+culture = dongfangian
+religion = earth_spirituality
+terrain = steppe
+
+#History

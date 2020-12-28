@@ -1,0 +1,17 @@
+# c_fuwei
+
+# County Title
+title = c_fuwei
+
+# Settlements
+max_settlements = 2
+
+b_fuwei = tribal
+b_fuwei_c = city
+
+
+# Misc
+culture = dongfangian
+religion = earth_spirituality
+terrain = mountain
+#History

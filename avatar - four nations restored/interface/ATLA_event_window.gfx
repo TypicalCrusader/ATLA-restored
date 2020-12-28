@@ -1,0 +1,5 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_Chonker"
+		texturefile = "gfx/interface/chonker_event_bg.dds"
+	}
