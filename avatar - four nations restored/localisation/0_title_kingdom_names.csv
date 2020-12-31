@@ -1,8 +1,6 @@
 #CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
 k_aksu;Aksu;Aksu;Aksu;;Aksu;;;;;;;;;x
 k_aksu_adj;Aksian;;akser;;;;;;;;;;;x
-k_ba_sing_se;Ba Sing Se;Ba Sing Se;Ba Sing Se;;Ba Sing Se;;;;;;;;;x
-k_ba_sing_se_adj;Ba Sing Se;;Ba Sing Ser;;;;;;;;;;;x
 k_beidiqiu;Beidiqiu;Beidiqiu;Beidiqiu;;Beidiqiu;;;;;;;;;x
 k_beidiqiu_adj;Beidiqian;;beidiqer;;;;;;;;;;;x
 k_beihai;Beihai;Beihai;Beihai;;Beihai;;;;;;;;;x
@@ -25,8 +23,6 @@ k_fire_nation;Dong'Huo;Fire Nation;Fire Nation;;Fire Nation;;;;;;;;;x
 k_fire_nation_adj;Dong'Huo;;Fire Nationer;;;;;;;;;;;x
 k_western_fire_nation;Xi'Huo;Fire Nation;Fire Nation;;Fire Nation;;;;;;;;;x
 k_western_fire_nation_adj;Xi'Huo;;Fire Nationer;;;;;;;;;;;x
-k_gaolan;Gaolan;Gaolan;Gaolan;;Gaolan;;;;;;;;;x
-k_gaolan_adj;Gaolan;;gaolaner;;;;;;;;;;;x
 k_great_divide;Great Divide;Great Divide;Great Divide;;Great Divide;;;;;;;;;x
 k_great_divide_adj;Great Divide;;Great Divider;;;;;;;;;;;x
 k_hu_xin;Hu;Hu;Hu;;Hu;;;;;;;;;x
@@ -45,8 +41,6 @@ k_northern_air_temple;Northern Air Temple;Northern Air Temple;Northern Air Templ
 k_northern_air_temple_adj;Northern Air Temple;;Northern Air Templer;;;;;;;;;;;x
 k_northern_water_tribe;Northern Water Tribe;Northern Water Tribe;Northern Water Tribe;;Northern Water Tribe;;;;;;;;;x
 k_northern_water_tribe_adj;Northern Water Tribe;;Northern Water Triber;;;;;;;;;;;x
-k_omashu;Omashu;Omashu;Omashu;;Omashu;;;;;;;;;x
-k_omashu_adj;Omashu;;omasher;;;;;;;;;;;x
 k_sha_hai;Sha Hai;Sha Hai;Sha Hai;;Sha Hai;;;;;;;;;x
 k_sha_hai_adj;Sha Hai;;Sha Her;;;;;;;;;;;x
 k_sikouzi;Sikouzi;Sikouzi;Sikouzi;;Sikouzi;;;;;;;;;x
@@ -67,8 +61,6 @@ k_xiong_lin;Xiong Lin;Xiong Lin;Xiong Lin;;Xiong Lin;;;;;;;;;x
 k_xiong_lin_adj;Xiong Lin;;Xiong Liner;;;;;;;;;;;x
 k_xisenlin;Xisenlin;Xisenlin;Xisenlin;;Xisenlin;;;;;;;;;x
 k_xisenlin_adj;Xisenlin;;xisenliner;;;;;;;;;;;x
-k_xishan;Xishan;Xishan;Xishan;;Xishan;;;;;;;;;x
-k_xishan_adj;Xishan;;xishaner;;;;;;;;;;;x
 k_yizhidifang;Yizhidifang;Yizhidifang;Yizhidifang;;Yizhidifang;;;;;;;;;x
 k_yizhidifang_adj;Yizhidifang;;yizhidifanger;;;;;;;;;;;x
 k_zaofu;Zaofu;Zaofu;Zaofu;;Zaofu;;;;;;;;;x

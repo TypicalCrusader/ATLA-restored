@@ -1,5 +1,5 @@
-# Fong Characters
-# 50000-50012
+# Fong Characters, Hou Quan Characters
+# 50000-50012, 60000-
 
 50000 = {
 	name = "Bang-Fong"

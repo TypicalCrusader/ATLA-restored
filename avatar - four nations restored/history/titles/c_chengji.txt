@@ -7,14 +7,12 @@
 }
 573.2.2 = {
 	holder = 33484
-	liege = "d_ordos"
 }
 623.11.26 = {
 	holder = 33493
 }
 655.10.12 = {
 	holder = 33501
-	liege = "d_jilin"
 }
 701.7.7 = {
 	holder = 33505
@@ -39,9 +37,6 @@
 835.4.26 = {
 	holder = 33527
 }
-851.3.5 = {
-	liege = "k_dongfang"
-}
 872.12.24 = {
 	holder = 33532
 }
@@ -50,9 +45,6 @@
 }
 931.2.4 = {
 	liege = 0
-}
-939.2.4 = {
-	liege = "d_ordos"
 }
 954.7.13 = {
 	holder = 33542
