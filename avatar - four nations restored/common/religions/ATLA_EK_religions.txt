@@ -50,6 +50,9 @@ earth_spiritualism_group = {
 		intermarry = way_of_chin
 		intermarry = unificationism
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 	
 	earth_spirituality = {
@@ -91,6 +94,9 @@ earth_spiritualism_group = {
 		intermarry = way_of_chin
 		intermarry = unificationism
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 	
 	northern_earth_spirituality = {
@@ -141,6 +147,9 @@ earth_spiritualism_group = {
 		intermarry = way_of_chin
 		intermarry = unificationism
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}		
 	
 	the_great_serpent_reformed = {
@@ -175,6 +184,9 @@ earth_spiritualism_group = {
 		intermarry = way_of_chin
 		intermarry = unificationism	
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 		
 	the_great_serpent = {
@@ -230,7 +242,10 @@ earth_spiritualism_group = {
 		intermarry = children_of_si_wong_reformed
 		intermarry = way_of_chin
 		intermarry = unificationism
-		intermarry = followers_of_kyoshi		
+		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 	
 	children_of_si_wong_reformed = {
@@ -269,6 +284,9 @@ earth_spiritualism_group = {
 		intermarry = way_of_chin
 		intermarry = unificationism
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 
 	children_of_si_wong = { # Spiritualist
@@ -315,7 +333,10 @@ earth_spiritualism_group = {
 		intermarry = children_of_si_wong_reformed
 		intermarry = way_of_chin
 		intermarry = unificationism
-		intermarry = followers_of_kyoshi		
+		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}	
 }
 
@@ -386,6 +407,9 @@ earth_imperialism_group = {
 		intermarry = children_of_si_wong_reformed
 		intermarry = earth_imperialism
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 	
 	earth_imperialism = { #No Religous Head
@@ -434,6 +458,9 @@ earth_imperialism_group = {
 		intermarry = earth_monarchism
 		intermarry = way_of_chin
 		intermarry = unificationism
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 	
 	imperial_cult = {
@@ -496,6 +523,9 @@ earth_imperialism_group = {
 		intermarry = children_of_si_wong_reformed
 		intermarry = earth_imperialism
 		intermarry = vanguard #only religion with intermarry with them
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}	
 	
 	badgermole_cult = {
@@ -555,6 +585,9 @@ earth_imperialism_group = {
 		intermarry = way_of_chin
 		intermarry = unificationism
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 
 	vanguard = { #Oh boi, Super Fringe Radical Group beliving that only they are worthy basking in God Monarch Light
@@ -668,7 +701,10 @@ earth_imperialism_group = {
 		intermarry = children_of_si_wong
 		intermarry = children_of_si_wong_reformed
 		intermarry = earth_imperialism
-		intermarry = unificationism			
+		intermarry = unificationism
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 	
 	unificationism = { # Imperialist
@@ -729,7 +765,10 @@ earth_imperialism_group = {
 		intermarry = children_of_si_wong
 		intermarry = children_of_si_wong_reformed
 		intermarry = earth_imperialism
-		intermarry = unificationism		
+		intermarry = unificationism
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}	
 }
 
@@ -789,7 +828,10 @@ earth_philosophies_group = {
 		intermarry = earth_monarchism
 		intermarry = badgermole_cult
 		intermarry = the_divided
-		intermarry = followers_of_kyoshi		
+		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp		
 	}
 	
 	the_divided = {
@@ -836,6 +878,9 @@ earth_philosophies_group = {
 		intermarry = badgermole_cult
 		intermarry = omashuan_ethics	
 		intermarry = followers_of_kyoshi
+		intermarry = barbarism
+		intermarry = barbarism_reformed
+		intermarry = the_great_swamp	
 	}
 	
 
@@ -960,7 +1005,8 @@ earth_philosophies_group = {
 		intermarry = children_of_si_wong_reformed
 		intermarry = earth_monarchism
 		intermarry = badgermole_cult
-		intermarry = omashuan_ethics		
+		intermarry = omashuan_ethics
+		intermarry = the_great_swamp		
 	}
 
 }
@@ -1046,6 +1092,89 @@ earth_paganism_group = {
 		}
 		
 		piety_name = SPIRITUALITY
-	}		
+		
+		#intermarry
+		intermarry = path_of_jin_wei
+		intermarry = path_of_wei_jin
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_monarchism
+		intermarry = badgermole_cult
+		intermarry = omashuan_ethics
+		intermarry = followers_of_kyoshi
+		intermarry = imperial_cult
+		intermarry = the_great_swamp	
+	}
+
+	barbarism_reformed = { # Barbarism
+		icon = 34
+		heresy_icon = 34
+		color = { 155 23 58 }
+		priest_title = PRIEST		
+		god_names = {
+			GOD_SPIRITS GOD_THE_SPIRITS GOD_FREEDOM
+		}
+		high_god_name = GOD_THE_SPIRITS
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS
+		}
+		allow_in_ruler_designer = no
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 3
+		piety_name = SPIRITUALITY
+		aggression = 3
+	}
+
+	barbarism = { # Barbarism
+		icon = 34
+		heresy_icon = 34
+		color = { 155 23 58 }
+		priest_title = PRIEST
+		priests_can_marry = yes
+		female_temple_holders = no
+		allow_rivermovement = no
+		can_grant_divorce = no
+		allow_looting = yes
+		seafarer = yes
+		god_names = {
+			GOD_SPIRITS GOD_THE_SPIRITS GOD_FREEDOM
+		}
+		high_god_name = GOD_THE_SPIRITS
+		evil_god_names = {
+			EVILGOD_THE_DARK_SPIRITS
+		}
+		max_consorts = 3
+		investiture = no
+		short_reign_opinion_year_mult = 1
+		religious_clothing_head = 4
+		religious_clothing_priest = 3
+		piety_name = SPIRITUALITY
+		aggression = 3
+
+		#intermarry
+		intermarry = path_of_jin_wei
+		intermarry = path_of_wei_jin
+		intermarry = earth_spirituality
+		intermarry = earth_spirituality_reformed
+		intermarry = northern_earth_spirituality
+		intermarry = the_great_serpent
+		intermarry = the_great_serpent_reformed
+		intermarry = children_of_si_wong
+		intermarry = children_of_si_wong_reformed
+		intermarry = earth_monarchism
+		intermarry = badgermole_cult
+		intermarry = omashuan_ethics
+		intermarry = followers_of_kyoshi
+		intermarry = imperial_cult
+		intermarry = the_great_swamp
+		intermarry = fortune_telling
+		intermarry = fortune_telling_reformed
+	}	
 }	
 		
