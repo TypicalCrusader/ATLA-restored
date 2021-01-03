@@ -1,0 +1,239 @@
+#CODE;ENGLISH;;;;;;;;;;x
+
+
+#Laws
+
+#Groups
+Quan_laws_1;Local Administration;;;;;;;;;;x
+Quan_laws_1_desc;;;;;;;;;;;x
+Quan_laws_2;Status of Council of Clans;;;;;;;;;;x
+Quan_laws_2_desc;The Council of Clans consists of the rulers of all clans, originally serving as an advisory council. It recently gained the power to veto changes by the ruler of Quan, along with the power to implement new laws independent of their liege's influence.;;;;;;;;;;x
+Quan_laws_3;Army Law;;;;;;;;;;x
+Quan_laws_3_desc;Traditionally, each clan of the Golden Steppe gives a portion of their warriors to the ruler of Quan, but the influx of Jian colonists inspired the princes of Quan to use these warriors as either a primary force or an elite force whose members are handpicked by the ruler.;;;;;;;;;;x
+
+#Admin
+quan_admin_1;;;;;;;;;;;x
+quan_admin_1_desc;;;;;;;;;;;x
+quan_admin_2;;;;;;;;;;;x
+quan_admin_2_desc;;;;;;;;;;;x
+quan_admin_3;;;;;;;;;;;x
+quan_admin_3_desc;;;;;;;;;;;x
+quan_admin_4;;;;;;;;;;;x
+quan_admin_4_desc;;;;;;;;;;;x
+quan_admin_5;;;;;;;;;;;x
+quan_admin_5_desc;;;;;;;;;;;x
+
+#Council
+quan_council_1;;;;;;;;;;;x
+quan_council_1_desc;;;;;;;;;;;x
+quan_council_2;;;;;;;;;;;x
+quan_council_2_desc;;;;;;;;;;;x
+quan_council_3;;;;;;;;;;;x
+quan_council_3_desc;;;;;;;;;;;x
+quan_council_4;;;;;;;;;;;x
+quan_council_4_desc;;;;;;;;;;;x
+quan_council_5;;;;;;;;;;;x
+quan_council_5_desc;;;;;;;;;;;x
+quan_council_6;;;;;;;;;;;x
+quan_council_6_desc;;;;;;;;;;;x
+
+#Army
+quan_army_1;Clan Levies;;;;;;;;;;x
+quan_army_1_desc;;;;;;;;;;;x
+quan_army_2;Jian Levies;;;;;;;;;;x
+quan_army_2_desc;;;;;;;;;;;x
+quan_army_3;Mixed;;;;;;;;;;x
+quan_army_3_desc;;;;;;;;;;;x
+quan_army_4;Officer Core;;;;;;;;;;x
+quan_army_4_desc;;;;;;;;;;;x
+quan_army_5;Badgermole Brigade;;;;;;;;;;x
+quan_army_5_desc;;;;;;;;;;;x
+
+
+#CA things
+
+has_20_CA;Has §M20 §YClan Authority§!;;;;;;;;;;x
+has_30_CA;Has §G30 §YClan Authority§!;;;;;;;;;;x
+has_40_CA;Has §Z40 §YClan Authority§!;;;;;;;;;;x
+has_50_CA;Has §R50 §YClan Authority§!;;;;;;;;;;x
+has_60_CA;Has §K60 §YClan Authority§!;;;;;;;;;;x
+
+ca_huge_law_loss;§K3 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_big_law_loss;§K2 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_law_loss;§R1 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_small_law_loss;§R0.5 §YClan Authority§! loss yearly from laws.;;;;;;;;;;x
+ca_small_law_gain;§G0.5 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+ca_law_gain;§G1 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+ca_big_law_gain;§Z2 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+ca_huge_law_gain;§Z3 §YClan Authority§! gain yearly from laws.;;;;;;;;;;x
+
+QuanNextYearCALoss10;You will lose §R10 §YClan Authority§! next year.;;;;;;;;;;x
+QuanNextYearCAGain5;You will gain §G5 §YClan Authority§! next year.;;;;;;;;;;x
+
+#Council law Block loc
+Quan_council_full_block;All §YCouncil laws§! change is §Kblocked§!;;;;;;;;;;x
+Quan_council_partial_block;§YCouncil laws§! change beside §Rgranting title and imprisonment is Blocked§!;;;;;;;;;;x
+Quan_council_partial_2_block;§YCouncil law§! change beside §Mgranting title, imprisonment, banishment and execution is Blocked§!;;;;;;;;;;x
+Quan_council_small_block;All §YCouncil law§! change is allowed beside §MWar and Council Power§!;;;;;;;;;;x
+Quan_council_no_block;All §YCouncil Law§! change is §Zallowed§!;;;;;;;;;;x
+Quan_council_good_block;All change of §YCouncil Law§! is §Gblocked§!;;;;;;;;;;x
+
+
+#Army laws custom tooltips
+Quan_clan_dislike_warn;§RSome Clans may not like it.§!;;;;;;;;;;x
+Quan_gman;§KPrepare for unforseen consequences.§!;;;;;;;;;;x
+
+
+#Events
+
+#Yearly Check Event
+QuanYearlycheckdesc;Yada Yada yearly gain;x
+QuanYearlycheckopt;kok;x
+QuanYearlycheck;CA gained [Root.CAgain.GetValue], CA gained from traits [Root.CA_mileducationgain.GetValue], from tributes [Root.CA_tributesgain.GetValue], from laws [Root.CA_lawgain.GetValue];Crusader
+
+#Pre Revolt narrative Event
+QuanPreRevoltEvtTit;Whispers in the Shadows;;;;;;;;;;x
+QuanPreRevoltEvtDesc;Under the cover of darkness, the clan leaders of Gonzun, Bei, Guan, Dong, and Yi, gather to discuss their impending insurrection. Over heated debate, they recant the perversions of justice they have suffered -- tyranny from their lord, and taxes so brutal their people can barely afford food. Hearing enough, one lord speaks up to rally the others, promising their master's cruel reign to be over. Declaring themselves the "Rebellion of Five Banners", they draw up plans to start their righteous uprising on the 12th of the Fifth Moon, next year.\nMeanwhile in Quan the Capital of Dongfang...\nAs you settle in for a night of work, one of your advisors enters your chambers with troubling news. "We have not received tribute from any of the clans, my liege. Surely, if this was just one bad actor, the others would still pay their taxes, but since none of them paid, we're worried they're working together against us." A scowl breaks across your face, and the advisor takes note, following with "However... the Steppes these days are rather dangerous, so it's possible they are simply late". A naive thought, at best, and much wiser to take action. "Increase patrols and prepare provisions, in-case the clans try something foolish", you bark, before the advisor hastily bows and leaves.;;;;;;;;;;x
+QuanPreRevoltEvtOpt;In the Shadow of a night a devious plot is revealed!;;;;;;;;;;x
+Quan_alea_iacta_est;§KTHIS IS A POINT OF NO RETURN. IF YOU ARE NOT ON IRONMAN, YOU SHOULD SAVE NOW.§!;;;;;;;;;;x
+
+#Five Banner Revolt Start Event
+QuanFiveBannersTit;A House Divided;;;;;;;;;;x
+QuanFiveBannersDesc;You stand near the fireplace, holding a piece of parchment in your hand. You read it aloud:\n"To the traitorous [k_quan.Holder.GetFirstNameWithNick]:\nThe people of Dongfang shall soon be free of your tyranny! Sharpen your blade and ready your horse, for you will need them!\nSigned,\n[Quan_Five_Banners_leader.GetFullName] of the Five Banners Rebellion"\n\n"These traitors shall pay! Guard!" You shout.A guard enter the room and ask, "Yes, my [GetQuanHolderTitleName]?" "Bring General Yun here now!" The guard leaves the room as you toss the letter into the fire. "The Die is Cast.";;;;;;;;;;x
+QuanFiveBannersOpt;They will pay with their blood!;;;;;;;;;;x
+Quan_rebelion_begins;§RRebelion Begins...§!;;;;;;;;;;x
+
+#Five Banner Revolt World Event
+QuanFiveBannersWorldTit;Five Banners Rebelion;;;;;;;;;;x
+QuanFiveBannersWorldDesc;A courier arrives with an interesting letter, and passes on to you.\n"Let it be known the spirits are on our side, and that our cause is just! With such divine support, we shall despose that vile fiend [GetQuanHolderTitleName] [k_quan.Holder.GetFirstNameWithNick]  of the Grand Duchy of Quan and return peace and justice to our lands! We are the Five Banner Rebellion, and we shall never surrender!";;;;;;;;;;x
+QuanRebelionPrinceReaction;Damn those Rebels!;;;;;;;;;;x
+QuanRebelionRebelReaction;For the Clans!;;;;;;;;;;x
+QuanRebelionEKReaction;We must help our kinsman!;;;;;;;;;;x
+QuanRebelionWorldReaction;Looks like there's trouble in Quan...;;;;;;;;;;x
+
+#Coronation (Hou-Quan narrative 1)
+QuanHouQuanNarrativeTit1;Coronation;;;;;;;;;;x
+QuanHouQuanNarrativeDesc1;;;;;;;;;;;x
+QuanHouQuanNarrativeOpt1a;Let My rule Begin;;;;;;;;;;x
+
+#Rebuilding the Walls (Hou-Quan narrative 2)
+QuanHouQuanNarrativeTit2;Rebuilding the Walls;;;;;;;;;;x
+QuanHouQuanNarrativeDesc2;;;;;;;;;;;x
+QuanHouQuanNarrativeOpt2a;Rebuild them;;;;;;;;;;x
+QuanHouQuanNarrativeOpt2b;We Dont need them;;;;;;;;;;x
+
+#Taming the Frontier (Hou-Quan narrative 3)
+QuanHouQuanNarrativeTit3;Taming The Frontier?;;;;;;;;;;x
+QuanHouQuanNarrativeDesc3;;;;;;;;;;;x
+QuanHouQuanNarrativeOpt3a;Allow It;;;;;;;;;;x
+QuanHouQuanNarrativeOpt3b;Dissallow It;;;;;;;;;;x
+Quan_clan_like;Clans Like it;;;;;;;;;;x
+
+#Hou-Quan strat/better education event
+QuanHouQuanBloodStratTit;Blood of the "Shield of the East";;;;;;;;;;x
+QuanHouQuanBloodStratDesc;The Wall of Place of Hold;;;;;;;;;;x
+QuanHouQuanBloodStratOpt;My blood makes most powerful Leaders!;;;;;;;;;;x
+Quan_swiggity_swooty;§YDEV NOTE: Results Hidden for reason!§!;;;;;;;;;;x
+
+#Colonisation Event
+QuanColonisation;Oi Mate choose a holding type;;;;;;;;;;x
+QuanChoosenCastle;Castle;;;;;;;;;;x
+QuanChoosenCity;City;;;;;;;;;;x
+
+#Day of Reconing
+QuanMorningTit;Day of Reconing;;;;;;;;;;x
+QuanMorningDesc;;;;;;;;;;;x
+QuanMorningOpt1;Attack [Quan_Five_Banners_leader.GetFirstNameWithNick] in your anger;;;;;;;;;;x
+QuanMorningOpt2;Attack nearby rock;;;;;;;;;;x
+
+#Day of Reconing pt.2
+QuanReconingTit;Reconing;;;;;;;;;;x
+QuanJusticeTit;Justice;;;;;;;;;;x
+QuanReconingDesc;;;;;;;;;;;x
+QuanJusticeDesc;;;;;;;;;;;x
+QuanReconingRegret;Oh Ancestors what have i done!;;;;;;;;;;x
+QuanReconingArbitrary;Eh one traitor down;;;;;;;;;;x
+
+#CBs
+
+#Five Banners Rebelion
+Quan_Five_Banners_CB;Five Banners Rebelion;;;;;;;;;;x
+Quan_Five_Banners_Rebelion;Five Banners Rebelion;;;;;;;;;;x
+
+#Clan Revolt
+Quan_clan_revolt_CB;Clan Revolt;;;;;;;;;;x
+Quan_clan_revolt;Clan Revolt;;;;;;;;;;x
+
+
+#Bloodlines
+
+#Hou-Quan
+quan_hou_quan_blood_effect;§YCharacters with military upbringing tend to be great §GStrategists and Leaders§!;;;;;;;;;;x
+hou_quan;Royal Blood of Hou-Quans;;;;;;;;;;x
+hou_quan_desc;§YHou-Quans§! are descended from Hou-Quan Yan, the second son of Earth King Hou Han IV. Yan became the ruler of Quan at a young age and quelled a peasant uprising in Ji and Dongfang, eventually granted the title "Shield of the East" by his brother, Earth King Hou-Ting Jian I. Hou-Quans are renowned as warriors and tacticians, and they have widespread support from the Dongfang clans.;;;;;;;;;;x
+
+
+#Governments
+
+#Clan
+clan_government;Clan;;;;;;;;;;;x
+clan_government_desc;;;;;;;;;;;x
+
+#Clan Federation
+clan_federation;Clan Federation;;;;;;;;;;;x
+clan_federation_desc;(insert rest of desc here) §Y“Since Lang Wang conquered Dongfang the tribes of it were one of most loyal subjects of Earth King but they always respected one thing Strength, There was one Prince which name was Bei he lost campaign against Imperial Regent and soon enough he also lost his head (...)” - Sun Wu, The Art of War§!\n;;;;;;;;;;;x
+
+
+#Buildings
+long_wang_fortress;Long Wang Fortress;;;;;;;;;;x
+long_wang_fortress_desc;Long Wang Fortress was erected along with its brother, the §YCitadel of Crouching Tiger§!, in §Y23 AU§! in the aftermath of the last battle between §YDongfang peninsula tribes§! with the §YKingdom of Ji§! forces. In §Y25 AU Hou Han§!, one of §YLong Wang§! cousins and a new Military Governor, made the land near both fortresses a capital of the §YProvince of Dongfang§! - along with granting it a new name, §YQuan§!. Long Wang Fortress, along with the §YCrouching Tiger Citadel§!, is one of most formidable defenses in the entire world. Attempting to conquer it will require even greater force and leadership than even the legendary §YChin 'The Conqueror'§! showed;;;;;;;;;;x
+quan_stable_1;Small Royal Stable;;;;;;;;;;x
+quan_stable_1_desc;;;;;;;;;;;x
+quan_stable_2;Royal Stable;;;;;;;;;;x
+quan_stable_2_desc;;;;;;;;;;;x
+quan_stable_3;Big Royal Stable;;;;;;;;;;x
+quan_stable_3_desc;;;;;;;;;;;x
+quan_stable_4;Grand Royal Stable;;;;;;;;;;x
+quan_stable_4_desc;;;;;;;;;;;x
+
+
+#Wonder
+
+#Citadel of Crouching Tiger
+crouching_tiger_citadel;Citadel of Crouching Tiger;;;;;;;;;;x
+crouching_tiger_citadel_desc;Built in §Y23 AU§! along with its brother §YLong Wang Fortress§!, this citadel is a sight to behold. Located on a cliff sitting in the middle of the current city of §YQuan§!, with fifteen heavily fortified towers and six double gates, this fortress has a §Yguardian spirit§! which protects it from destruction. Only one man in history has successfully besieged the fortress, §YChin the Conqueror§!, through military might the only other time the fortress was successfully besieged was after the §YFall of Ba Sing Se§! in §Y930 AU§! during a Fire Nation Siege. The Citadel was returned to its full glory in §Y1000 AU§! by Prince §YHou-Ting Jian§! before the traitorous §YKuvira§! formed the §Y"Earth Empire".§!;;;;;;;;;;x
+
+
+#Traits
+
+#DevNote
+QuanDevNote;Developer Note Regarding this character;;;;;;;;;;x
+QuanDevNote_desc;This character supposed be cousin of Long Wang but since we hitted year barrier we cannot make him cousin;;;;;;;;;;x
+
+
+#Decisions
+
+#Colonise province
+Quan_colonise_province;Colonise Province;;;;;;;;;;x
+Quan_colonise_province_desc;;;;;;;;;;;x
+
+
+#Tributaries
+TRIBUTARY_QUAN_NAME;Clan;;;;;;;;;;x
+TRIBUTARY_QUAN_PLURAL;Clans;;;;;;;;;;x
+SUZERAIN_QUAN_NAME;[GetQuanHolderTitleName];;;;;;;;;;x
+TRIBUTARY_QUAN_TRIBUTE;Tribute;;;;;;;;;;x
+
+
+#Rule
+RULE_GROUP_FOURNATIONS;§YFour Nations§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_amount_tit;§RFour Nations§!: Five Banners Rebelion;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_amount_desc;You can choose amount of troops that FBR will get.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_normal;§YNormal§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_normal_desc;FBR will spawn with normal amount of troops.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_hard;§RHard§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_hard_desc;FBR will spawn with 2 times of their normal forces.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_very_hard;§RVery Hard§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_very_hard_desc;FBR will spawn with 4 times of their normal forces.;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_i_want_die;§RI Want To Die§!;;;;;;;;;;x
+T4N_Quan_FBR_troops_spawn_i_want_die_desc;§KIts not even remotely fair...§!;;;;;;;;;;x

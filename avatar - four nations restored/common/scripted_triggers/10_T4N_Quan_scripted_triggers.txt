@@ -1,0 +1,22 @@
+#####                                          #####
+##                                                ##
+##  Scripted Triggers for Quan Events / Decisions ##
+##  Written for T4N - Restored by TypicalCrusader ##
+##                                                ##
+#####                                          #####
+
+
+
+Quan_random_events_block_negative = {
+	AND = {
+		has_landed_title = k_quan
+		NOT = { has_global_flag = CAloseblock }
+	}
+}
+
+Quan_random_events_block_positive = {
+	AND = {
+		has_landed_title = k_quan
+		NOT = { has_global_flag = CAgainblock }
+	}
+}

@@ -1,0 +1,16 @@
+# c_panging
+
+# County Title
+title = c_panging
+
+# Settlements
+max_settlements = 3
+
+b_panging = tribal
+
+
+# Misc
+culture = dongfangian
+religion = earth_spirituality
+
+#History
