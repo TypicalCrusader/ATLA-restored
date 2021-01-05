@@ -4,7 +4,6 @@
 	law = cognatic_succession
 	law = law_voting_power_1
 	law = war_voting_power_1
-	liege = "d_ordos"
 }
 575.2.27 = {
 	holder = 33557
@@ -17,11 +16,9 @@
 }
 661.8.6 = {
 	holder = 33575
-	liege = "d_jilin"
 }
 699.9.6 = {
 	holder = 33584
-	liege = "d_baotou"
 }
 751.3.26 = {
 	holder = 33587
@@ -54,9 +51,6 @@
 }
 984.8.26 = {
 	holder = 33634
-}
-1001.1.3 = {
-	liege = "d_jilin"
 }
 1002.9.1 = {
 	holder = 33641

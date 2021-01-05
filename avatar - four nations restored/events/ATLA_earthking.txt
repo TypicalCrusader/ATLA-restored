@@ -385,6 +385,8 @@ letter_event = {
 	}
 }
 
+
+#The Fuck does it do?! - TypicalCrusader
 character_event = { # Royal Authority System - Check Authority
 	id = earthking.9
 	hide_window = yes
