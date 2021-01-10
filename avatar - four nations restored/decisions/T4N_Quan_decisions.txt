@@ -1,0 +1,79 @@
+#####                                          #####
+##                                                ##
+##          Dongfang Overhaul Decisions           ##
+##  Written for T4N - Restored by TypicalCrusader ##
+##                                                ##
+#####                                          #####
+
+title_decisions = {
+	Quan_colonise_province = {
+		only_rulers = yes
+		filter = all
+		ai_target_filter = all
+		from_potential = {
+			has_landed_title = k_quan
+			has_global_flag = Quan_colonisation_allowed
+			NOT = { culture = dongfangian }
+		}
+		
+		potential = {
+			location = {
+				region = world_dongfang_peninsular
+			}
+			tier = county
+		}
+		
+		allow = {
+			FROM = {
+				check_variable = { which = global_Clanauthority value >= 40 }
+				NOT = { has_global_flag = Quan_the_die_is_cast }
+				treasury >= 250
+			}
+			ROOT = {
+				holder_scope = {
+					OR = {
+						is_tributary = {
+							type = quan_tributary
+							suzerain = FROM
+						}
+						top_liege = {
+							is_tributary = {
+								type = quan_tributary
+								suzerain = FROM
+							}
+						}
+					}
+				}
+				location = {
+					has_empty_holding = yes
+					culture = dongfangian
+					NOT = { has_province_modifier = Quan_colonised_prov }
+				}
+			}
+		}
+		
+		effect = {
+			ROOT = {
+				location = {
+					save_event_target_as = Quan_colonised_prov
+				}
+				#add_province_modifier = { name = Quan_colonised_prov years = 5 }
+			}
+			FROM = {
+				character_event = { id = T4NQuan.17 } #choose type of holding
+				subtract_variable = { which = global_Clanauthority value = 20 }
+				treasury = -250
+			}
+			
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+			#additive_modifer = {
+			#	value = 10
+			#	trait = ambitious
+			#}
+		}
+	}
+}

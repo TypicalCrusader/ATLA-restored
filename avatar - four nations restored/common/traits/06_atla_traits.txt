@@ -2617,3 +2617,24 @@ airball_player = {
 	same_opinion = 15
 	air_religions_opinion = 10
 }
+
+princequan = {
+	customizer = no
+	random = no
+
+	opposites = {
+		earthking
+		earthkingconstitution
+		earthkingpuppet
+	}
+
+	martial = 1
+	stewardship = 2
+
+	vassal_opinion = 10
+
+	command_modifier = {
+		cavalry = 0.15
+		speed = 0.1
+	}
+}

@@ -1,0 +1,1139 @@
+#####                                          #####
+##                                                ##
+##     Events behind Clan Authority and Story     ##
+##  Written for T4N - Restored by TypicalCrusader ##
+##                                                ##
+#####                                          #####
+
+namespace = T4NQuan
+
+###      ###
+#Event List#
+###      ###
+
+#####
+##T4NQuan.1 - Grant Trait princequan to new ruler
+##T4NQuan.2 - Remove trait princequan if char is no longer a ruler of k_quan
+##T4NQuan.3 - Check if CA is not < 0 / > 100 (yearly)
+##T4NQuan.4 - Grant CA modifer based on current CA (yearly + startup)
+##T4NQuan.5 - Assign tributes (startup)
+##T4NQuan.6 - Clan Authority Yearly gain/loss (Yearly)
+##T4NQuan.7 - Pre Scripted Mandate Revolt Event
+##T4NQuan.8 - Five Banner Rebelion
+##T4NQuan.9 - Declare Five Banners Rebelion
+##T4NQuan.10 - World Event stating that revolt has started
+##T4NQuan.11 - Coronation, Hou-Quan Narrative event (startup)
+##T4NQuan.12 - Rebuild the Walls, (Hou-quan narrative 2 )
+##T4NQuan.13 - Taming the Frontier, (Hou-Quan narrative 3)
+##T4NQuan.14 - Reform Fail (Hou-Quan narrative 4)
+##T4NQuan.15 - Kinsmanship (Hou-Quan narrative 5)
+##T4NQuan.16 - Strategist / Martial edu gain (Hou-Quans)
+##T4NQuan.17 - Colony Event
+##T4NQuan.18 - Day of The Reconing (pt.1) (Quan wins)
+##T4NQuan.19 - Day of The Reconing (pt.2)
+##T4NQuan.20 - Day of The Reconing (pt.3)
+##T4NQuan.21 - Retribution (pt.1) (FBR wins)
+##T4NQuan.22 - Retribution (pt.2)
+##T4NQuan.23 - Retribution (pt.3)
+###Start of Random CA gain/lose events
+##
+#####
+
+#Grant Trait to new ruler
+character_event = {
+	id = T4NQuan.1
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { trait = princequan }
+		has_landed_title = k_quan
+	}
+	
+	immediate = {
+		#Default CA to 50 after previous ruler death
+		set_variable = { which = global_Clanauthority value = 50 }
+		add_trait = princequan
+		
+		clr_global_flag = CAgainblock
+		clr_global_flag  = CAloseblock
+	}
+}
+
+#Remove trait if char is no longer a ruler of k_quan
+character_event = {
+	id = T4NQuan.2
+	is_triggered_only = yes
+	hide_window = yes	
+	
+	trigger = {
+		trait = princequan
+		NOT = { has_landed_title = k_quan }
+	}	
+	
+	immediate = { 
+		remove_trait = princequan
+	}
+}
+
+#Check if CA is not < 0  / > 100 (yearly)
+character_event = {
+	id = T4NQuan.3
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_landed_title = k_quan
+	}
+	
+	immediate = {
+		#if CA > 100 then set it to 100 and block any gain
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value > 100 }
+			}
+			set_variable = { which = global_Clanauthority value = 0 }
+			set_global_flag = CAgainblock
+		}
+		#if CA < 0 then set it to 0 and block any lose
+		else_if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value < 0 }
+			}		
+			set_variable = { which = global_Clanauthority value = 0 }
+			set_global_flag = CAloseblock
+		}
+		if = {
+			limit = {
+				has_global_flag = CAgainblock
+				check_variable = { which = global_Clanauthority value <= 95 }
+			}
+			clr_global_flag = CAgainblock
+		}
+		else_if = {
+			limit = {
+				has_global_flag = CAloseblock
+				check_variable = { which = global_Clanauthority value >= 5 }
+			}
+			clr_global_flag = CAloseblock
+		}
+	}
+}
+
+#Grant CA modifer based on current CA (yearly + startup)
+character_event = {
+	id = T4NQuan.4
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_landed_title = k_quan
+	}
+
+	immediate = {
+		quan_gib_ca_modifier_effect = yes
+	}
+}
+
+character_event = {
+	id = T4NQuan.5
+	only_rulers = yes
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		is_save_game = no
+	}
+
+	immediate = {
+		#any_independent_ruler = {
+		if = {	
+			limit = {
+				capital_scope = {
+					region = world_dongfang_peninsular
+				}
+				is_tribal = yes
+				rebel = no
+				independent = yes
+				NOT = { has_character_flag = LowCARevolter }
+			}
+			suzerain = {
+				remove_tributary = PREV
+			}			
+			k_quan = {
+				owner = {
+					make_tributary = {
+						who = ROOT
+						percentage = 0.2
+						tributary_type = quan_tributary
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = T4NQuan.6 
+	is_triggered_only = yes
+	only_rulers = yes
+
+	picture = GFX_evt_chin_war
+	desc = QuanYearlycheckdesc
+
+	trigger = {
+		has_landed_title = k_quan
+		NOR = {
+			has_global_flag = CAgainblock
+			has_global_flag = CAloseblock
+		}
+	}
+
+	immediate = {
+	
+		set_variable = { which = oldclanauthority which = global_Clanauthority }
+		set_variable = { which = CA_lawgain value = 0 }
+		set_variable = { which = CA_mileducationgain value = 0 }
+		set_variable = { which = global_CA_randomgain value = 0 }
+		set_variable = { which = CA_tributesgain value = 0 }
+
+		ROOT = {
+
+			#Tributaries
+			any_tributary = {
+				if = {
+					limit = {
+						is_tributary = {
+							type = quan_tributary
+						}				
+					}
+					change_variable = { which = CA_tributesgain value = 1 }
+				}
+			}
+
+			#Military education Traits + Strategist trait 
+			trigger_switch = {
+				on_trigger = trait
+
+				misguided_warrior = { change_variable = { which = CA_mileducationgain value = 0.5 } }
+				tough_soldier = { change_variable = { which = CA_mileducationgain value = 1 } }
+				skilled_tactician = { change_variable = { which = CA_mileducationgain value = 1.5 } }
+				brilliant_strategist = { change_variable = { which = CA_mileducationgain value = 2 } }
+			}
+
+			trigger_switch = {
+				on_trigger = trait
+
+				strong = { change_variable = { which = CA_mileducationgain value = 1 } }
+				weak = { change_variable = { which = CA_mileducationgain value = -1 } }
+			}
+
+			if = {
+				limit = {
+					NOR = {
+						trait = misguided_warrior
+						trait = tough_soldier
+						trait = skilled_tactician 
+						trait = brilliant_strategist
+					}
+				}
+				change_variable = { which = CA_mileducationgain value = -1 }
+			}
+
+			if = {
+				limit = {
+					trait = strategist
+				}
+				change_variable = { which = CA_mileducationgain value = 1.5 }
+			}
+
+			#TODO:Laws go here, when they will be done
+		}
+		
+		
+		
+		change_variable = { which = global_Clanauthority which = CA_tributesgain }
+		change_variable = { which = global_Clanauthority which = CA_mileducationgain }
+		change_variable = { which = global_Clanauthority which = CA_lawgain }
+		change_variable = { which = global_Clanauthority which = global_CA_randomgain }
+			
+		set_variable = { which = CAgain which = global_Clanauthority }
+		subtract_variable = { which = CAgain which = oldclanauthority }
+
+		if = {
+			limit = {
+				OR = {
+					check_variable = { which = global_Clanauthority value > 100 }
+					check_variable = { which = global_Clanauthority value < 0 } 
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { which = global_Clanauthority value > 100 }
+				}
+				character_event = { id = T4NQuan.3 }
+			}
+			if = {
+				limit = {
+					check_variable = { which = global_Clanauthority value < 0 }					
+				}
+				character_event = { id = T4NQuan.3 }
+			}
+		}
+
+	}
+
+	option = {
+		name = QuanYearlycheckopt
+		custom_tooltip = {
+			text = QuanYearlycheck
+		}
+	}
+}
+
+#Pre Scripted Mandate Revolt Event
+narrative_event = {
+	id = T4NQuan.7
+	only_rulers = yes
+	is_triggered_only = yes
+	#window = ChonkerEventWindowNarrative
+	#background = GFX_Chonker
+	picture = GFX_evt_suspicious_noble
+	border = GFX_event_narrative_frame_intrigue
+	title = QuanPreRevoltEvtTit
+	desc = QuanPreRevoltEvtDesc
+
+	trigger = {
+		has_landed_title = k_quan
+		k_quan = {	
+			OR = {
+				AND = {
+					has_law = quan_army_5
+					has_law = quan_council_4
+					has_law = quan_admin_3
+				}
+				AND = {
+					has_law = quan_army_5
+					has_law = quan_council_6
+					#TODO:after testing add all other conclave council law
+				}
+			}
+		}
+	}
+
+	immediate = {
+		character_event = { id = T4NQuan.8 years = 1 }
+	}
+
+	option = {
+		name = QuanPreRevoltEvtOpt
+		custom_tooltip = {
+			text = Quan_alea_iacta_est
+			hidden_tooltip = {
+				set_global_flag = Quan_the_die_is_cast
+			}
+		}
+	}
+}
+
+#Five Banners revolt
+#T h i c c 
+
+narrative_event = {
+	id = T4NQuan.8
+	is_triggered_only = yes
+	only_rulers = yes
+	picture = GFX_evt_burning_castle_hf
+	title = QuanFiveBannersTit
+	desc = QuanFiveBannersDesc
+	
+	trigger = {
+		has_global_flag = Quan_the_die_is_cast
+		has_landed_title = k_quan
+	}
+	
+	immediate = {
+		change_variable = { which = global_Clanauthority value = -15 }
+		if = {
+			limit = {
+				check_variable = { which = global_Clanauthority value < 0 }
+			}
+			character_event = { id = T4NQuan.3 }
+		}
+		c_tanghua = {
+			holder_scope = {
+				save_event_target_as = Quan_Five_Banners_leader
+			}
+		}
+	}
+	
+	option = {
+		name = QuanFiveBannersOpt
+		custom_tooltip = {
+			text = Quan_rebelion_begins
+			hidden_tooltip = {
+				c_nayong = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+					}
+				}
+				c_qijing = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+					}
+				}
+				c_jejin = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+					}
+				}
+				c_tangong = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+					}
+				}
+				c_tanghua = {
+					holder_scope = {
+						set_character_flag = Quan_Five_banners_member
+						set_character_flag = Quan_Five_banners_Leader
+						event_target:Quan_Five_Banners_leader = {
+							character_event = { id = T4NQuan.9 }
+						}
+					}	
+				}				
+			}				
+		}
+	}
+}
+
+character_event = {
+	id = T4NQuan.9
+	is_triggered_only = yes
+	only_rulers = yes
+	hide_window = yes
+	
+	
+	trigger = {
+		has_character_flag = Quan_Five_banners_Leader
+		has_global_flag = Quan_the_die_is_cast
+	}
+	
+	immediate = {
+		ROOT = {
+			k_quan = {
+				remove_tributary = ROOT
+			}
+			primary_title = {
+				holder_scope = {
+					activate_title = { title = k_five_banners status = yes }
+					grant_title = k_five_banners
+				}
+			}
+			k_five_banners = {
+				holder_scope = {
+					copy_title_laws = PREV
+					copy_title_history = PREV			
+					#if = {
+						#limit = {
+							#has_game_rule = 
+						#}
+						#o h  b o i now you are fucked
+						spawn_unit = {
+							owner = ROOT
+							province = ROOT
+							home = ROOT			
+							
+							troops = {
+								archers = { 1000 1000 }
+								light_infantry = { 1500 1500 }
+								light_cavalry = { 2500 2500 }
+							}
+
+							attrition = 1.0
+							disband_on_peace = yes
+							maintenance_multiplier = 0.5
+						}
+					#}
+				}
+			}	
+		}
+		any_playable_ruler = {
+			limit = {
+				culture = dongfangian
+				has_character_flag = Quan_Five_banners_member
+				NOT = { has_character_flag = Quan_Five_banners_Leader }
+			}
+			k_quan = {
+				remove_tributary = PREV
+			}
+			primary_title = {
+				set_defacto_liege = ROOT
+			}
+		}
+		k_quan = {
+			holder_scope = {
+				reverse_war = {
+					target = PREV
+					casus_belli = Quan_scripted_revolt_cb
+				}
+			}
+		}
+	}
+	
+	option = {
+		any_playable_ruler = {
+			limit = {
+				ai = no
+			}
+			set_global_flag = WorldState_QuanFiveBannerRebelion
+			clr_global_flag = Quan_the_die_is_cast
+			narrative_event = { id = T4NQuan.10 }
+		}
+	}	
+}
+
+narrative_event = {
+	id = T4NQuan.10
+	is_triggered_only = yes
+	only_rulers = yes
+	ai = no
+	picture = GFX_evt_china_unrest
+	title = QuanFiveBannersWorldTit
+	desc = QuanFiveBannersWorldDesc
+	#frame =
+	
+	trigger = {
+		has_global_flag = WorldState_QuanFiveBannerRebelion
+	}
+	
+	option = {
+		trigger = {
+			has_landed_title = k_quan
+		}
+		name = QuanRebelionPrinceReaction
+	}
+	
+	option = {
+		trigger = {
+			OR = {
+				has_landed_title = k_five_banners
+				vassal_of = k_five_banners
+			}
+		}
+		name = QuanRebelionRebelReaction
+	}
+	
+	option = {
+		trigger = {
+			has_landed_title = e_earth_kingdom
+			OR = {
+				dynasty = 1366 #Hou-Ting
+				dynasty = 3972 #Hou
+				dynasty = 3971 #Hao
+			}
+		}
+		name = QuanRebelionEKReaction
+		hidden_tooltip = {
+			narrative_event = { id = T4NQuan.11 }
+		}		
+	}
+
+	option = {
+		trigger = {
+			NOR = {
+				AND = {
+					has_landed_title = e_earth_kingdom
+					OR = {
+						dynasty = 1366 #Hou-Ting
+						dynasty = 3972 #Hou
+						dynasty = 3971 #Hao
+					}
+				}
+				OR = {
+					has_landed_title = k_five_banners
+					vassal_of = k_five_banners
+				}
+				has_landed_title = k_quan
+			}
+		}
+		name = QuanRebelionWorldReaction
+	}
+}
+
+#coronation of the prince		
+narrative_event = {
+	id = T4NQuan.11
+	is_triggered_only = yes
+	only_rulers = yes
+	title = QuanHouQuanNarrativeTit1
+	desc = QuanHouQuanNarrativeDesc1
+	picture = GFX_evt_coronation_cm
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		NOT = { has_character_flag = Quan_narrative_chain_start }
+		has_landed_title = k_quan
+	}
+	
+	option = { #Let My Rule Begin
+		name = QuanHouQuanNarrativeOpt1a
+		set_character_flag = Quan_narrative_chain_start
+		narrative_event = { id = T4NQuan.12 years = 2 random = 120 }
+		prestige = 50
+	}
+		
+}
+
+
+#Decay
+narrative_event = {
+	id = T4NQuan.12
+	is_triggered_only = yes
+	only_rulers = yes
+	title = QuanHouQuanNarrativeTit2
+	desc = QuanHouQuanNarrativeDesc2
+	#picture = 
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		has_landed_title = k_quan
+	}
+	
+	option = { #Rebuild Them
+		name = QuanHouQuanNarrativeOpt2a
+		narrative_event = { id = T4NQuan.13 years = 2 random = 120 }
+		treasury = -450
+		prestige = 150
+		b_crouching_tiger = {
+			#add_building = militia_barracks_4
+			add_building = quan_walls_4
+		}
+		custom_tooltip = {
+			text = QuanNextYearCAGain5
+			hidden_tooltip = {	
+				change_variable = { which = global_CA_randomgain value = 5 }
+			}
+		}
+	}
+	
+	option = { #we dont need them
+		name = QuanHouQuanNarrativeOpt2b
+		narrative_event = { id = T4NQuan.13 years = 2 random = 120 }
+		custom_tooltip = {
+			text = QuanNextYearCALoss10
+			hidden_tooltip = {	
+				change_variable = { which = global_CA_randomgain value = -10 }
+			}
+		}		
+	}
+}
+
+#Taming the Frontier (Hou-Quan narrative 3)
+narrative_event = {
+	id = T4NQuan.13
+	is_triggered_only = yes
+	only_rulers = yes
+	title = QuanHouQuanNarrativeTit3
+	desc = QuanHouQuanNarrativeDesc3
+	#picture = 
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		has_landed_title = k_quan
+	}
+	
+	option = { #allow colonisation
+		name = QuanHouQuanNarrativeOpt3a
+		custom_tooltip = {
+			text = Quan_clan_dislike_warn
+			hidden_tooltip = {
+				any_tributary = {
+					opinion = {
+						modifier = opinion_deeply_insulted
+						who = ROOT
+						years = 10
+					}
+				}
+				set_global_flag = Quan_colonisation_allowed
+				narrative_event = { id = T4NQuan.14 years = 2 random = 120 }
+			}
+		}
+	}
+	
+	option = { #dissallow it 
+		name = QuanHouQuanNarrativeOpt3b
+		custom_tooltip = {
+			text = Quan_clan_like
+			hidden_tooltip = {
+				any_tributary = {
+					opinion = {
+						modifier = opinion_reasonable
+						who = ROOT
+						years = 10
+					}
+				}
+				set_global_flag = Quan_colonisation_disallowed
+				narrative_event = { id = T4NQuan.14 years = 2 random = 120 }
+			}
+		}
+	}
+}
+
+
+
+
+#Kinsmanship
+narrative_event = {
+	id = T4NQuan.15
+	is_triggered_only = yes
+	only_rulers = yes
+	hide_from = no
+	title = QuanKinsmanshipTit
+	desc = QuanKinsmanshipDesc
+	picture = GFX_evt_diplomat_hf
+	
+	trigger = {
+		character = c_60009 #sorry kids scripted linear chain time
+		has_landed_title = k_quan		
+	}
+
+	
+	#We shall rejoin our Kinsman!
+	option = {
+		name = QuanKinsmanshipRejoin
+
+		e_earth_kingdom = {
+			holder_scope = {
+				make_tributary = {
+					who = ROOT
+					percentage = 0.2
+					tributary_type = earth_kingdom_state_tributary #they are first and only ""Canon"" state of EK
+				}
+			}
+			opinion = {
+				modifier = opinion_reasonable
+				who = ROOT
+				years = 100
+			}				
+		}
+	}
+	
+	#Who need Family Bonds anyway?
+	option = {
+		name = QuanKinsmanshipReject
+		add_trait = unjust
+		add_trait = cynical
+		e_earth_kingdom = {
+			holder_scope = {
+				opinion = {
+					modifier = opinion_deeply_insulted
+					who = ROOT
+					years = 100
+				}
+			}
+		}
+	}
+}
+	
+	
+#Strategist / Martial edu gain (Hou-Quans)
+narrative_event = {
+	id = T4NQuan.16
+	is_triggered_only = yes
+	title = QuanHouQuanBloodStratTit
+	desc = QuanHouQuanBloodStratDesc
+	picture = GFX_evt_china_invades
+	
+	trigger = {
+		any_owned_bloodline = {
+			has_bloodline_flag = hou_quan
+		}
+		OR = {
+			trait = misguided_warrior
+			trait = tough_soldier
+			trait = skilled_tactician
+			trait = brilliant_strategist
+		}
+		NOT = { has_character_flag = Quan_edu_strat_event_fired }
+	}
+	
+	option = {
+		name = QuanHouQuanBloodStratOpt
+		custom_tooltip = {
+			text = Quan_swiggity_swooty
+			hidden_tooltip = {
+				random_list = {
+					50 = { #you can get better education!
+						if = {
+							limit = {
+								trait = misguided_warrior
+							}
+							random_list = {
+								75 = {
+									remove_trait = misguided_warrior
+									add_trait = tough_soldier
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								25 = { 
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+							}
+							break = yes
+						}
+						if = {
+							limit = {
+								trait = tough_soldier
+							}
+							random_list = {
+								50 = { 
+									remove_trait = tough_soldier
+									add_trait = skilled_tactician	
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								50 = { set_character_flag = Quan_edu_strat_event_fired }
+							}
+							break = yes
+						}
+						if = {
+							limit = {
+								trait = skilled_tactician
+							}
+							random_list = {
+								25 = { 
+									remove_trait = skilled_tactician
+									add_trait = brilliant_strategist	
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								75 = { set_character_flag = Quan_edu_strat_event_fired  }
+							}
+							break = yes
+						}
+						if = { #special cases
+							limit = {
+								trait = brilliant_strategist
+								NOT = { trait = strategist }
+							}
+							random_list = {
+								75 = { 
+									add_trait = strategist
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								25 = { set_character_flag = Quan_edu_strat_event_fired }
+							}
+							break = yes
+						}
+						if = {
+							limit = {
+								trait = brilliant_strategist
+								trait = strategist 
+							}
+							random_list = {
+								60 = { 
+									martial = 1 
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								20 = { 
+									martial = 2
+									set_character_flag = Quan_edu_strat_event_fired
+								}
+								20 = { set_character_flag = Quan_edu_strat_event_fired }
+							}
+							break = yes
+						}
+					}
+					50 = { #you can get strategist trait!
+						random_list = {
+							50 = {
+								add_trait = strategist
+								set_character_flag = Quan_edu_strat_event_fired
+							}
+							50 = { set_character_flag = Quan_edu_strat_event_fired }
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+character_event = {
+	id = T4NQuan.17
+	is_triggered_only = yes
+	only_rulers = yes
+	hide_from = yes
+	desc = QuanColonisation
+	picture = GFX_evt_powerful_tower_wol
+	
+	trigger = {
+		has_landed_title = k_quan
+	}
+	
+	option = {
+		name = QuanChoosenCastle
+		
+		event_target:Quan_colonised_prov = {
+			location = {
+				build_holding = {
+					type = castle
+					holder = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = QuanChoosenCity
+		
+		event_target:Quan_colonised_prov = {
+			location = {
+				build_holding = {
+					type = city
+					holder = ROOT
+				}
+			}
+		}
+	}
+}		
+
+#Day of Reconing
+narrative_event = {
+	id = T4NQuan.18
+	only_rulers = yes
+	is_triggered_only = yes
+	title = QuanMorningTit
+	desc = QuanMorningDesc
+	picture = GFX_evt_china_rebel_general
+	
+	trigger = {
+		has_landed_title = k_quan
+		has_global_flag = Quan_QuanWonCivilWar
+	}
+	
+	#Attack [Quan_Five_Banners_leader.GetFirstName] with full force
+	option = {
+		name = QuanMorningOpt1
+		set_character_flag = killed_FBR_leader
+		event_target:Quan_Five_Banners_leader = {
+			death = {
+				death_reason = death_murder_beheading
+				killer = ROOT
+			}
+		}
+		narrative_event = { id = T4NQuan.19 } #Day of Reconing pt.2
+	}
+	
+	#Attack the rock
+	option = {
+		name = QuanMorningOpt2
+		set_character_flag = attacked_rock
+		narrative_event = { id = T4NQuan.19 } #Day of Reconing pt.2
+	}
+}	
+
+#Day of Reconing pt.2
+narrative_event = {
+	id = T4NQuan.19
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	picture = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		picture = GFX_evt_cornered_duel_hf
+	}
+	picture = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		picture = GFX_evt_judged_by_ruler
+	}	
+	
+	title = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		text = QuanReconingTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		text = QuanJusticeTit
+	}
+	
+	desc = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		text = QuanReconingDesc
+	}
+	desc = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		text = QuanJusticeDesc
+	}
+	
+	trigger = {
+		has_landed_title = k_quan
+		has_global_flag = Quan_QuanWonCivilWar
+	}
+
+	#Oh Ancestors what have i done?!
+	option = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		name = QuanReconingRegret
+		set_character_flag = Quan_ReconingRegret
+		narrative_event = { id = T4NQuan.20 days = 1 }
+	}
+	
+	#Eh one traitor down
+	option = {
+		trigger = {
+			has_character_flag = killed_FBR_leader
+		}
+		name = QuanReconingArbitrary
+		narrative_event = { id = T4NQuan.20 days = 1 }
+		set_character_flag = Quan_ReconingArbitrary
+	}
+	
+	#Let one of them to become advisor
+	option = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		name = QuanJusticeAdvisor
+		set_character_flag = Quan_JusticeAdvisor
+		narrative_event = { id = T4NQuan.20 }
+	}
+	
+	#expel them from the golden steppe
+	option = {
+		trigger = {
+			has_character_flag = attacked_rock
+		}
+		name = QuanJusticeExile
+		set_character_flag = Quan_JusticeExile
+		narrative_event = { id = T4NQuan.20 }
+	}
+}
+
+#Day of Reconing (pt.3)
+narrative_event = {
+	id = T4NQuan.20
+	is_triggered_only = yes
+	only_rulers = yes
+
+	trigger = {
+		has_landed_title = k_quan
+		has_global_flag = Quan_QuanWonCivilWar
+	}
+	
+	title = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}
+		text = QuanRegretEvtTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = Quan_ReconingArbitrary
+		}	
+		text = QuanArbitraryEvtTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}	
+		text = QuanAdvisorEvtTit
+	}
+	title = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}	
+		text = QuanExileEvtTit
+	}
+
+	desc = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}
+		text = QuanRegretEvtDesc		
+	}
+	desc = {
+		trigger = {
+			has_character_flag = Quan_ReconingArbitrary
+		}	
+		text = QuanArbitraryEvtDesc	
+	}
+	desc = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}	
+		text = QuanAdvisorEvtDesc		
+	}
+	desc = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}	
+		text = QuanExileEvtDesc	
+	}
+
+	picture = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}
+		picture = GFX_evt_bloody_knife_hf
+	}
+	picture = {
+		trigger = {
+			has_character_flag = Quan_ReconingArbitrary
+		}	
+		picture = GFX_evt_king_Lunatic
+	}
+	picture = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}
+		picture = GFX_evt_meeting_hf
+	}
+	picture = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}	
+		picture = GFX_evt_riders_night_hf
+	}
+	
+	option = {
+		trigger = {
+			has_character_flag = Quan_ReconingRegret
+		}	
+		name = QuanDeath
+	}
+	option = {
+		trigger = {
+			OR = {
+				has_character_flag = Quan_ReconingArbitrary
+				has_character_flag = Quan_ReconingRegret
+			}
+		}		
+		name = QuanMoveOn
+	}
+	option = {
+		trigger = {
+			has_character_flag = Quan_JusticeAdvisor
+		}	
+		name = QuanAdvisor
+	}
+	option = {
+		trigger = {
+			has_character_flag = Quan_JusticeExile
+		}		
+		name = QuanExile
+	}	
+}
+	
+#Random gain events

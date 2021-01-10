@@ -1,0 +1,110 @@
+castle = {
+	long_wang_fortress = {
+		desc = long_wang_fortress_desc
+		potential = {
+			FROMFROM = {
+				title = b_long_wang_fortress
+			}
+		}
+		trigger = {
+			always = yes
+		}
+		heavy_infantry = 250
+		fort_level = 3
+		light_cavalry = 100
+		garrison_size = 0.05
+	}	
+	quan_stable_1 = {
+		desc = quan_stable_1_desc
+		potential = {
+			FROMFROM = {
+				title = b_crouching_tiger
+			}
+		}
+		trigger = {
+			TECH_CAVALRY = 2
+			TECH_FORTIFICATIONS_CONSTRUCTION = 1
+		}
+		replaces = ca_stable_1
+		add_number_to_name = no
+		gold_cost = 190
+		build_time = 180
+		light_cavalry = 150
+	}	
+	quan_stable_2 = {
+		desc = quan_stable_2_desc
+		upgrades_from = quan_stable_1
+		potential = {
+			FROMFROM = {
+				title = b_crouching_tiger
+			}
+		}
+		trigger = {
+			TECH_CAVALRY = 3
+			TECH_FORTIFICATIONS_CONSTRUCTION = 2
+		}		
+		replaces = ca_stable_2
+		add_number_to_name = no
+		gold_cost = 286
+		build_time = 350
+		light_cavalry = 200
+	}
+	quan_stable_3 = {
+		desc = quan_stable_3_desc
+		upgrades_from = quan_stable_2
+		potential = {
+			FROMFROM = {
+				title = b_crouching_tiger
+			}
+		}
+		trigger = {
+			TECH_CAVALRY = 4
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}		
+		replaces = ca_stable_3
+		add_number_to_name = no
+		gold_cost = 486
+		build_time = 450
+		light_cavalry = 150
+	}
+	quan_walls_4 = {
+		desc = quan_stable_3_desc
+		upgrades_from = quan_stable_2
+		potential = {
+			FROMFROM = {
+				title = b_crouching_tiger
+			}
+		}
+		trigger = {
+			TECH_CAVALRY = 4
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}		
+		replaces = quan_walls_3
+		add_number_to_name = no
+		gold_cost = 651
+		build_time = 841
+		garrison_size = 0.5
+		fort_level = 3
+	}
+	militia_barracks_4 = {
+		desc = quan_stable_3_desc
+		upgrades_from = quan_stable_2
+		potential = {
+			FROMFROM = {
+				title = b_crouching_tiger
+			}
+		}
+		trigger = {
+			TECH_CAVALRY = 4
+			TECH_FORTIFICATIONS_CONSTRUCTION = 3
+		}		
+		replaces = quan_walls_3
+		add_number_to_name = no
+		gold_cost = 651
+		build_time = 841
+		garrison_size = 0.1
+		light_infantry = 450
+		archers = 210
+		earth_benders = 25
+	}	
+	

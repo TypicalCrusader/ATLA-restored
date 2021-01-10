@@ -11,11 +11,10 @@ b_da_chengbao_zhong = tribal
 #b_gujia = temple
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = way_of_chin
 
 #History
-669.9.13 = { b_da_chengbao_zhong = castle }
 669.9.13 = { religion = earth_spirituality }
 791.2.4 = { b_gui_kulou = temple }
 938.7.2 = { b_gujia = city }
