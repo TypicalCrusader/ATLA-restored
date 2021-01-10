@@ -19,7 +19,15 @@ succession_laws = {
 						}
 					}
 				}
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}
 				NOT = { religion_group = air_religions }
+				is_merchant_republic = no
+				is_patrician = no
+				holy_order = no
+				is_theocracy = no
 				OR = {
 					independent = yes
 					NOT = {
@@ -28,12 +36,19 @@ succession_laws = {
 						}
 					}
 				}
+				NOT = { government = chinese_imperial_government }
 			}
-			ATLA_succ_block	= yes	
-			is_tribal_type_title = yes
+			OR = {
+				is_landless_type_title = no
+				is_landless_type_title = yes
+				is_tribal_type_title = yes
+				temporary = yes
+			}
+			rebel = no
 			OR = {
 				holder_scope = { is_feudal = yes }
 				holder_scope = { is_tribal = yes }
+				holder_scope = { government = lawless_piracy }
 			}
 			holder_scope = { NOT = { government = pirate_cartel } }
 			#is_primary_type_title = no
@@ -84,7 +99,15 @@ succession_laws = {
 						}
 					}
 				}
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}				
 				NOT = { religion_group = air_religions }
+				is_merchant_republic = no
+				is_patrician = no
+				holy_order = no
+				is_theocracy = no
 				OR = {
 					independent = yes
 					NOT = {
@@ -93,7 +116,13 @@ succession_laws = {
 						}
 					}
 				}
-				ATLA_succ_block	= yes	
+				NOT = { government = chinese_imperial_government }
+			}
+			OR = {
+				is_landless_type_title = no
+				is_landless_type_title = yes
+				is_tribal_type_title = yes
+				temporary = yes
 			}
 			
 			rebel = no
@@ -146,6 +175,10 @@ succession_laws = {
 				OR = {
 					has_religion_feature = religion_beatification
 				}
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}				
 			}
 			holder_scope = {
 				has_dlc = "Holy Fury"
@@ -158,6 +191,10 @@ succession_laws = {
 						}
 					}
 				}
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}				
 				NOR = { 
 					has_religion_feature = religion_matriarchal
 					has_religion_feature = religion_patriarchal
@@ -237,6 +274,10 @@ succession_laws = {
 
 		potential = {
 			holder_scope = {
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}			
 				holy_order = no
 				OR = {
 					independent = yes
@@ -362,6 +403,10 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}			
 				is_merchant_republic = no
 				is_patrician = no
 			}
@@ -495,6 +540,10 @@ succession_laws = {
 		vassal_opinion = 10
 		potential = {
 			holder_scope = {
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}			
 				OR = {
 					independent = yes
 					NOT = {
@@ -555,9 +604,14 @@ succession_laws = {
 		vassal_opinion = 5
 		potential = {
 			holder_scope = {
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}			
 				OR = {
 					culture = sandbender
 					culture = southern_water
+					has_landed_title = k_quan
 				}
 				OR = {
 					independent = yes
@@ -644,6 +698,10 @@ succession_laws = {
 		dynasty_opinion = -5
 		potential = {
 			holder_scope = {
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}			
 				NOT = { religion_group = air_religions }
 				OR = {
 					independent = yes
@@ -759,6 +817,10 @@ succession_laws = {
 				is_landless_type_title = yes
 			}
 			holder_scope = {
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}			
 				is_theocracy = no
 				is_republic = no
 				is_merchant_republic = no
@@ -874,6 +936,10 @@ succession_laws = {
 				religion_group = air_religions
 			}
 			holder_scope = {
+				NOR = {
+					has_landed_title = k_earth_kingdom
+					has_landed_title = e_earth_kingdom
+				}			
 				is_patrician = no
 				is_merchant_republic = no
 				OR = {

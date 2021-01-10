@@ -90,7 +90,7 @@ character_event = {
 				}
 				save_event_target_as = MF_fact_leader
 			}
-			MF_fact_leader = { character_event = { id = TEA.2000 } }    
+			event_target:MF_fact_leader = { character_event = { id = TEA.2000 } }    
 		}
     }
 }
