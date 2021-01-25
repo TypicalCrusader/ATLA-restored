@@ -1,51 +1,48 @@
-513.6.23 = {
-	holder = 32963
+510.6.12 = {
+	holder = 32899
 	law = succ_gavelkind
 	law = cognatic_succession
 	law = law_voting_power_1
 	law = war_voting_power_1
 }
-577.3.16 = {
-	holder = 32965
+570.2.4 = {
+	holder = 32903
 }
-600.7.13 = {
-	holder = 32972
+602.6.24 = {
+	holder = 32906
 }
-609.3.19 = {
-	holder = 32975
+639.6.12 = {
+	holder = 32911
 }
-622.8.27 = {
-	holder = 0
+661.5.16 = {
+	holder = 32915
 }
-665.5.11 = {
-	holder = 33070
+685.4.12 = {
+	holder = 32918
 }
-677.12.21 = {
-	holder = 33077
+731.5.27 = {
+	holder = 32925
 }
-730.10.16 = {
-	holder = 33083
+771.4.7 = {
+	holder = 32930
 }
-782.3.13 = {
-	holder = 33093
-}
-789.10.4 = {
-	holder = 33089
-}
-791.10.20 = {
-	holder = 33096
-}
-835.11.9 = {
-	holder = 33102
+823.8.19 = {
+	holder = 32932
 	law = true_cognatic_succession
 	law = succ_feudal_elective
 }
-879.10.10 = {
-	holder = 33109
+861.1.22 = {
+	holder = 32942
 }
-920.8.13 = {
-	holder = 33111
+919.6.5 = {
+	holder = 32946
 }
-953.9.2 = {
-	holder = 0
+950.10.7 = {
+	holder = 32949
+}
+988.8.5 = {
+	holder = 32956
+}
+1002.7.2 = {
+	holder = 32961
 }

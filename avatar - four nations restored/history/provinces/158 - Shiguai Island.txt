@@ -11,11 +11,10 @@ b_naogui_de_chengbao = tribal
 #b_shutsubotsu_shimasu = temple
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 
 #History
-674.5.2 = { b_naogui_de_chengbao = castle }
 703.3.6 = { b_chumo = temple }
 812.3.4 = { b_shutsubotsu_shimasu = city }
 1002.9.24 = { religion = unificationism }

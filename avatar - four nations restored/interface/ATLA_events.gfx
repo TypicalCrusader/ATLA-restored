@@ -892,6 +892,13 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_evt_fire_nation_capital_path"
 		texturefile = "gfx/event_pictures/fire_nation_capital_path.dds"
+		name = "GFX_evt_chin_war"
+		texturefile = "gfx/event_pictures/chin_war.dds"
+		allwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_evt_chin_defeat"
+		texturefile = "gfx/event_pictures/chin_defeat.dds"
 		allwaystransparent = yes
 	}
 }

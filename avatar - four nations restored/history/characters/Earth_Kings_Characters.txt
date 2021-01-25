@@ -1,3 +1,6 @@
+#200 - 240 Earth Kings
+#60000 - Hou-Quan Yi, Prince of Quan
+
 ##########################Hao Dynasty
 200 = {
 	name = "Long Wang"
