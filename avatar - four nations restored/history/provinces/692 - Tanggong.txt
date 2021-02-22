@@ -1,0 +1,16 @@
+# c_tangong
+
+# County Title
+title = c_tangong
+
+# Settlements
+max_settlements = 2
+
+b_tangong = tribal
+
+
+# Misc
+culture = dongfangian
+religion = earth_spirituality
+
+#History
