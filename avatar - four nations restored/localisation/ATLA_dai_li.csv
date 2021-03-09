@@ -1,0 +1,58 @@
+####                                     ####
+#					                        #
+#        Dai Li Localisation file	        #
+# Made By Typical Crusader for T4N-Restored #
+#                                           #
+####                                     ####
+
+#Code;English;Unused
+
+#Society Name, Ranks and Currency
+dai_li;Dai Li;
+dai_li_desc;The secret police of Ba Sing Se, created by Avatar Kyoshi after Jian V's failed unification campaign. Knowledge of the Dai Li is widespread, yet they are only known as the "Protectors of Ba Sing Se heritage" in truth, the Dai Li is the ruthless secret police which assassinates, kidnaps and brainwashes people to further their goals and solidify their power. The Dai Li is dedicated to protecting the status quo that exist within the court and limiting the Earth King's influence, and few will ever be able to join them.;
+
+currency_name_daili;Heritage;
+
+dai_li_rank_1_female;Initiate;
+dai_li_rank_1_male;Initiate;
+dai_li_rank_2_female;Agent;
+dai_li_rank_2_male;Agent;
+dai_li_rank_3_female;Sergeant;
+dai_li_rank_3_male;Sergeant;
+dai_li_rank_4_female;Inspector;
+dai_li_rank_4_male;Inspector;
+dai_li_rank_5_female;Secretariat;
+dai_li_rank_5_male;Secretariat;
+dai_li_rank_6_female;Grand Secretariat;
+dai_li_rank_6_male;Grand Secretariat;
+
+#Decisions
+daili_train_bending_1;Train Bending;
+daili_train_bending_1_desc;;
+daili_train_subterfuge;Train Subterfuge;
+daili_train_subterfuge_desc;;
+daili_kidnap_person;Kidnap;
+daili_kidnap_person_desc;;
+daili_catch_dissident;Catch Dissidents;
+daili_catch_dissident_desc;;
+daili_brainwash;Brainwash;
+daili_brainwash_desc;;
+daili_raise_unrest;Raise Unrest;
+daili_raise_unrest_desc;;
+daili_train_bending_2;Master Bending;
+daili_train_bending_2_desc;;
+daili_learn_subbending;Learn Subbending;
+daili_learn_subbending_desc;;
+daili_start_revolt;Start Rebelion;
+daili_start_revolt_desc;;
+daili_use_sleepers;Use Sleeper Agents;
+daili_use_sleepers_desc;;
+daili_dethrone_monarch;Dethrone Earth Monarch;
+daili_dethrone_monarch_desc;;
+daili_use_joo_dee;Utilise Joo Dees;
+daili_use_joo_dee_desc;;
+
+
+#Government
+dai_li_government;Ministry of Cultural Preservation;
+dai_li_government_desc;The Ministry of Cultural Preservation, also known as the Dai Li, is tasked with the protection of the cultural heritage. This includes preserving culture, maintaining public order, and silencing threats to the state. They are the silent protectors of Ba Sing Se master earthbenders, silent, precise, and feared by all.;

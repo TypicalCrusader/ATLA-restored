@@ -205,6 +205,11 @@ feudal_governments = {
 				is_feudal = yes
 				}
 			}
+			NOT = { 
+				primary_title = {
+					title = d_dai_li
+				}
+			}			
 			NOT = {	religion_group = air_religions }
 			NOT = {	religion = piracy }
 			NOT = { is_government_potential = water_tribe_government }
@@ -212,6 +217,7 @@ feudal_governments = {
 			NOR = { 
 				has_landed_title = e_earth_kingdom 
 				has_landed_title = k_earth_kingdom 
+				has_landed_title = d_dai_li
 			}
 			is_patrician = no
 		}
@@ -559,6 +565,9 @@ feudal_governments = {
 		title_prefix = "order_"
 
 		potential = {
+			NOT = { 
+				has_landed_title = d_dai_li
+			}				
 			OR = {
 				holy_order = yes
 				AND = {
@@ -567,7 +576,7 @@ feudal_governments = {
 						religion = ROOT
 					}
 					ai = yes
-					NAND = { 
+					NAND = {
 						is_government_potential = merchant_republic_government 
 						OR = {
 							tier = DUKE
@@ -609,4 +618,62 @@ feudal_governments = {
 		can_inherit = no
 		free_retract_vassalage = yes
 	}
+	
+	dai_li_government = {
+		preferred_holdings = { CASTLE }
+		allowed_holdings = { 
+			CITY
+			CASTLE
+			FORT
+			HOSPITAL
+		}
+		free_revoke_on_tiers = {
+			baron
+			count
+		}
+		vassal_call_to_arms = {
+			republic_government
+			merchant_republic_government
+			feudal_government_earth_kingdom
+		}
+	
+		frame_suffix = "_daili"
+		title_prefix = "daili_"
+		
+		unit_modifier = {
+			earth_benders_offensive = 0.3
+			earth_benders_defensive = 0.2
+			earth_benders_morale = 0.35
+		}
+		
+		character_modifier = {
+			intrigue = 2
+			vassal_limit = -20
+			monthly_character_prestige = 0.05
+		}
+		
+		potential = {
+			has_landed_title = d_dai_li
+			culture_group = earth_kingdom_culture
+		}
+		
+		color = { 125 94 22 }
+		
+		can_imprison_without_reason = no
+		can_revoke_without_reason = no
+		
+		can_create_empires = no
+		can_create_kingdoms = no
+		can_be_granted_kingdoms_and_empires_by_other_government = no
+		have_gender_laws = no
+		can_inherit = no
+		
+		can_build_tribal = no
+		
+		capital_move_delay = 600
+
+		## Modifiers
+		court_size_modifier = 5	
+	
+	}	
 }

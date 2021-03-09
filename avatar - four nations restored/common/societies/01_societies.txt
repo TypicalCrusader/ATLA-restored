@@ -266,10 +266,17 @@ dai_li = { #Grand Secretariat of Ba Sing Se
 	sound = monastic_orders_interface
 	society_ranks_gfx = monk_ranks
 	
+	society_influence = no
+	
 	active = {
-		#year = 603
 		NOT = { has_global_flag = dai_li_disbanded }
 	}
+	
+	show_society = {
+		NOT = { has_global_flag = dai_li_disbanded }
+	}
+	
+	indestructible = yes
 	
 	can_join_society = {
 		hidden_trigger = {
@@ -281,73 +288,111 @@ dai_li = { #Grand Secretariat of Ba Sing Se
 				}
 			}
 		}
-		age = 18
-		trait = earthbender
-		more_experienced_incompetent_trigger = yes
+		age >= 18
 		culture = ba_sing_se
-		NOT = { has_landed_title = e_earth_kingdom }
+		NOR = { 
+			has_landed_title = e_earth_kingdom 
+			has_landed_title = k_earth_kingdom 
+		}
+		OR = {
+			trait = earthbender
+			has_landed_title = d_dai_li
+		}
 	}
+	
 	show_society = {
 		religion_group = earth_religions
 	}
+	
 	potential = {
 		culture = ba_sing_se
 	}
 	
-	society_rank = { # Agent
+	society_rank = { # Initiate
 		level = 1
 		limit = 100 
+		startup_limit = 10
+		modifier = {
+			monthly_character_piety = 0.01
+		}
+		decisions = {
+			daili_train_bending_1
+		}
+	}
+
+	society_rank = { # Agent
+		level = 2
+		limit = 75
 		startup_limit = 10
 		modifier = {
 			monthly_character_piety = 0.05
 			intrigue = 1
 		}
 		decisions = {
-			daili_train_bending
+			daili_train_subterfuge
+			daili_kidnap_person
 		}
 	}
 	
 	society_rank = { # Dai Li Sergeant
-		level = 2
+		level = 3
 		limit = 50
 		startup_limit = 6
 		modifier = { 
-			monthly_character_piety = 0.1
+			monthly_character_piety = 0.08
 			intrigue = 2
 		}
 		decisions = {
-			daili_train_bending
-			daili_kill_dissident
+			daili_catch_dissident
+			daili_brainwash
 		}
 	}
 	
 	society_rank = { # Dai Li Inspector
-		level = 3
-		limit = 5 
-		startup_limit = 3
+		level = 4
+		limit = 16 # 4 for each ring + 4 for inner palace grounds
+		startup_limit = 4
 		modifier = {
+			monthly_character_piety = 0.1
 			intrigue = 3
-			diplomacy = 1
 		}
 		decisions = {
-			daili_train_subterfuge
+			daili_raise_unrest
+			daili_train_bending_2
+			daili_frame_rivals
 		}
 	}
 
 	society_rank = { # Secretariat
-		level = 4
+		level = 5
 		limit = 3
 		startup_limit = 3
-		modifier = { 
+		modifier = {
+			monthly_character_piety = 0.15
 			intrigue = 4
+			diplomacy = 1
+		}
+		decisions = {
+			daili_learn_subbending
+			daili_start_revolt
+			daili_use_sleepers
+		}
+	}
+	
+	society_rank = { #Grand Secretariat
+		level = 6
+		limit = 1
+		startup_limit = 1
+		modifier = { 
+			monthly_character_piety = 0.2
+			intrigue = 5
 			diplomacy = 2
 		}
 		decisions = {
-			daili_raise_unrest
-			daili_learn_subbending
-			# daili_
+			daili_dethrone_monarch
+			daili_use_joo_dee
 		}
-	}
+	}	
 	
 	monthly_currency_gain = {
 		name = currency_name_daili
@@ -472,12 +517,25 @@ dai_li = { #Grand Secretariat of Ba Sing Se
 	startup_populate = {
 	    trigger = {
 			ai = yes
-	    	controls_religion = no
 			culture = ba_sing_se
-			age = 18
-			trait = earthbender
-			NOT = { trait = incompetent_bender }
-			is_in_society = no
+	    	OR = {
+				AND = {
+					age = 18
+					trait = earthbender
+					is_in_society = no
+					NOT = {
+						primary_title = {
+							OR = {
+								title = e_earth_kingdom
+								title = k_earth_kingdom
+							}
+						}
+					}
+				}
+				primary_title = {
+					title = d_dai_li
+				}
+			}
 		}
 	}
 }

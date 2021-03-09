@@ -1,0 +1,66 @@
+####									####
+#										   #
+#            Dai Li Event File			   #
+# Made by TypicalCrusader for T4N-Restored #
+#										   #
+####									####
+
+namespace = dai_li
+
+############
+#EVENT LIST#											
+# dai_li.1 #
+#
+#
+#
+############
+
+
+
+#Assign Current leader of d_dai_li as a leader of dai_li society
+#on_chronicle_start and on on_death
+character_event = {
+	id = dai_li.1
+	is_triggered_only = yes
+	hide_window = yes
+	only_rulers = yes
+	
+	trigger = {
+		#has_landed_title = d_dai_li
+		NOT = {
+			d_dai_li = {
+				holder_scope = {		
+					dai_li = {
+						PREV = {
+							is_society_grandmaster = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		d_dai_li = {
+			holder_scope = {
+				#Should not happen, but better to be sure
+				if = {
+					limit = {
+						NOT = {
+							society_member_of = dai_li
+						}
+						join_society = dai_li
+					}
+				}
+				dai_li = {
+					PREV = {
+						set_society_grandmaster = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+
+	

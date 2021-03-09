@@ -2901,7 +2901,7 @@ d_dai_li = {
 
 	# Always exists
 	#landless = yes
-	holy_order = yes
+	#holy_order = yes ok then fuck yourself game
 	controls_religion = ba_sing_se_cultural_heritage
 	
 	religion = ba_sing_se_cultural_heritage
