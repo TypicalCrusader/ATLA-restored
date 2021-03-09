@@ -1,0 +1,77 @@
+#####                                          #####
+##                                                ##
+##   Scripted Effect for Quan Events / Decisions  ##
+##  Written for T4N - Restored by TypicalCrusader ##
+##                                                ##
+#####                                          #####
+
+quan_gib_ca_modifier_effect = {
+	remove_character_modifier = CAmodif1
+	remove_character_modifier = CAmodif2
+	remove_character_modifier = CAmodif3
+	remove_character_modifier = CAmodif4
+	remove_character_modifier = CAmodif5
+	remove_character_modifier = CAmodif6
+		
+	if = {
+		limit = {
+			check_variable = { which = global_Clanauthority value >= 0 }
+			check_variable = { which = global_Clanauthority value <= 20 }
+		}
+		add_character_modifier = {
+			name = CAmodif1
+			years = -1
+		}
+		
+	}
+	if = {
+		limit = {
+			check_variable = { which = global_Clanauthority value >= 21 }
+			check_variable = { which = global_Clanauthority value <= 40 }
+		}
+		add_character_modifier = {
+			name = CAmodif2
+			years = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { which = global_Clanauthority value >= 41 }
+			check_variable = { which = global_Clanauthority value <= 44 }
+		}
+		add_character_modifier = {
+			name = CAmodif3
+			years = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { which = global_Clanauthority value >= 56 }
+			check_variable = { which = global_Clanauthority value <= 60 }
+		}
+		add_character_modifier = {
+			name = CAmodif4
+			years = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { which = global_Clanauthority value >= 61 }
+			check_variable = { which = global_Clanauthority value <= 80 }
+		}
+		add_character_modifier = {
+			name = CAmodif5
+			years = -1
+		}
+	}
+	if = {
+		limit = {
+			check_variable = { which = global_Clanauthority value >= 81 }
+			check_variable = { which = global_Clanauthority value <= 100 }
+		}
+		add_character_modifier = {
+			name = CAmodif6
+			years = -1
+		}
+	}
+}

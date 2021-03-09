@@ -1,0 +1,243 @@
+#splitted for obvious reason
+#5000 -
+
+#Princes of Quan
+5000 = {
+	name = "Hou-Quan"
+	culture = eastern_earth
+	religion = earth_spirituality
+	coat_of_arms = {
+		template = 0
+		layer = {
+			texture = 2
+			texture_internal = 30
+			emblem = 0
+			color = 0
+			color = 0
+			color = 0
+		}
+	}
+	used_for_random = no
+}
+
+#Random Lords
+5001 = {
+	name = "Dong"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no	
+}
+
+5002 = {
+	name = "Gonsun"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no	
+}
+
+5003 = {
+	name = "Liu"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5004 = {
+	name = "Bei"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5005 = {
+	name = "Guan"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5006 = {
+	name = "Yi"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5007 = {
+	name = "He"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+5008 = {
+	name = "Duan"
+	culture = dongfangian
+	religion = earth_spirituality
+	used_for_random = no
+}
+
+
+#Plebian Random Dynasties
+
+5009 = {
+	name = "Sartaq"
+	culture = dongfangian
+	religion = earth_spirituality
+}	
+
+5010 = {
+	name = "Mengu-Timur"
+	culture = dongfangian
+	religion = earth_spirituality
+}	
+
+5011 = {
+	name = "Timurid"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5012 = {
+	name = "Uriankhai"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5013 = {
+	name = "Bujakhin"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5014 = {
+	name = "Besud"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5015 = {
+	name = "Noyan"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5016 = {
+	name = "Jochid"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5017 = {
+	name = "Chagatayid"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5018 = {
+	name = "Borjigin"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5019 = {
+	name = "Chupanid"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5020 = {
+	name = "Injuid"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5021 = {
+	name = "Toluid"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5022 = {
+	name = "Ganbold"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5023 = {
+	name = "Bolormaa"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5024 = {
+	name = "Otgonbayar"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5025 = {
+	name = "Enkhtuyaa"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5026 = {
+	name = "Gantulga"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5027 = {
+	name = "Enkhjargal"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5028 = {
+	name = "Ganzorig"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5029 = {
+	name = "Narantsetseg"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5030 = {
+	name = "Ganbaatar"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5031 = {
+	name = "Sartuul"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5032 = {
+	name = "Olkhunut"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5033 = {
+	name = "Khatagin"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5034 = {
+	name = "Iljigin"
+	culture = dongfangian
+	religion = earth_spirituality
+}
+
+5035 = {
+	name = "Tsookhor"
+	culture = dongfangian
+	religion = earth_spirituality
+}

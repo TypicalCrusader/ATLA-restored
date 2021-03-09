@@ -11,11 +11,8 @@ b_inu = tribal
 #b_kuttom = temple
 
 # Misc
-culture = eastern_earth
+culture = dongfangian
 religion = earth_spirituality
 
 #History
-629.11.13 = { b_inu = castle }
-688.4.12 = { b_gou = city }
-754.2.12 = { b_kuttom = temple }
 1002.7.2 = { religion = unificationism }
