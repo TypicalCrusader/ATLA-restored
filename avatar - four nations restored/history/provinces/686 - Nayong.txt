@@ -1,0 +1,17 @@
+# c_nayong
+
+# County Title
+title = c_nayong
+
+# Settlements
+max_settlements = 2
+
+b_naygong = tribal
+
+# Misc
+culture = dongfangian
+religion = earth_spirituality
+
+#History
+
+

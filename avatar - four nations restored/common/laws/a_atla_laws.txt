@@ -33,6 +33,18 @@ law_groups = {
 		law_type = realm
 		allowed_for_councillors = no
 	}
+	Quan_laws_1 = { #Local Administration
+		law_type = realm
+		allowed_for_councillors = no
+	}
+	Quan_laws_2 = { #Council of Clans
+		law_type = realm
+		allowed_for_councillors = no		
+	}
+	Quan_laws_3 = { #Army law
+		law_type = realm
+		allowed_for_councillors = no		
+	}
 }
 laws = {
 	# EARTH KINGDOM UNITY
@@ -865,7 +877,7 @@ laws = {
 		demesne_size = 2
 
 		ai_will_do = {
-			factor = 0.01
+    factor = 0.01
 			modifier = {
 				factor = 0.1
 				has_law = ze_admin_slight_central
@@ -934,6 +946,7 @@ laws = {
 				check_variable = { which = global_royalAuthority value == 100 }
 			}	
 		}
+
 	}
 
 	bureaucracy_anarchy = {
@@ -1190,7 +1203,6 @@ laws = {
 			factor = 0.01
 		}
 	}
-}
 
 #	ek_army_law_0 = {
 #	group = ek_army_laws
@@ -1743,3 +1755,1220 @@ laws = {
 #		}
 #	}
 #}
+
+#	ek_army_law_5 = {
+#	group = ek_army_laws
+#	
+#	allow = {
+#		has_law = ek_army_law_4
+#		custom_tooltip = {
+#			text = has_RA_for_law_change_60
+#			hidden_tooltip = {
+#				check_variable = { which = global_royalAuthority value = 60 }
+#			}
+#		}
+#	}
+#
+#	potential = {
+#		holder_scope = { government = chinese_imperial_government }
+#	}
+#
+#	pass_effect = {
+#		#log = "slavery_legal pass ([This.GetFullBaseName])"
+#		custom_tooltip = {
+#			text = ek_army_law_5
+#			}
+#		}
+#
+#	effect = {
+#			#log = "slavery_legal ([This.GetFullBaseName])"
+#			custom_tooltip = {
+#				text = ek_army_law_5
+#			}
+#			hidden_effect = {
+#				revoke_law = ek_army_law_1
+#				revoke_law = ek_army_law_2
+#				revoke_law = ek_army_law_3
+#				revoke_law = ek_army_law_4
+#				revoke_law = ek_army_law_0
+#			}
+#		}
+#		
+#		global_levy_size = -0.8
+#		castle_vassal_max_levy = -0.8
+#		retinuesize_perc = 1
+#		retinue_maintenence_cost = -0.8
+#		land_morale = 0.4
+#		land_organisation = 0.25
+#		
+#		ai_will_do = {
+#			factor = 1000
+#		}
+#	}  
+
+#	ek_system_law_1 = {
+#	group = ek_law_system
+#	
+#	allow = {
+#		custom_tooltip = {
+#			text = has_RA_for_law_change_30
+#			hidden_tooltip = {
+#				check_variable = { which = global_royalAuthority value = 30 }
+#			}
+#		}
+#	}
+#
+#	potential = {
+#		holder_scope = { government = chinese_imperial_government }
+#	}
+#
+#	pass_effect = {
+#		#log = "slavery_legal pass ([This.GetFullBaseName])"
+#		custom_tooltip = {
+#			text = ek_system_law_1
+#			}
+#		}
+#
+#	effect = {
+#			#log = "slavery_legal ([This.GetFullBaseName])"
+#			custom_tooltip = {
+#				text = ek_system_law_1
+#			}
+#			hidden_effect = {
+#				revoke_law = ek_system_law_2
+#				revoke_law = ek_system_law_3
+#				revoke_law = ek_system_law_4
+#				revoke_law = ek_system_law_5
+#				revoke_law = ek_system_law_6
+#			}
+#		}
+#		
+#		earth_kingdom_culture_opinion = 15
+#		
+#		
+#		ai_will_do = {
+#			factor = 1000
+#		}
+#	}
+#	
+#	ek_system_law_2 = {
+#	group = ek_law_system
+#	
+#	allow = {
+#		has_law = ek_system_law_1
+#		custom_tooltip = {
+#			text = has_RA_for_law_change_50
+#			hidden_tooltip = {
+#				check_variable = { which = global_royalAuthority value = 50 }
+#			}
+#		}
+#	}
+#
+#	potential = {
+#		holder_scope = { government = chinese_imperial_government }
+#	}
+#
+#	pass_effect = {
+#		#log = "slavery_legal pass ([This.GetFullBaseName])"
+#		custom_tooltip = {
+#			text = ek_system_law_2
+#			}
+#		}
+#
+#	effect = {
+#			#log = "slavery_legal ([This.GetFullBaseName])"
+#			custom_tooltip = {
+#				text = ek_system_law_2
+#			}
+#			hidden_effect = {
+#				revoke_law = ek_system_law_1
+#				revoke_law = ek_system_law_3
+#				revoke_law = ek_system_law_4
+#				revoke_law = ek_system_law_5
+#				revoke_law = ek_system_law_6
+#			}
+#		}
+#		earth_kingdom_culture_opinion = 10
+#		global_revolt_risk = -0.005
+#		
+#		
+#		ai_will_do = {
+#			factor = 1000
+#		}
+#	}
+#	
+#	ek_system_law_3 = {
+#	group = ek_law_system
+#	
+#	allow = {
+#		has_law = ek_system_law_2
+#		custom_tooltip = {
+#			text = has_RA_for_law_change_60
+#			hidden_tooltip = {
+#				check_variable = { which = global_royalAuthority value = 60 }
+#			}
+#		}
+#	}
+#
+#	potential = {
+#		holder_scope = { government = chinese_imperial_government }
+#	}
+#
+#	pass_effect = {
+#		#log = "slavery_legal pass ([This.GetFullBaseName])"
+#		custom_tooltip = {
+#			text = ek_system_law_3
+#			}
+#		}
+#
+#	effect = {
+#			#log = "slavery_legal ([This.GetFullBaseName])"
+#			custom_tooltip = {
+#				text = ek_system_law_3
+#			}
+#			hidden_effect = {
+#				revoke_law = ek_system_law_1
+#				revoke_law = ek_system_law_2
+#				revoke_law = ek_system_law_4
+#				revoke_law = ek_system_law_5
+#				revoke_law = ek_system_law_6
+#			}
+#		}
+#		earth_kingdom_culture_opinion = 5
+#		global_revolt_risk = -0.01
+#		
+#		
+#		ai_will_do = {
+#			factor = 1000
+#		}
+#	}
+#	
+#	ek_system_law_4 = {
+#	group = ek_law_system
+#	
+#	allow = {
+#		has_law = ek_system_law_3
+#		custom_tooltip = {
+#			text = has_RA_for_law_change_70
+#			hidden_tooltip = {
+#				check_variable = { which = global_royalAuthority value = 70 }
+#			}
+#		}
+#	}
+#
+#	potential = {
+#		holder_scope = { government = chinese_imperial_government }
+#	}
+#
+#	pass_effect = {
+#		#log = "slavery_legal pass ([This.GetFullBaseName])"
+#		custom_tooltip = {
+#			text = ek_system_law_4
+#			}
+#		}
+#
+#	effect = {
+#			#log = "slavery_legal ([This.GetFullBaseName])"
+#			custom_tooltip = {
+#				text = ek_system_law_4
+#			}
+#			hidden_effect = {
+#				revoke_law = ek_system_law_1
+#				revoke_law = ek_system_law_2
+#				revoke_law = ek_system_law_3
+#				revoke_law = ek_system_law_5
+#				revoke_law = ek_system_law_6
+#			}
+#		}
+#		global_revolt_risk = -0.02
+#		
+#		
+#		ai_will_do = {
+#			factor = 1000
+#		}
+#	}
+	
+#	ek_system_law_5 = {
+#	group = ek_law_system
+#	
+#	allow = {
+#		has_law = ek_system_law_4
+#		custom_tooltip = {
+#			text = has_RA_for_law_change_60
+#			hidden_tooltip = {
+#				check_variable = { which = global_royalAuthority value = 60 }
+#			}
+#		}
+#	}
+#
+#	potential = {
+#		holder_scope = { government = chinese_imperial_government }
+#	}
+#
+#	pass_effect = {
+#		#log = "slavery_legal pass ([This.GetFullBaseName])"
+#		custom_tooltip = {
+#			text = ek_system_law_5
+#			}
+#		}
+#
+#	effect = {
+#			#log = "slavery_legal ([This.GetFullBaseName])"
+#			custom_tooltip = {
+#				text = ek_system_law_5
+#			}
+#			hidden_effect = {
+#				revoke_law = ek_system_law_1
+#				revoke_law = ek_system_law_2
+#				revoke_law = ek_system_law_3
+#				revoke_law = ek_system_law_4
+#				revoke_law = ek_system_law_6
+#			}
+#		}
+#		earth_kingdom_culture_opinion = -5
+#		global_revolt_risk = -0.025
+#		
+#		
+#		ai_will_do = {
+#			factor = 1000
+#		}
+#	}
+	
+	quan_admin_1 = { #Autonomous
+	group = Quan_laws_1
+	
+		allow = {
+			has_dlc = "Conclave"
+			NOR = {
+				has_law = quan_admin_2
+				has_law = quan_admin_3
+				has_law = quan_admin_4
+				has_law = quan_admin_5
+			
+			}
+			#Base reform never should be passed unless enforced by Clan Revolters, If it was passed then ... fuck - TypicalCrusader
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "impossible law passed quan_admin_1 h e c c"
+		}
+
+		effect = {
+				log = "impossible law tried to be passed quan_admin_1 s a d"
+				
+				custom_tooltip = {
+					text = ca_law_loss
+				}
+
+				hidden_effect = {
+					revoke_law = quan_admin_2
+					revoke_law = quan_admin_3
+					revoke_law = quan_admin_4
+					revoke_law = quan_admin_5
+				}
+
+		}
+
+		vassal_limit = 15
+		demesne_size = -2
+		vassal_opinion = 15
+
+		ai_will_do = {
+			factor = 0
+			#Never fucking never
+		}
+
+	}
+
+	quan_admin_2 = { #Semi-Autonomous
+		group = Quan_laws_1
+		
+		allow = {
+			has_dlc = "Conclave"
+			has_law = quan_admin_1
+			custom_tooltip = {
+				text = has_20_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 20 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_admin_2 passed"
+		}
+
+		effect = {
+				log = "quan_admin_2 tried to pass"
+				custom_tooltip = {
+					text = ca_small_law_loss
+				}
+				hidden_effect = {
+					revoke_law = quan_admin_1
+					revoke_law = quan_admin_3
+					revoke_law = quan_admin_4
+					revoke_law = quan_admin_5
+				}
+
+				change_variable = { which = global_Clanauthority value = -20 }
+
+			}
+
+			vassal_limit = 10
+			demesne_size = -1
+			vassal_opinion = 10			
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_admin_3
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_1
+			}			
+		}
+	}
+
+	quan_admin_3 = { #Balanced
+		group = Quan_laws_1
+		
+		allow = {
+			has_dlc = "Conclave"
+			has_law = quan_admin_2
+			custom_tooltip = {
+				text = has_30_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 30 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_admin_3 passed"
+		}
+
+		effect = {
+				log = "quan_admin_3 tried to pass"
+				custom_tooltip = {
+					text = ca_small_law_gain
+				}
+				hidden_effect = {
+					revoke_law = quan_admin_1
+					revoke_law = quan_admin_2
+					revoke_law = quan_admin_4
+					revoke_law = quan_admin_5
+				}
+
+				change_variable = { which = global_Clanauthority value = -30 }
+
+			}
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_admin_4
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_2
+			}			
+		}
+	}
+
+	quan_admin_4 = { #Semi-Centralised
+		group = Quan_laws_1
+		
+		allow = {
+			has_dlc = "Conclave"
+			has_law = quan_admin_2
+			custom_tooltip = {
+				text = has_40_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 40 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_admin_4 passed"
+		}
+
+		effect = {
+				log = "quan_admin_4 tried to pass"
+				custom_tooltip = {
+					text = ca_law_gain
+				}
+				hidden_effect = {
+					revoke_law = quan_admin_1
+					revoke_law = quan_admin_2
+					revoke_law = quan_admin_3
+					revoke_law = quan_admin_5
+				}
+
+				change_variable = { which = global_Clanauthority value = -40 }
+			}
+
+			vassal_limit = -10
+			demesne_size = 1
+			vassal_opinion = -10			
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_admin_5
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_3
+			}			
+		}
+	}
+
+	quan_admin_5 = { #Centralised
+		group = Quan_laws_1
+		
+		allow = {
+			has_dlc = "Conclave"
+			has_law = quan_admin_2
+			custom_tooltip = {
+				text = has_50_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 50 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_admin_5 passed"
+		}
+
+		effect = {
+				log = "quan_admin_5 tried to pass"
+				custom_tooltip = {
+					text = ca_huge_law_gain
+				}
+				hidden_effect = {
+					revoke_law = quan_admin_1
+					revoke_law = quan_admin_2
+					revoke_law = quan_admin_3
+					revoke_law = quan_admin_4
+				}
+
+				change_variable = { which = global_Clanauthority value = -50 }
+			}
+
+			vassal_limit = -15
+			demesne_size = 2
+			vassal_opinion = -15			
+
+		ai_will_do = {
+			factor = 1
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_admin_4
+			}			
+		}
+	}
+
+	quan_council_1 = { #Dominating
+		group = Quan_laws_2
+		
+		allow = {
+			has_dlc = "Conclave"
+			NOR = {
+				has_law = quan_council_2
+				has_law = quan_council_3
+				has_law = quan_council_4
+				has_law = quan_council_5
+				has_law = quan_council_6
+			}
+			#Base reform never should be passed unless enforced by Clan Revolters, If it was passed then ... fuck - TypicalCrusader
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_council_1 either enforced by clan revoters or its bug"
+		}
+
+		effect = {
+				log = "quan_council_1 tried to pass"
+				hidden_effect = {
+					revoke_law = quan_council_2
+					revoke_law = quan_council_3
+					revoke_law = quan_council_4
+					revoke_law = quan_council_5
+					revoke_law = quan_council_6
+				}
+			}
+
+			custom_tooltip = {
+				text = Quan_council_full_block
+			}
+
+			custom_tooltip = {
+				text = ca_huge_law_loss
+			}	
+
+			global_tax_modifier = -0.25		
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		ai_will_revoke = {
+			factor = 0
+		}
+	}
+
+	quan_council_2 = { #Huge
+		group = Quan_laws_2
+		
+		allow = {
+			has_dlc = "Conclave"
+			OR = {
+				has_law = quan_council_1
+				has_law = quan_council_3
+			}
+			custom_tooltip = {
+				text = has_20_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 20 }
+				}
+			}			
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_council_2 passed"
+		}
+
+		effect = {
+				log = "quan_council_2 tried to pass"
+				hidden_effect = {
+					revoke_law = quan_council_1
+					revoke_law = quan_council_3
+					revoke_law = quan_council_4
+					revoke_law = quan_council_5
+					revoke_law = quan_council_6
+				}
+
+				custom_tooltip = {
+					text = Quan_council_partial_block
+				}
+	
+				custom_tooltip = {
+					text = ca_huge_law_loss
+				}
+			}
+
+			change_variable = { which = global_Clanauthority value = -20 }
+			global_tax_modifier = -0.15		
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_3
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_1
+			}			
+		}
+
+	}	
+
+	quan_council_3 = { #Big
+		group = Quan_laws_2
+		
+		allow = {
+			has_dlc = "Conclave"
+			OR = {
+				has_law = quan_council_2
+				has_law = quan_council_4
+			}
+			custom_tooltip = {
+				text = has_30_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 30 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "quan_council_3 passed"
+		}
+
+		effect = {
+				log = "quan_council_3 tried to pass"
+				hidden_effect = {
+					revoke_law = quan_council_1
+					revoke_law = quan_council_2
+					revoke_law = quan_council_4
+					revoke_law = quan_council_5
+					revoke_law = quan_council_6
+				}
+				change_variable = { which = global_Clanauthority value = -30 }
+
+				custom_tooltip = {
+					text = Quan_council_partial_2_block
+				}
+	
+				custom_tooltip = {
+					text = ca_big_law_loss
+				}					
+
+			}
+
+
+			global_tax_modifier = -0.05		
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_4
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_2
+			}			
+		}
+
+	}	
+
+	quan_council_4 = { #Normal
+	group = Quan_laws_2
+	
+	allow = {
+		has_dlc = "Conclave"
+		OR = {
+			has_law = quan_council_3
+			has_law = quan_council_5
+		}
+		custom_tooltip = {
+			text = has_40_CA
+			hidden_tooltip = {
+				check_variable = { which = global_Clanauthority value = 40 }
+			}
+		}
+	}
+
+	potential = {
+		holder_scope = { government = clan_federation }
+	}
+
+	pass_effect = {
+		log = "quan_council_4 passed"
+	}
+
+	effect = {
+			log = "quan_council_4 tried to pass"
+			hidden_effect = {
+				revoke_law = quan_council_1
+				revoke_law = quan_council_2
+				revoke_law = quan_council_3
+				revoke_law = quan_council_5
+				revoke_law = quan_council_6
+			}
+			change_variable = { which = global_Clanauthority value = -40 }
+			
+			custom_tooltip = {
+				text = Quan_council_small_block
+			}
+	
+			custom_tooltip = {
+				text = ca_small_law_loss
+			}		
+		}	
+	
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_5
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_4
+			}			
+		}
+
+	}
+
+	quan_council_5 = { #Small
+	group = Quan_laws_2
+	
+	allow = {
+		has_dlc = "Conclave"
+		OR = {
+			has_law = quan_council_4
+			has_law = quan_council_6
+		}
+		custom_tooltip = {
+			text = has_50_CA
+			hidden_tooltip = {
+				check_variable = { which = global_Clanauthority value = 50 }
+			}
+		}
+	}
+
+	potential = {
+		holder_scope = { government = clan_federation }
+	}
+
+	pass_effect = {
+		log = "quan_council_5 passed"
+	}
+
+	effect = {
+			log = "quan_council_5 tried to pass"
+			hidden_effect = {
+				revoke_law = quan_council_1
+				revoke_law = quan_council_2
+				revoke_law = quan_council_3
+				revoke_law = quan_council_4
+				revoke_law = quan_council_6
+			}
+			change_variable = { which = global_Clanauthority value = -50 }
+		
+			custom_tooltip = {
+				text = Quan_council_no_block
+			}
+	
+			custom_tooltip = {
+				text = ca_small_law_gain
+			}		
+		}
+	
+
+		global_tax_modifier = 0.05		
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_6
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_5
+			}			
+		}
+
+	}	
+
+	quan_council_6 = { #Advisory
+	group = Quan_laws_2
+	
+	allow = {
+		has_dlc = "Conclave"
+		has_law = quan_council_5
+		has_law = law_voting_power_0
+		custom_tooltip = {
+			text = has_60_CA
+			hidden_tooltip = {
+				check_variable = { which = global_Clanauthority value = 60 }
+			}
+		}
+	}
+
+	potential = {
+		holder_scope = { government = clan_federation }
+	}
+
+	pass_effect = {
+		log = "quan_council_5 passed"
+	}
+
+	effect = {
+			log = "quan_council_5 tried to pass"
+			hidden_effect = {
+				revoke_law = quan_council_1
+				revoke_law = quan_council_2
+				revoke_law = quan_council_3
+				revoke_law = quan_council_4
+				revoke_law = quan_council_6
+			}
+			custom_tooltip = {
+				text = Quan_council_good_block
+			}
+	
+			custom_tooltip = {
+				text = ca_huge_law_gain
+			}				
+			change_variable = { which = global_Clanauthority value = -60 }
+		}
+
+
+		global_tax_modifier = 0.1	
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_council_6
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_council_5
+			}			
+		}
+
+	}	
+
+	quan_army_1 = { #Clan Levies
+	group = Quan_laws_3
+	
+		allow = {
+			has_dlc = "Conclave"
+			NOR = {
+				has_law = quan_army_2
+				has_law = quan_army_3
+				has_law = quan_army_4
+				has_law = quan_army_5
+			}
+			#Base reform never should be passed unless enforced by Clan Revolters, If it was passed then ... fuck - TypicalCrusader
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "impossible law passed quan_admin_1 h e c c"
+		}
+
+		effect = {
+				log = "impossible law tried to be passed quan_admin_1 s a d"
+				
+				custom_tooltip = {
+					text = ca_small_law_loss
+				}
+
+				hidden_effect = {
+					has_law = quan_army_2
+					has_law = quan_army_3
+					has_law = quan_army_4
+					has_law = quan_army_5
+				}
+
+		}
+
+		ai_will_do = {
+			factor = 0
+			#Never fucking never
+		}
+
+	}
+
+	quan_army_2 = { #Jian Levies
+	group = Quan_laws_3
+	
+		allow = {
+			has_dlc = "Conclave"
+			OR = {
+				has_law = quan_army_1
+				has_law = quan_army_3
+			}
+			custom_tooltip = {
+				text = has_20_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 20 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "law quan_army_2 tried to pass"
+		}
+
+		effect = {
+				log = "law quan_army_2 passed"
+				
+				custom_tooltip = {
+					text = Quan_clan_dislike_warn
+				}
+
+				custom_tooltip = {
+					text = ca_small_law_gain
+				}
+
+				hidden_effect = {
+					has_law = quan_army_1
+					has_law = quan_army_3
+					has_law = quan_army_4
+					has_law = quan_army_5
+				}
+
+				change_variable = { which = global_Clanauthority value = -20 }
+		}
+
+		retinuesize_perc = -0.25
+		levy_size = 0.7
+
+
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_army_3
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_1
+			}			
+		}
+
+	}	
+
+	quan_army_3 = { #Normal
+	group = Quan_laws_3
+	
+		allow = {
+			has_dlc = "Conclave"
+			OR = {
+				has_law = quan_army_2
+				has_law = quan_army_4
+			}
+			custom_tooltip = {
+				text = has_30_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 30 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "law quan_army_3 tried to pass"
+		}
+
+		effect = {
+				log = "law quan_army_3 passed"
+				
+				custom_tooltip = {
+					text = ca_small_law_gain
+				}
+
+				hidden_effect = {
+					has_law = quan_army_1
+					has_law = quan_army_2
+					has_law = quan_army_4
+					has_law = quan_army_5
+				}
+
+				change_variable = { which = global_Clanauthority value = -30 }
+		}
+
+		retinuesize_perc = 0.5
+		levy_size = 0.5
+		
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_army_4
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_2
+			}			
+		}
+
+	}
+
+	quan_army_4 = { #Officer Corps
+	group = Quan_laws_3
+	
+		allow = {
+			has_dlc = "Conclave"
+			OR = {
+				has_law = quan_army_3
+				has_law = quan_army_5
+			}
+			custom_tooltip = {
+				text = has_40_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 40 }
+				}
+			}
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "law quan_army_4 tried to pass"
+		}
+
+		effect = {
+				log = "law quan_army_4 passed"
+				
+				custom_tooltip = {
+					text = Quan_clan_dislike_warn
+				}
+
+				custom_tooltip = {
+					text = ca_law_gain
+				}
+
+				hidden_effect = {
+					has_law = quan_army_1
+					has_law = quan_army_2
+					has_law = quan_army_3
+					has_law = quan_army_5
+				}
+
+				change_variable = { which = global_Clanauthority value = -40 }
+		}
+
+		retinuesize_perc = 0.5
+		levy_size = 0.5
+		
+		ai_will_do = {
+			factor = 1
+
+			additive_modifier = {
+				value = -10
+				has_law = quan_army_5
+			}
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_3
+			}			
+		}
+
+	}	
+
+	quan_army_5 = { #Badgermole Brigade
+	group = Quan_laws_3
+	
+		allow = {
+			has_dlc = "Conclave"
+			has_law = quan_army_4
+			custom_tooltip = {
+				text = has_50_CA
+				hidden_tooltip = {
+					check_variable = { which = global_Clanauthority value = 50 }
+				}
+			}
+			#TODO:add all absolute council laws or at least balanced and normal council + admin + additional 20 CA
+		}
+
+		potential = {
+			holder_scope = { government = clan_federation }
+		}
+
+		pass_effect = {
+			log = "law quan_army_5 tried to pass"
+		}
+
+		effect = {
+				log = "law quan_army_5 passed"
+				
+				custom_tooltip = {
+					text = Quan_gman
+					hidden_tooltip = {
+						ROOT = {
+							holder_scope = {	
+								character_event = { id = T4NQuan.7 days = 120 random = 120 } 
+								#Pre Revolt Narrative event
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = ca_law_loss
+				}
+
+				hidden_effect = {
+					has_law = quan_army_1
+					has_law = quan_army_2
+					has_law = quan_army_3
+					has_law = quan_army_5
+				}
+
+				change_variable = { which = global_Clanauthority value = -50 }
+		}
+
+		retinuesize_perc = 0.9
+		levy_size = 0.25
+		retinue_maintenence_cost = 0.45
+		land_morale = 0.2
+		
+		ai_will_do = {
+			factor = 1
+			
+			additive_modifier = {
+				value = 10
+				has_law = quan_army_4
+			}			
+		}
+	}
+}
