@@ -8,11 +8,13 @@
 namespace = dai_li
 
 ############
-#EVENT LIST#											
-# dai_li.1 #
+#EVENT LIST#	
+############										
+#dai_li.1 
 #
 #
-#
+#dai_li.3 - Kidnapping starts
+#dai_li.4
 ############
 
 
@@ -41,8 +43,34 @@ character_event = {
 	}
 	
 	option = {
-		d_dai_li = {
-			holder_scope = {
+		
+		if = {
+			limit = {
+				NOT = {
+					has_landed_title = d_dai_li 
+				}
+			}
+			d_dai_li = {
+				holder_scope = {
+					#Should not happen, but better to be sure
+					if = {
+						limit = {
+							NOT = {
+								society_member_of = dai_li
+							}
+							join_society = dai_li
+						}
+					}
+					dai_li = {
+						PREV = {
+							set_society_grandmaster = yes
+						}
+					}
+				}
+			}
+		}
+		else = {
+			ROOT = {
 				#Should not happen, but better to be sure
 				if = {
 					limit = {
@@ -62,5 +90,25 @@ character_event = {
 	}
 }
 
-
+#Kidnapping begin
+character_event = {
+	id = dai_li.3
+	
+	desc = evt_dai_li.3_desc
+	
+	only_rulers = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = evt_dai_li.3_opt1
+	}
+	
+	option = {
+		name = evt_dai_li.3_opt2
+	}
+	
+	option = {
+		name = evt_dai_li.3_opt3
+	}
+}
 	

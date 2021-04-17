@@ -2,14 +2,12 @@
 
 
 targetted_decisions = {
-	kidnap_person = {
+	kidnap_person = { #kidnapp for unlanded and not members of society for them will be new plot type 
 		ai_check_interval = 12 # Determines how seldom the AI checks whether they can and should do the decision, in months. By default 1 (every month).
 		filter = sub_realm home_court rivals
 		from_potential = {
-			NOT = {	has_character_modifier = kidnap_cooldown}
 			society_member_of = dai_li
 			society_rank >= 2
-			society_currency >= 450
 		}
 		potential = {
 			NOR = {
@@ -18,15 +16,17 @@ targetted_decisions = {
 			}
 		}
 		allow = {
-			#Conditions for the decision to be enabled
+			NOT = {	has_character_modifier = kidnap_cooldown}
+			society_currency >= 450
 		}
 		effect = {
-			FROM = {
+			FROM = { #FROM gets event
 				character_event = { id = dai_li.3 }
+				add_character_modifier = {
+					name = kidnap_cooldown
+					years = 3
+				}
 			}
-		}
-		revoke_allowed = {
-			always = no #Not used in vanilla
 		}
 		ai_will_do = {
 			factor = 0.1
@@ -79,6 +79,9 @@ targetted_decisions = {
 		}
 	}
 	
+	daili_train_bending_1 = {
+		ai_check_interval = 12
 	
 	
+	}
 }

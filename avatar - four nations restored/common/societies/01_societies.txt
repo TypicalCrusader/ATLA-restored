@@ -346,6 +346,9 @@ dai_li = { #Grand Secretariat of Ba Sing Se
 			daili_catch_dissident
 			daili_brainwash
 		}
+		plots = {
+			daili_plot_kidnapp #For landed and members of society
+		}
 	}
 	
 	society_rank = { # Dai Li Inspector

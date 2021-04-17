@@ -52,6 +52,12 @@ daili_dethrone_monarch_desc;;
 daili_use_joo_dee;Utilise Joo Dees;
 daili_use_joo_dee_desc;;
 
+#Events
+evt_dai_li.3_desc;;
+evt_dai_li.3_opt1;;
+evt_dai_li.3_opt2;;
+evt_dai_li.3_opt3;;
+
 
 #Government
 dai_li_government;Ministry of Cultural Preservation;

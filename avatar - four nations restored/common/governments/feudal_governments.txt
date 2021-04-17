@@ -219,6 +219,8 @@ feudal_governments = {
 				has_landed_title = k_earth_kingdom 
 				has_landed_title = d_dai_li
 			}
+			is_theocracy = no
+			is_tribal = no
 			is_patrician = no
 		}
 		
@@ -265,6 +267,8 @@ feudal_governments = {
 				has_landed_title = k_earth_kingdom
 			}
 			is_patrician = no
+			is_theocracy = no
+			is_tribal = no		
 		}
 		
 		color = { 7 115 37 }
@@ -337,6 +341,9 @@ feudal_governments = {
 			NOT = {	religion_group = air_religions }
 			NOT = { culture_group = water_tribe_culture }
 			NOT = { is_government_potential = order_government }
+			is_theocracy = no
+			is_tribal = no
+			is_patrician = no			
 		}
 		
 		color = { 250 0 0 }
@@ -486,7 +493,7 @@ feudal_governments = {
 				OR = {
 					has_landed_title = e_fire_nation
 					primary_title = {
-						tier >= king
+						higher_tier_than = duke
 						has_law = ze_fire_administration_laws_2
 						has_law = fire_imperial_administration
 						holder_scope = {
