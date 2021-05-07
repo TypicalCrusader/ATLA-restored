@@ -92,6 +92,7 @@ d_earth_monarchism = {
 	culture = ba_sing_se
 	religion = earth_monarchism
 	controls_religion = earth_monarchism
+	landless = yes
 	
 	title = EARTH_KING
 	title_female = EARTH_QUEEN
@@ -106,11 +107,29 @@ d_imperial_cult = {
 	culture = ba_sing_se
 	religion = imperial_cult
 	
+	controls_religion = imperial_cult
+	landless = yes
+	
 	title = "grand_secretary"
 	title_female = "grand_secretary"
 	foa = "imperial_secretary"
-	title_prefix = "grand_secretariat"
 
+}
+
+d_vanguard = {
+	color = { 206 203 18 }
+	color2 = { 255 255 20 }
+	
+	short_name = yes
+	culture = ba_sing_se
+	religion = vanguard
+	
+	controls_religion = vanguard
+	landless = yes
+	
+	title = "guardian"
+	title_female = "guardian"
+	foa = "imperial_secretary"
 
 }
 
