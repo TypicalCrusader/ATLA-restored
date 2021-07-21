@@ -388,9 +388,21 @@ spriteTypes = {
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
+	spriteType = {
+		name = "GFX_become_legend"
+		texturefile = "gfx/traits/sandsailor3.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	
 	spriteType = {
 		name = "GFX_present_male_debutante"
 		texturefile = "gfx\\interface\\decision_icon_present_debutante.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_check_avatar_decision"
+		texturefile = "gfx/interface/avatar_ambitions_0.dds"
 	}
 }
