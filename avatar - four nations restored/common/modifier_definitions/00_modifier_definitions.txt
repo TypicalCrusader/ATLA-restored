@@ -1049,6 +1049,22 @@ earth_monarchism_opinion = {
 	max_decimals = 0
 }
 
+anti_royalist_aligned_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+royalist_aligned_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
 earth_king_opinion = {
   show_as_percent = no
   is_good = yes
@@ -1081,6 +1097,22 @@ unificationism_opinion = {
 }
 
 vanguard_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+path_of_jin_wei_opinion = {
+	show_as_percent = no
+	is_good = yes
+	is_monthly = no
+	is_hidden = no
+	max_decimals = 0
+}
+
+path_of_wei_jin_opinion = {
 	show_as_percent = no
 	is_good = yes
 	is_monthly = no
