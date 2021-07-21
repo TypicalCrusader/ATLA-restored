@@ -4377,3 +4377,98 @@ ba_sing_se_siege_cb = {
 #		factor = 150
 #	}
 #}
+
+Quan_scripted_revolt_cb = {
+	name = Quan_Five_Banners_CB
+	war_name = Quan_Five_Banners_Rebelion
+	sprite = 7
+	truce_days = 3650
+	hostile_against_others = yes
+	can_ask_to_join_war = no
+	is_revolt_cb = yes
+	allow_whitepeace = yes
+	
+	can_use = {
+		ROOT = { has_landed_title = k_five_banners }
+		FROM = { has_landed_title = k_quan }
+	}
+
+	on_success = {
+		
+	}
+
+	on_fail = {
+
+	}
+
+	on_reverse_demand = {
+
+	}
+
+	on_reverse_demand_title = {
+
+	}
+
+	attacker_ai_victory_worth = {
+		factor = 100
+	}
+	
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	defender_ai_defeat_worth = {
+		factor = 150
+	}
+}
+
+Quan_clan_revolt = {
+	name = Quan_clan_revolt_CB
+	war_name = Quan_clan_revolt
+	sprite = 7
+	truce_days = 3650
+	hostile_against_others = yes
+	can_ask_to_join_war = no
+	is_revolt_cb = yes
+	allow_whitepeace = yes
+	
+	can_use = {
+		FROM = { has_landed_title = k_quan }
+	}
+
+	on_success = {
+		
+	}
+
+	on_fail = {
+
+	}
+
+	on_reverse_demand = {
+
+	}
+
+	on_reverse_demand_title = {
+
+	}
+
+	attacker_ai_victory_worth = {
+		factor = 100
+	}
+	
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	defender_ai_defeat_worth = {
+		factor = 150
+	}
+}

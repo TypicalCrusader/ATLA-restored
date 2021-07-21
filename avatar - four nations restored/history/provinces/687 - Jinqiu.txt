@@ -1,0 +1,15 @@
+# c_jinqiu
+
+# County Title
+title = c_jinqiu
+
+# Settlements
+max_settlements = 4
+
+b_jinqiu = tribal
+
+# Misc
+culture = dongfangian
+religion = earth_spirituality
+
+#History

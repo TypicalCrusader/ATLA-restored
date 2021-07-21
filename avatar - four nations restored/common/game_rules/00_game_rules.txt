@@ -94,6 +94,41 @@ pet_names = {
 	}
 }
 
+T4N_Quan_FBR_troops_spawn_amount = {
+	name = "T4N_Quan_FBR_troops_spawn_amount_tit"
+	desc = "T4N_Quan_FBR_troops_spawn_amount_desc"
+	group =  RULE_GROUP_FOURNATIONS	 
+#	alt_start_default = option_name					# Default value in alt start. If not set, defaults 
+	option = {										# please note that the first option is always the default option
+		name = T4N_Quan_FBR_troops_spawn_normal
+		text = "T4N_Quan_FBR_troops_spawn_normal"
+		desc = "T4N_Quan_FBR_troops_spawn_normal_desc"
+		achievements = yes					# by default achievements = yes, allows or disallows achievements
+		alt_start_achievements = no					# by default alt_start_achievements = yes, allows or disallows achievements in alt start. Note that it defaults to yes even when achievements = no
+	}
+	option = {										# please note that the first option is always the default option
+		name = T4N_Quan_FBR_troops_spawn_hard
+		text = "T4N_Quan_FBR_troops_spawn_hard"
+		desc = "T4N_Quan_FBR_troops_spawn_hard_desc"
+		achievements = no				# by default achievements = yes, allows or disallows achievements
+		alt_start_achievements = no					# by default alt_start_achievements = yes, allows or disallows achievements in alt start. Note that it defaults to yes even when achievements = no
+	}
+	option = {										# please note that the first option is always the default option
+		name = T4N_Quan_FBR_troops_spawn_very_hard
+		text = "T4N_Quan_FBR_troops_spawn_very_hard"
+		desc = "T4N_Quan_FBR_troops_spawn_very_hard_desc"
+		achievements = no				# by default achievements = yes, allows or disallows achievements
+		alt_start_achievements = no					# by default alt_start_achievements = yes, allows or disallows achievements in alt start. Note that it defaults to yes even when achievements = no
+	}
+	option = {										# please note that the first option is always the default option
+		name = T4N_Quan_FBR_troops_spawn_i_want_die
+		text = "T4N_Quan_FBR_troops_spawn_i_want_die"
+		desc = "T4N_Quan_FBR_troops_spawn_i_want_die_desc"
+		achievements = no				# by default achievements = yes, allows or disallows achievements
+		alt_start_achievements = no					# by default alt_start_achievements = yes, allows or disallows achievements in alt start. Note that it defaults to yes even when achievements = no
+	}	
+}
+
 # earth_kingdom_status = {
 	# name = "RULE_EK_STATUS"
 	# option = {
@@ -1313,3 +1348,4 @@ court_limit_rule = {
 		desc = "RULE_COURT_LIMIT_OFF"
 	}
 }
+

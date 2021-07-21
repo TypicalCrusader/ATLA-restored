@@ -1413,3 +1413,151 @@ misty_palms_oasis = {
 		}
     }
 }
+crouching_tiger_citadel = {
+	picture = GFX_wonder_strip_grandfortress
+	# model = GFX_something
+	default_picture_stage = 3
+	allow_construction = no
+	is_in_water = no
+	allow_coastal = no
+	show_model = yes
+	background_overrides = {
+	}
+	potential = {
+	}
+	active = {
+		culture_group = earth_kingdom_culture
+	}
+	flags = {
+		defensive
+		cost_medium
+	}
+	available_upgrades = {
+		# UNIQUE:
+		upgrade_armory
+		upgrade_watch_tower
+		upgrade_vault
+		upgrade_moat_pit
+		upgrade_moat_spike
+		upgrade_moat_water
+		upgrade_moat_bones
+		upgrade_hidden_passageways
+		upgrade_garden_inner
+		upgrade_dueling_room
+
+		#
+		upgrade_torture_chamber
+		upgrade_historical_mural
+
+		# OTHER:
+		upgrade_roads
+		upgrade_watchtower_network
+		upgrade_spikes
+		upgrade_hypocausts
+		upgrade_heating_pipes
+		upgrade_retinue
+		upgrade_road_tolls
+		upgrade_tavern
+	}
+	stage = { # First stage
+		allow = {
+			#triggers (eg. wealth)
+		}
+		build_time = 600
+		restore_time = 300
+		loot_time = 10
+		gold_cost_flat = 500
+		gold_cost_ticking = 2
+		restore_cost_flat = 427
+		restore_cost_ticking = 3
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.005
+			local_tax_modifier = 0.005
+		}
+		owner_modifier = {
+			monthly_character_prestige = 0.1
+			fort_level = 1
+		}
+	}
+	stage = { # Second stage
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 3
+				TECH_CONSTRUCTION = 2
+			}
+		}
+		build_time = 400
+		restore_time = 70
+		loot_time = 12
+		gold_cost_flat = 1200
+		gold_cost_ticking = 3
+		restore_cost_flat = 524
+		restore_cost_ticking = 4
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.005
+			local_tax_modifier = 0.005
+		}
+		owner_modifier = {
+			fort_level = 1
+			garrison_size = 0.05
+			heavy_infantry = 50
+			earth_benders = 25
+		}
+    }
+	stage = { # Third stage
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 5
+				TECH_CONSTRUCTION = 4
+			}		
+		}
+		build_time = 400
+		restore_time = 70
+		loot_time = 12
+		gold_cost_flat = 1200
+		gold_cost_ticking = 3
+		restore_cost_flat = 524
+		restore_cost_ticking = 4
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.005
+			local_tax_modifier = 0.005
+		}
+		owner_modifier = {
+			fort_level = 2
+			garrison_size = 0.05
+			heavy_infantry = 100
+			earth_benders = 75
+			light_cavalry = 50
+		}
+    }
+	stage = { # Forth stage
+		allow = {
+			FROMFROMFROM = {
+				TECH_FORTIFICATIONS_CONSTRUCTION = 8
+				TECH_CONSTRUCTION = 6
+			}		
+		}
+		build_time = 400
+		restore_time = 70
+		loot_time = 12
+		gold_cost_flat = 1200
+		gold_cost_ticking = 3
+		restore_cost_flat = 524
+		restore_cost_ticking = 4
+		upgrade_slots = 2
+		local_modifier = {
+			local_revolt_risk = -0.005
+			local_tax_modifier = 0.005
+		}
+		owner_modifier = {
+			fort_level = 1
+			garrison_size = 0.1
+			heavy_infantry = 300
+			earth_benders = 200
+			light_cavalry = 100
+		}
+    }
+}

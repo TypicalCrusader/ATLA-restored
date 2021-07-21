@@ -132,6 +132,7 @@ tribal_governments = {
 			NOT = { religion_group = air_religions }
 			NOT = { culture = sandbender }
 			NOT = { culture = pirate }
+			NOT = { culture = dongfangian }
 			is_patrician = no
 			mercenary = no
 			holy_order = no
@@ -152,4 +153,61 @@ tribal_governments = {
 		capital_move_delay = 600
 	}
 	
+	clan_government = {
+		preferred_holdings = { TRIBAL }
+		allowed_holdings = {
+			TRIBAL
+			FORT
+			HOSPITAL
+		}
+		accepts_liege_governments_culture = { # Tribals have no opinion penalty towards their liege if of the same culture
+			clan_federation
+		}
+		vassal_call_to_arms = {
+			clan_government
+			theocracy_government
+			republic_government
+			feudal_government_earth_kingdom
+		}
+		no_vassal_tax = {
+			clan_government
+		}
+		builds_with_prestige = {
+			TRIBAL
+		}
+		frame_suffix = "_clan"
+		#title_prefix = "tribal_"
+		potential = {
+			culture = dongfangian
+		}
+		
+		color = { 5 118 133 }
+		
+		character_modifier = {
+			levy_size = -0.4
+			tribal_vassal_min_levy = 0.1
+			city_vassal_min_levy = 0.1
+			temple_vassal_min_levy = 0.1
+			castle_vassal_min_levy = 0.1
+			light_cavalry_defensive = 0.05
+			light_cavalry_offensive = 0.05
+			light_cavalry_morale = 0.025
+			heavy_cavalry_defensive = 0.05
+			heavy_cavalry_offensive = 0.05
+			heavy_cavalry_morale = 0.025
+		}
+
+		allow_looting = yes
+		ignores_de_jure_laws = yes
+		can_build_castle = no
+		can_build_city = no
+		can_build_temple = yes
+		can_build_tribal = yes
+		
+		demesne_size = 2
+		vassal_limit = -10
+		
+		capital_move_delay = 600
+	}
+
 }
